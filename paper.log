@@ -1,0 +1,1700 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2012/dev/Arch Linux) (format=pdflatex 2012.4.18)  19 APR 2012 13:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper
+(./paper.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2011-07-01, ngerman-x-2011-07-01, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2011/07/29 v1.5 (git show 1.5-1-gcc2f2d2 )
+
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks15
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box27
+
+(/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen119
+\pgf@y=\dimen120
+\pgf@xa=\dimen121
+\pgf@ya=\dimen122
+\pgf@xb=\dimen123
+\pgf@yb=\dimen124
+\pgf@xc=\dimen125
+\pgf@yc=\dimen126
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count92
+\c@pgf@countb=\count93
+\c@pgf@countc=\count94
+\c@pgf@countd=\count95
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count96
+\pgfsyssoftpath@bigbuffer@items=\count97
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen127
+\pgfmath@count=\count98
+\pgfmath@box=\box28
+\pgfmath@toks=\toks20
+\pgfmath@stack@operand=\toks21
+\pgfmath@stack@operation=\toks22
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count99
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen128
+\pgf@picmaxx=\dimen129
+\pgf@picminy=\dimen130
+\pgf@picmaxy=\dimen131
+\pgf@pathminx=\dimen132
+\pgf@pathmaxx=\dimen133
+\pgf@pathminy=\dimen134
+\pgf@pathmaxy=\dimen135
+\pgf@xx=\dimen136
+\pgf@xy=\dimen137
+\pgf@yx=\dimen138
+\pgf@yy=\dimen139
+\pgf@zx=\dimen140
+\pgf@zy=\dimen141
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen142
+\pgf@path@lasty=\dimen143
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen144
+\pgf@shorten@start@additional=\dimen145
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box29
+\pgf@hbox=\box30
+\pgf@layerbox@main=\box31
+\pgf@picture@serial@count=\count100
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen146
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen147
+\pgf@pt@y=\dimen148
+\pgf@pt@temp=\dimen149
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count101
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box32
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box33
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
+\pgffor@stack=\toks23
+\pgffor@toks=\toks24
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count102
+\pgfplotmarksize=\dimen155
+)
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikzleveldistance=\dimen160
+\tikzsiblingdistance=\dimen161
+\tikz@figbox=\box34
+\tikz@tempbox=\box35
+\tikztreelevel=\count103
+\tikznumberofchildren=\count104
+\tikznumberofcurrentchild=\count105
+\tikz@fig@count=\count106
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count107
+\pgfmatrixcurrentcolumn=\count108
+\pgf@matrix@numberofcolumns=\count109
+)
+\tikz@expandcount=\count110
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks25
+\t@pgfplots@tokb=\toks26
+\t@pgfplots@tokc=\toks27
+\pgfplots@tmpa=\dimen162
+\c@pgfplots@coordindex=\count111
+\c@pgfplots@scanlineindex=\count112
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
+oader.code.tex
+Package pgfplots: loading complementary code for your PGF version...
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_m
+isc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count114
+\pgfplotmarksize=\dimen163
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gflibraryfpu.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+ext.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
+x
+\c@pgfplotsarray@tmp=\count115
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
+ex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
+ex
+\c@pgfplotstable@counta=\count116
+\t@pgfplotstable@a=\toks31
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
+.code.tex
+\c@pgfplotslibrarysurf@no=\count117
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-pdftex.def)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen164
+\pgfdecoratedremainingdistance=\dimen165
+\pgfdecoratedinputsegmentcompleteddistance=\dimen166
+\pgfdecoratedinputsegmentremainingdistance=\dimen167
+\pgf@decorate@distancetomove=\dimen168
+\pgf@decorate@repeatstate=\count118
+\pgfdecorationsegmentamplitude=\dimen169
+\pgfdecorationsegmentlength=\dimen170
+)
+\tikz@lib@dec@box=\box36
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathmorphing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathmorphing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+\pgfplots@numplots=\count119
+\pgfplots@xmin@reg=\dimen171
+\pgfplots@xmax@reg=\dimen172
+\pgfplots@ymin@reg=\dimen173
+\pgfplots@ymax@reg=\dimen174
+\pgfplots@zmin@reg=\dimen175
+\pgfplots@zmax@reg=\dimen176
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+plotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2010/10/15 v2.10 (rcs-revision 1.12)
+))) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks32
+\inpenc@posthook=\toks33
+
+(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count120
+\uc@combtoks=\toks34
+\uc@combtoksb=\toks35
+\uc@temptokena=\toks36
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def
+File: l7xenc.def 2008/10/14 v1.96 LaTeX-LT file
+LaTeX Info: Redefining \selectfont on input line 30.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+100.
+LaTeX Font Info:    Try loading font information for L7x+lmr on input line 100.
+
+
+(/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd
+File: l7xlmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+(/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf
+Language: lithuanian 2006/09/20 v0.5 Lithuanian support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count121
+\U@D=\dimen177
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count122
+\lst@gtempboxa=\box37
+\lst@token=\toks37
+\lst@length=\count123
+\lst@currlwidth=\dimen178
+\lst@column=\count124
+\lst@pos=\count125
+\lst@lostspace=\dimen179
+\lst@width=\dimen180
+\lst@newlines=\count126
+\lst@lineno=\count127
+\lst@maxwidth=\dimen181
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count128
+\lst@skipnumbers=\count129
+\lst@framebox=\box38
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks38
+\ex@=\dimen182
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen183
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count130
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count131
+\leftroot@=\count132
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count133
+\DOTSCASE@=\count134
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box39
+\strutbox@=\box40
+\big@size=\dimen184
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count135
+\c@MaxMatrixCols=\count136
+\dotsspace@=\muskip10
+\c@parentequation=\count137
+\dspbrk@lvl=\count138
+\tag@help=\toks39
+\row@=\count139
+\column@=\count140
+\maxfields@=\count141
+\andhelp@=\toks40
+\eqnshift@=\dimen185
+\alignsep@=\dimen186
+\tagshift@=\dimen187
+\tagwidth@=\dimen188
+\totwidth@=\dimen189
+\lineht@=\dimen190
+\@envbody=\toks41
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks42
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (./paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for L7x/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+28.
+
+ABD: EveryShipout initializing macros
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count142
+\scratchdimen=\dimen191
+\scratchbox=\box41
+\nofMPsegments=\count143
+\nofMParguments=\count144
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen192
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
+\everyMPtoPDFconversion=\toks44
+) (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+\c@lstlisting=\count148
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+30.
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-1.def
+File: uni-1.def 2004/10/17 UCS: Unicode data U+0100..U+01FF
+)
+LaTeX Font Info:    Failed loading font information for L7x+pcr. on input line 
+30.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+30.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+32.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+93.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+129.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+130.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+131.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+132.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+133.
+ [2]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+133.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+151.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+161.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+166.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+182.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+190.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+192.
+Package epstopdf Info: Source file: <figures/pirmine_schema.eps>
+(epstopdf)                    date: 2012-03-22 10:27:05
+(epstopdf)                    size: 61295 bytes
+(epstopdf)             Output file: <figures/pirmine_schema-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2012-04-02 17:10:30
+(epstopdf)                    size: 28032 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/pirmine_schema-eps
+-converted-to.pdf figures/pirmine_schema.eps>
+(epstopdf)             \includegraphics on input line 194.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/pirmine_schema-eps-converted-to.pdf, id=20, 430.60875pt x 515.9275pt>
+File: figures/pirmine_schema-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/pirmine_schema-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pirmine_schema-eps-converted-to.pdf used on in
+put line 194.
+(pdftex.def)             Requested size: 200.75073pt x 240.5336pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+195.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+195.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+209.
+ [3]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+213.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+218.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+224.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+234.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+246.
+ [4 <./figures/pirmine_schema-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+250.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+261.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+263.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+264.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+265.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+279.
+ (./sources/read_data.m
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+1.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+2.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+3.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+4.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+5.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+6.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+7.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+8.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+12.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+12.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+13.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+14.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+15.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+16.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+18.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+18.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+20.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+20.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+21.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+24.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+24.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+24.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+282.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+282.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+299.
+ (./sources/split_data.m
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+1.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+2.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+4.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+4.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+5.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+6.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+8.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+8.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+9.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+11.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+12.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+13.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+14.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+15.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+16.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+17.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+18.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+19.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+20.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+21.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+23.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+23.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+301.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+302.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+302.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+318.
+
+[5]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+324.
+ [6]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+325.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+328.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+329.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+330.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+332.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+332.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+351.
+ (./sources/extract_signal.m
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+1.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+2.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+3.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+4.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+5.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+6.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+7.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+8.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+9.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+11.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+12.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+13.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+14.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+15.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+16.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+17.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+18.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+19.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+20.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+21.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+22.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+23.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+24.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+354.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+354.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+386.
+ [7]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+387.
+Package epstopdf Info: Source file: <figures/09_sample_stance_phase.eps>
+(epstopdf)                    date: 2012-03-22 15:20:00
+(epstopdf)                    size: 10093 bytes
+(epstopdf)             Output file: <figures/09_sample_stance_phase-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2012-04-02 22:02:22
+(epstopdf)                    size: 7259 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/09_sample_stance_p
+hase-eps-converted-to.pdf figures/09_sample_stance_phase.eps>
+(epstopdf)             \includegraphics on input line 389.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/09_sample_stance_phase-eps-converted-to.pdf, id=46, 410.53375pt x 309.
+155pt>
+File: figures/09_sample_stance_phase-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use figures/09_sample_stance_phase-eps-converted-to.pdf>
+Package pdftex.def Info: figures/09_sample_stance_phase-eps-converted-to.pdf us
+ed on input line 389.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+390.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+390.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+394.
+Package epstopdf Info: Source file: <figures/10_global_max_local_min.eps>
+(epstopdf)                    date: 2012-03-22 15:36:00
+(epstopdf)                    size: 10524 bytes
+(epstopdf)             Output file: <figures/10_global_max_local_min-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2012-04-02 22:05:13
+(epstopdf)                    size: 7474 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/10_global_max_loca
+l_min-eps-converted-to.pdf figures/10_global_max_local_min.eps>
+(epstopdf)             \includegraphics on input line 396.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/10_global_max_local_min-eps-converted-to.pdf, id=47, 410.53375pt x 309
+.155pt>
+File: figures/10_global_max_local_min-eps-converted-to.pdf Graphic file (type p
+df)
+ <use figures/10_global_max_local_min-eps-converted-to.pdf>
+Package pdftex.def Info: figures/10_global_max_local_min-eps-converted-to.pdf u
+sed on input line 396.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+398.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+398.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+418.
+ [8 <./figures/09_sample_stance_phase-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+419.
+ (./sources/min_max.m
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+1.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+2.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+3.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+4.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+5.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+6.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+7.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+8.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+10.
+
+Overfull \hbox (9.64987pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+11.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+12.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+13.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+14.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+15.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+16.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+423.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+423.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+439.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+450.
+ [9 <./figures/10_global_max_local_min-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+453.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+467.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+469.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+507.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+507.
+ [10]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+517.
+LaTeX Font Info:    Try loading font information for U+euf on input line 534.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+536.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+542.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+546.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+556.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+573.
+ [11]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+577.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+582.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+589.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+605.
+Package epstopdf Info: Source file: <figures/co_fft.eps>
+(epstopdf)                    date: 2012-03-22 19:13:00
+(epstopdf)                    size: 3301304 bytes
+(epstopdf)             Output file: <figures/co_fft-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-03 16:32:20
+(epstopdf)                    size: 86553 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/co_fft-eps-convert
+ed-to.pdf figures/co_fft.eps>
+(epstopdf)             \includegraphics on input line 607.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/co_fft-eps-converted-to.pdf, id=75, 410.53375pt x 309.155pt>
+File: figures/co_fft-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/co_fft-eps-converted-to.pdf>
+Package pdftex.def Info: figures/co_fft-eps-converted-to.pdf used on input line
+ 607.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+609.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+609.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+613.
+Package epstopdf Info: Source file: <figures/pt_fft.eps>
+(epstopdf)                    date: 2012-03-22 19:14:00
+(epstopdf)                    size: 3301304 bytes
+(epstopdf)             Output file: <figures/pt_fft-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-03 16:33:01
+(epstopdf)                    size: 73966 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/pt_fft-eps-convert
+ed-to.pdf figures/pt_fft.eps>
+(epstopdf)             \includegraphics on input line 615.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/pt_fft-eps-converted-to.pdf, id=76, 410.53375pt x 309.155pt>
+File: figures/pt_fft-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/pt_fft-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pt_fft-eps-converted-to.pdf used on input line
+ 615.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+617.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+617.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+637.
+ [12 <./figures/co_fft-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+648.
+Package epstopdf Info: Source file: <figures/co_corr.eps>
+(epstopdf)                    date: 2012-03-22 20:00:00
+(epstopdf)                    size: 3301305 bytes
+(epstopdf)             Output file: <figures/co_corr-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-04 11:05:26
+(epstopdf)                    size: 222303 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/co_corr-eps-conver
+ted-to.pdf figures/co_corr.eps>
+(epstopdf)             \includegraphics on input line 650.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/co_corr-eps-converted-to.pdf, id=87, 410.53375pt x 309.155pt>
+File: figures/co_corr-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/co_corr-eps-converted-to.pdf>
+Package pdftex.def Info: figures/co_corr-eps-converted-to.pdf used on input lin
+e 650.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+652.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+652.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+656.
+Package epstopdf Info: Source file: <figures/pt_corr.eps>
+(epstopdf)                    date: 2012-03-22 20:01:00
+(epstopdf)                    size: 3301305 bytes
+(epstopdf)             Output file: <figures/pt_corr-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-04 11:05:28
+(epstopdf)                    size: 220972 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/pt_corr-eps-conver
+ted-to.pdf figures/pt_corr.eps>
+(epstopdf)             \includegraphics on input line 658.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/pt_corr-eps-converted-to.pdf, id=88, 410.53375pt x 309.155pt>
+File: figures/pt_corr-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/pt_corr-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pt_corr-eps-converted-to.pdf used on input lin
+e 658.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+660.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+660.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+672.
+Package epstopdf Info: Source file: <figures/maximums_minimums.eps>
+(epstopdf)                    date: 2012-03-22 21:02:00
+(epstopdf)                    size: 166278 bytes
+(epstopdf)             Output file: <figures/maximums_minimums-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2012-04-04 11:04:56
+(epstopdf)                    size: 58478 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/maximums_minimums-
+eps-converted-to.pdf figures/maximums_minimums.eps>
+(epstopdf)             \includegraphics on input line 674.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/maximums_minimums-eps-converted-to.pdf, id=89, 410.53375pt x 309.155pt
+>
+File: figures/maximums_minimums-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/maximums_minimums-eps-converted-to.pdf>
+Package pdftex.def Info: figures/maximums_minimums-eps-converted-to.pdf used on
+ input line 674.
+(pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+676.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+676.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+686.
+ [13 <./figures/pt_fft-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+696.
+Package epstopdf Info: Source file: <figures/pirminis_signalo_apdorojimas_skaic
+iuojant_variacija.eps>
+(epstopdf)                    date: 2012-04-04 15:07:21
+(epstopdf)                    size: 127559 bytes
+(epstopdf)             Output file: <figures/pirminis_signalo_apdorojimas_skaic
+iuojant_variacija-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-04 15:08:48
+(epstopdf)                    size: 58141 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/pirminis_signalo_a
+pdorojimas_skaiciuojant_variacija-eps-converted-to.pdf figures/pirminis_signalo
+_apdorojimas_skaiciuojant_variacija.eps>
+(epstopdf)             \includegraphics on input line 698.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija-eps-converted-to.p
+df, id=100, 430.60875pt x 739.76375pt>
+File: figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija-eps-converted
+-to.pdf Graphic file (type pdf)
+
+<use figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija-eps-converted-
+to.pdf>
+Package pdftex.def Info: figures/pirminis_signalo_apdorojimas_skaiciuojant_vari
+acija-eps-converted-to.pdf used on input line 698.
+(pdftex.def)             Requested size: 200.75073pt x 344.88962pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+701.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+701.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+701.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+703.
+ [14 <./figures/co_corr-eps-converted-to.pdf> <./figures/pt_corr-eps-converted-
+to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+723.
+Package epstopdf Info: Source file: <figures/stance_phase.eps>
+(epstopdf)                    date: 2012-03-22 22:18:00
+(epstopdf)                    size: 50858 bytes
+(epstopdf)             Output file: <figures/stance_phase-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2012-04-04 15:14:03
+(epstopdf)                    size: 27268 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/stance_phase-eps-c
+onverted-to.pdf figures/stance_phase.eps>
+(epstopdf)             \includegraphics on input line 725.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/stance_phase-eps-converted-to.pdf, id=116, 410.53375pt x 309.155pt>
+File: figures/stance_phase-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/stance_phase-eps-converted-to.pdf>
+Package pdftex.def Info: figures/stance_phase-eps-converted-to.pdf used on inpu
+t line 725.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+726.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+726.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+730.
+Package epstopdf Info: Source file: <figures/swing_phase.eps>
+(epstopdf)                    date: 2012-03-22 22:18:00
+(epstopdf)                    size: 48322 bytes
+(epstopdf)             Output file: <figures/swing_phase-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-04 15:14:04
+(epstopdf)                    size: 18739 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/swing_phase-eps-co
+nverted-to.pdf figures/swing_phase.eps>
+(epstopdf)             \includegraphics on input line 732.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/swing_phase-eps-converted-to.pdf, id=117, 410.53375pt x 309.155pt>
+File: figures/swing_phase-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/swing_phase-eps-converted-to.pdf>
+Package pdftex.def Info: figures/swing_phase-eps-converted-to.pdf used on input
+ line 732.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+733.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+733.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+745.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+746.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+747.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+748.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+751.
+Package epstopdf Info: Source file: <figures/st_sw_linear_kpca.eps>
+(epstopdf)                    date: 2012-04-18 16:10:00
+(epstopdf)                    size: 37603 bytes
+(epstopdf)             Output file: <figures/st_sw_linear_kpca-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2012-04-18 20:41:20
+(epstopdf)                    size: 26492 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_linear_kpca-
+eps-converted-to.pdf figures/st_sw_linear_kpca.eps>
+(epstopdf)             \includegraphics on input line 753.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_linear_kpca-eps-converted-to.pdf, id=118, 410.53375pt x 309.155p
+t>
+File: figures/st_sw_linear_kpca-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/st_sw_linear_kpca-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_linear_kpca-eps-converted-to.pdf used on
+ input line 753.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+755.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+755.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+764.
+ [15 <./figures/maximums_minimums-eps-converted-to.pdf>]
+
+LaTeX Warning: Text page 16 contains only floats.
+
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+764.
+[16 <./figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija-eps-converte
+d-to.pdf> <./figures/stance_phase-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+765.
+Package epstopdf Info: Source file: <figures/st_sw_linear_lda.eps>
+(epstopdf)                    date: 2012-04-18 20:39:00
+(epstopdf)                    size: 37104 bytes
+(epstopdf)             Output file: <figures/st_sw_linear_lda-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2012-04-18 20:43:53
+(epstopdf)                    size: 26212 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_linear_lda-e
+ps-converted-to.pdf figures/st_sw_linear_lda.eps>
+(epstopdf)             \includegraphics on input line 767.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_linear_lda-eps-converted-to.pdf, id=142, 410.53375pt x 309.155pt
+>
+File: figures/st_sw_linear_lda-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/st_sw_linear_lda-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_linear_lda-eps-converted-to.pdf used on 
+input line 767.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+769.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+769.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+780.
+Package epstopdf Info: Source file: <figures/st_sw_poly_kpca.eps>
+(epstopdf)                    date: 2012-04-18 22:09:00
+(epstopdf)                    size: 23619 bytes
+(epstopdf)             Output file: <figures/st_sw_poly_kpca-eps-converted-to.p
+df>
+(epstopdf)                    date: 2012-04-18 22:17:43
+(epstopdf)                    size: 9825 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_poly_kpca-ep
+s-converted-to.pdf figures/st_sw_poly_kpca.eps>
+(epstopdf)             \includegraphics on input line 782.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_poly_kpca-eps-converted-to.pdf, id=143, 410.53375pt x 309.155pt>
+File: figures/st_sw_poly_kpca-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/st_sw_poly_kpca-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_poly_kpca-eps-converted-to.pdf used on i
+nput line 782.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+785.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+785.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+785.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+789.
+Package epstopdf Info: Source file: <figures/st_sw_poly_gda.eps>
+(epstopdf)                    date: 2012-04-18 22:11:00
+(epstopdf)                    size: 29875 bytes
+(epstopdf)             Output file: <figures/st_sw_poly_gda-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2012-04-18 22:17:43
+(epstopdf)                    size: 20144 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_poly_gda-eps
+-converted-to.pdf figures/st_sw_poly_gda.eps>
+(epstopdf)             \includegraphics on input line 791.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_poly_gda-eps-converted-to.pdf, id=144, 410.53375pt x 309.155pt>
+File: figures/st_sw_poly_gda-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/st_sw_poly_gda-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_poly_gda-eps-converted-to.pdf used on in
+put line 791.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+794.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+794.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+794.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+798.
+Package epstopdf Info: Source file: <figures/st_sw_gauss_kpca.eps>
+(epstopdf)                    date: 2012-04-18 22:13:00
+(epstopdf)                    size: 48064 bytes
+(epstopdf)             Output file: <figures/st_sw_gauss_kpca-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2012-04-18 22:17:44
+(epstopdf)                    size: 34322 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_gauss_kpca-e
+ps-converted-to.pdf figures/st_sw_gauss_kpca.eps>
+(epstopdf)             \includegraphics on input line 800.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_gauss_kpca-eps-converted-to.pdf, id=145, 410.53375pt x 309.155pt
+>
+File: figures/st_sw_gauss_kpca-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/st_sw_gauss_kpca-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_gauss_kpca-eps-converted-to.pdf used on 
+input line 800.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+802.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+802.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+802.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+806.
+Package epstopdf Info: Source file: <figures/st_sw_gauss_gda.eps>
+(epstopdf)                    date: 2012-04-18 22:11:00
+(epstopdf)                    size: 40000 bytes
+(epstopdf)             Output file: <figures/st_sw_gauss_gda-eps-converted-to.p
+df>
+(epstopdf)                    date: 2012-04-18 22:17:45
+(epstopdf)                    size: 8020 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/st_sw_gauss_gda-ep
+s-converted-to.pdf figures/st_sw_gauss_gda.eps>
+(epstopdf)             \includegraphics on input line 808.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/st_sw_gauss_gda-eps-converted-to.pdf, id=146, 410.53375pt x 309.155pt>
+File: figures/st_sw_gauss_gda-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/st_sw_gauss_gda-eps-converted-to.pdf>
+Package pdftex.def Info: figures/st_sw_gauss_gda-eps-converted-to.pdf used on i
+nput line 808.
+(pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+810.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+810.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+810.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+827.
+ [17 <./figures/swing_phase-eps-converted-to.pdf> <./figures/st_sw_linear_kpca-
+eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+832.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+838.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+840.
+
+[18 <./figures/st_sw_linear_lda-eps-converted-to.pdf> <./figures/st_sw_poly_kpc
+a-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+840.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+841.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+842.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+854.
+ [19 <./figures/st_sw_poly_gda-eps-converted-to.pdf> <./figures/st_sw_gauss_kpc
+a-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+860.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+861.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+862.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+863.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+874.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+876.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+876.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+898.
+ [20 <./figures/st_sw_gauss_gda-eps-converted-to.pdf>]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+899.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+901.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+901.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+919.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+921.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+921.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+931.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+933.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+946.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+956.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+959.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+964.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+971.
+ [21]
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+971.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+980.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+981.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+984.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+986.
+ (./paper.bbl
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+1.
+)
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+993.
+ [22] (./paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 21839 strings out of 493629
+ 457735 string characters out of 3148778
+ 586477 words of memory out of 3000000
+ 24655 multiletter control sequences out of 15000+200000
+ 115915 words of font info for 127 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 63i,8n,74p,640b,1739s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/euler/e
+ufm10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts
+/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pf
+b></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/
+fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/l
+mri8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on paper.pdf (22 pages, 1283034 bytes).
+PDF statistics:
+ 305 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+

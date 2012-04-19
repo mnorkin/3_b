@@ -1,6 +1,4 @@
 \documentclass[10pt,onecolumn,draftcls]{IEEEtran}
-%\documentclass[10pt]{article}
-%% \documentclass[]{vgtuef}
 %\usepackage[bottom=20mm,left=20mm,right=20mm,top=20mm]{geometry}
 \usepackage{pgfplots}
 \usepackage{tikz}
@@ -11,12 +9,9 @@
 \usepackage{listings}
 \usepackage{dsfont}
 \usepackage{amsmath,amssymb}
-\usepackage{upgreek}
-\usepackage{setspace}
 
 \author{Maksim Norkin\\Vilniaus Gedimino technikos
-  universitetas\\Elektronikos fakultetas\\Elektroninių sistemų
-  katedra\\\texttt{maksim.norkin@ieee.org}}
+  universitetas\\Elektronikos fakultetas\\Elektroninių sistemų katedra\\\texttt{maksim.norkin@ieee.org}}
 \title{Bakalauro baigiamasis darbas\\Parkinsono ligos eigos stebėjimo priemonė}
 
 \lstset{
@@ -286,7 +281,7 @@ yra $read\_data$. Funkcijos kodas pateikiamas \ref{code:read_data} pav.
 Funkcijai užtenka nurodyti tik norimos nuskaityti bylos pavadinimą,
 kaip pavyzdžiui "SiPt30\_01.txt" ir funkcija gražins kairės kojos
 duomenis. Duomenų analizėje naudojami tik vienos kojos duomenis,
-kadangi dešinės ir kairės kojos duomenys yra stipriai koreliuoti \cite{16053531},
+kadangi dešinės ir kairės kojos duomenys yra stipriai koreliuoti, % TODO: ref
 todėl nėra prasmės naudoti dviejų kojų duomenų. Pasirinkus tokį
 sprendimą taip pat yra sumažinamas skaičiavimų skaičius
 programoje. Duomenų bazės direktorija nurodyti kintamojo vietoje yra
@@ -545,45 +540,6 @@ klasės scatter matrica". Scatter matricų apibrėžimas yra:
   S_W = \sum_c \sum_{i \in c} ( x_i - \mu_c)(x_i - \mu_c)^T
 \end{equation}
 
-%% Branduolio metodas
-
-Branduolio metodas yra labai lengvai paaiškinamas pavyzdžiu
-\cite{2007math......1907H}. Tarkim, egzistuoja tam tikri empiriniai
-duomenys:
-
-\begin{equation}
-  (x_1,y_1),...,(x_n,y_n) \in \mathcal{X} \times \mathcal{Y}.
-\end{equation}
-
-Čia, $\mathcal{X}$ yra netuščia sritis, iš kurios imami $x_i$
-duomenys. Tikslu arba žymekliu vadinami yra $y_i \in \mathcal{Y}$
-(sistemos atsakas), $i,j \in [n]$ žymimas eilės, identifikavimo
-numeris, kur $n := \{1,..,n\}$.
-
-Reikia pastebėti, kad sričiai $\mathcal{X}$ nebuvo suteikta jokių
-apribojimų. Norint išspręsti apmokymo problemą reikia papildomos
-struktūros. Mašininiame apmokyme siekiama apibendrinti neturimus
-duomenis. Binarinio klasifikavimo atveju, turint naujus duomenis $x
-\in \mathcal{X}$, norima nuspėti jų žymeklį $y \in \{\pm
-1\}$. Paprastai kalbant, norima pasirinkti tokį $y$, kuris labiausiai
-atspindėtų apmokymo metu naudotas $(x,y)$ poras. Tam įgyvendinti
-reikalingi kuo panašesnis duomenys į $\mathcal{X}$ ir
-$\mathcal{Y}$. Pastarąjį palengvina tai, kad spėjimas gali būti arba
-identiškas arba atvirkščias. Formaliai yra reikalinga tokia funkcija:
-
-\begin{equation}
-  k: \mathcal{X} \times \mathcal{X} \rightarrow \mathbb{R}, ~~ (x,x')
-  \rightarrow k(x,x'),
-\end{equation}
-kuri tenkinta tokias sąlygą visiems $x,x' \in \mathcal{X}$:
-
-\begin{equation}
-  k(x,x') = \langle \Phi(x), \Phi(x') \rangle,
-\end{equation}
-kur $\Phi$ projektuota taškus į Hilberto plokštumą $\mathcal{H}$,
-kai kada vadinama savybių erdvė. Vienodumo matmuo $k$ dažniausiai
-vadinamas branduoliu, o $\Phi$ vadinama savybių projekcija.
-
 \subsubsection{Savybių tyrimas}
 
 Šiame skyriuje bus išnagrinėtos galimos signalų savybės, pagal kurias
@@ -602,7 +558,7 @@ apdorojimo bloke bus panaudotas slankiojančio lango metodas. Taip
 kiekvienas signalas turės fiksuotą ilgį ir taip bus galima lyginti
 signalus tarpusavyje.
 
-\begin{figure}[!t]
+\begin{figure}[t]
   \centering
   \includegraphics[width=300px]{figures/co_fft.eps}
   \caption{Kontrolinių subjektų kairės kojos žingsnių signalų dažninės
@@ -610,7 +566,7 @@ signalus tarpusavyje.
   \label{fig:co_fft}
 \end{figure}
 
-\begin{figure}[!t]
+\begin{figure}[t]
   \centering
   \includegraphics[width=300px]{figures/pt_fft.eps}
   \caption{Parkinsono liga sergančių subjektų kairės kojos žingsnių signalų dažninės
@@ -645,17 +601,17 @@ akselerometro ir giroskopo jutiklių parodymais, reikėjo suprojektuoti
 algoritmą, gebantį atskirti tokias žmogaus veiklas: stovėjimas,
 ėjimas, ėjimas aukštyn laiptais, ėjimas žemyn laiptais.
 
-\begin{figure}[!t]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=300px]{figures/co_corr.eps}
+  \includegraphics[width=300px]{figures/co_fft.eps}
   \caption{Kontrolinių subjektų kairės kojos žingsnių signalų
     savi-koreliacijos koeficientai.}
   \label{fig:co_corr}
 \end{figure}
 
-\begin{figure}[!t]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=300px]{figures/pt_corr.eps}
+  \includegraphics[width=300px]{figures/pt_fft.eps}
   \caption{Parkinsono liga sergančių subjektų kairės kojos žingsnių
     signalų savi-koreliacijos koeficientai.}
   \label{fig:pt_corr}
@@ -669,264 +625,12 @@ subjektai turi panašias, o kai kuriais atvejais ir tokias pačias,
 koreliacijos reikšmes. Remiantis vien tik turima informacija,
 nustatyti ar subjektas serga Parkinsono liga ar ne, nėra įmanoma.
 
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=300px]{figures/maximums_minimums.eps}
-  \caption{Dviejų globalių maksimumų ir vieno lokalaus minimumo
-    savybių erdvė.}
-  \label{fig:max_min}
-\end{figure}
-
 Sudėtingesnė analizė seka iš dviejų globalių maksimumų ir vieno
 lokalaus minimumo savybių erdvės. Šios tris savybės sudaro trijų
 dimensijų plokštumą, kurią galima lengvai pavaizduoti. Pilna savybių
-erdvė pavaizduota \ref{fig:max_min} pav. Kaip matosi iš duotos erdvės,
-duomenys neturi jokio koncentracijos centro. Erdvėje jie pasiskirstę
-pagal nežinomą dėsnį.
-
-Tokių duomenų pateikti klasifikavimui nėra galima. Grafike "Co"
-taškai, pažymėti kryžiumi, parodo kontrolinį subjektą, "Pt" taškai,
-pažymėti apskritimu, parodo Parkinsono liga sergančius subjektus.
-
-Sekančios savybės nagrinėjimui yra siūlomos atlikto tyrimo \cite{16053531}.
-Nagrinėjama savybė yra žingsnio fazės laiko variacija. Kojos
-susilietimo su žeme laiko variacija ir kojos pakilimo nuo žemės laiko
-variacija.
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=200px]{figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija.eps}
-  \caption{Pirminis signalo apdorojimas, išskiriant savybę kaip kojos
-    susilietimo su žeme laiko variaciją ir kojos pakilimo nuo žemės
-    laiko variaciją.}
-  \label{fig:stance_swing_extract}
-\end{figure}
-
-Išskiriant variacijos savybes iš signalo, reikalinga nuo pagrindų
-pakeisti pirminio signalo apdorojimo algoritmą. Kadangi kojos
-pakilimas nuo žemės ir kojos susilietimas su žeme gali būti vienas nuo
-kito nepriklausomi (subjektas sustojo ir stovi dviem kojomis ant žemės
-arba subjektas stovi tik ant kairės kojos), pirminis signalo
-apdorojimas turi būti atliekamas lygiagrečiai, t.y. tuo pat metu
-išskiriamas tiek kojos pakilimo nuo žemės signalas, tiek ir kojos
-susilietimas su žeme signalas. Tokios sistemos struktūrinis grafikas
-yra parodytas \ref{fig:stance_swing_extract} pav. Sekantis žingsnis yra signalo
-išskaidymas slankiojančio lango principu. Abiejų signalų slankiojančio
-lango ilgis buvo parinktas 4 verčių ilgio, su 2 verčių
-perdanga. Kuomet tiek kojos susilietimo su žeme, tiek kojos pakilimo
-nuo žemės keturi signalai patenkina keliamus reikalavimus - iš jų yra
-apskaičiuojami signalų ilgiai. Vėliau, abiejų etapų signalams yra
-paskaičiuojama jų variacija ir taip yra sudaroma savybių erdvė. Toliau
-bus nagrinėjamos abiejų signalų variacijos vienos dimensijos
-plokštumoje.
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/stance_phase.eps}
-  \caption{Kojos prisilietimo prie žėmės laiko variacija.}
-  \label{fig:stance_var}
-\end{figure}
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/swing_phase.eps}
-  \caption{Kojos pakilimo nuo žemės laiko variacija.}
-  \label{fig:swing_var}
-\end{figure}
-
-Abiejų signalų variacijų pasiskirstymai yra parodyti
-\ref{fig:stance_var} pav. ir \ref{fig:swing_var} pav. Abu
-pasiskirstymai turi vieną trūkumą - jų vidurkiai sutampa, tačiau gera
-žinia yra tai, kad jų variacijos skirtingos. Norint išspręsti
-iškilusią problemą, reikia taikyti dimensijų praskyrimo metodus. Darbo
-metu buvo išbandyti tokie dimensijų praskyrimo metodai:
-
-\begin{itemize}
-\item PCA;
-\item LDA;
-\item Kernel PCA (su "poly", "Gauss" branduoliais);
-\item Kernel LDA (su "poly", "Gauss" branduoliais);
-\end{itemize}
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_linear_kpca.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po PCA transformacijos.}
-  \label{fig:linear_pca}
-\end{figure}
-
-Vienmatė linijinė PCA transformacija pavaizduota
-\ref{fig:linear_pca} pav. Kaip matosi iš grafiko - vidurkis nepasikeitė,
-tačiau žymiai pasikeitė variacija. Vidurkio pokyčio nebuvimas
-pablogina situacija, kadangi to pačio vidurkio duomenis atskirti nėra
-įmanoma, todėl ir teikti duomenis klasifikavimui nėra prasmės.
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_linear_lda.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po LDA transformacijos.}
-  \label{fig:linear_lda}
-\end{figure}
-
-Sekantis metodas yra LDA. Transformacijos rezultatas yra pavaizduotas
-\ref{fig:linear_lda} pav. Kaip matosi - tiek po LDA, tiek po PCA
-duomenų pasiskirstymas nėra kritiškai skirtingas. Galima daryti
-hipotezę, kad linijinis duomenų praskirstymas šiuo atveju
-neveikia. Reikia taikyti branduolio metodą ir papildyti jau panaudotus
-transformacijos metodus polinominiu arba Gausso branduoliu.
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_poly_kpca.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po PCA transformacijos, naudojant
-    polinominį branduolį.}
-  \label{fig:poly_pca}
-\end{figure}
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_poly_gda.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po LDA transformacijos, naudojant
-    polinominį branduolį.}
-  \label{fig:poly_lda}
-\end{figure}
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_gauss_kpca.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po PCA transformacijos, naudojant Gauso branduolį.}
-  \label{fig:gauss_pca}
-\end{figure}
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=250px]{figures/st_sw_gauss_gda.eps}
-  \caption{Kojos prisilietimo prie žemės ir pakilimo nuo žemės laiko
-    variacijos pasiskirstymas po LDA transformacijos, naudojant Gauso branduolį.}
-  \label{fig:gauss_lda}
-\end{figure}
-
-Branduolio metodas pritaikytas PCA transformacijai yra pavaizduotas
-\ref{fig:poly_pca} pav. ir \ref{fig:gauss_pca} pav. Branduolio metodas
-pritaikytas LDA transformacijai yra pavaizduotas \ref{fig:poly_lda}
-pav. ir \ref{fig:gauss_pca} pav. Polinominis branduolys abiems
-atvejais buvo panaudotas su 4 branduolio argumentu.
-
-Kaip matosi, panaudojus polinimonį branduolį, tiek PCA (\ref{fig:poly_pca}
-pav.), tiek LDA (\ref{fig:poly_lda} pav.) atveju - vidurkis iš savo
-vietos nepajudėjo. Abidvi transformacijos pakeitė variaciją. Tai nėra
-norimas tikslas, todėl toks branduolys nėra tinkamas. Panaudojus Gauso
-branduolį rezultatas labai pagerėja LDA transformacijos atveju
-(\ref{fig:gauss_lda} pav.), PCA su tokiu branduoliu
-(\ref{fig:gauss_pca} pav.) duomenis tik dar labiau suvienodina.
-
-Remiantis pateikta analize galima teigti, kad geriausiai duomenis
-savybių erdvėje atskiria LDA su Gauso branduoliu. Tolimesniame darbe
-duomenis į klasifikatorių bus pateikiami būtent po tokios transformacijos.
+erdvė pavaizduota \ref{fig:} pav. .
 
 \subsection{Požymių klasifikavimo programos kūrimas}
-
-Šiame skyriuje bus išnagrinėti ir pritaikyti populiariausi šiuo metu
-naudojami klasifikatorių metodai:
-
-\begin{itemize}
-\item Vektoriaus palaikymo mašina (angl. Support Vector Machine
-  (SVM));
-\item Paslėptas Markovo modelis (angl. Hidden Markov Model (HMM));
-\item Naivusis Bayes klasifikatorius (angl. NayveBayes);
-\item Tiesioginio sklidimo neuronų tinklas (angl. Feed-Forward Neural
-  Network (FFNN));
-\end{itemize}
-
-Labai svarbu yra atskirti duomenis, kuriais klasifikatorius yra
-apmokamas ir kuriais jis yra testuojamas. Jeigu klasifikatoriaus
-apmokymo duomenys yra pakankamai apibendrinti, tuomet naujus duomenis
-klasifikatorius turėtų gerai atpažinti. Pateikiant klasifikatoriaus
-testavime tokius pačius duomenis, kaip ir apmokyme - atliekamas
-tikrinimas ar klasifikatorius teisingai ``suprato'' nagrinėjamus
-duomenis, tačiau tai neapibrėžia kiek gerai jis apdoros naujus duomenis.
-
-Vektoriaus palaikymo mašina šiuo metu yra populiariausias
-klasifikatorius nagrinėjant netiesiškai atskiriamus
-duomenis. Klasifikatoriaus testavimo metu buvo naudojami tokie
-parametrai:
-
-\begin{itemize}
-\item SVM tipas - Siquential Minimal Optimization;
-\item Branduolio tipas - linijinis;
-\item Sureguliavimo konstanta - 2;
-\item Branduolio argumentas - 2;
-\end{itemize}
-
-Lentelėje \ref{table:svm_scores} pateikti SVM tikslumo ir
-taiklumo duomenis. Kaip matosi, klasifikatorius veikia nepakankamai
-gerai - tikslumo koeficientas nėra didesnis negu pusę, abiems atvejams
-tik $0.489$. Pirmos klasės atpažinimo taiklumas tėra $0.234$, antros
-klasės atpažinimo taiklumas yra $0.744$, tačiau to nepakanka. Iš
-padarytos klasifikatoriaus veikimo analizės galima teigti, kad
-klasifikatorius veikia blogai ir jo naudoti sprendime nėra galima.
-
-\begin{table}[t]
-  \centering
-  \caption{Vektoriaus palaikymo mašinos tikslumas ir taiklumas.}
-  \label{table:svm_scores}
-  \begin{tabular}{|c|c|c|} \hline
-    & C1 & C2 \\ \hline
-    Tikslumas & 0.489 & 0.489 \\ \hline
-    Taiklumas & 0.234 & 0.744 \\ \hline
-  \end{tabular}
-\end{table}
-
-Paslėptas Markovo modelis yra vienintelis iš šiame darbe nagrinėjamų
-klasifikatorių, kuris turi laikinę informaciją. Tokia savybė suteikia
-``inkaro'' galimybę - klasifikatorius gali užsilaikyti prie vienos
-klasės net ir tuomet, kai pagal savybių erdvę turi būti kitas
-klasifikavimo rezultatas. Tokia klasifikatoriaus savybė buvo
-pritaikyta ankstesniame darbe, sudarant žmogaus eisenos atpažinimo
-sprendimą \cite{mano_darbas}.
-
-Lentelėje \ref{table:hmm_scores} pateikti tikslumo ir taikumo
-duomenys. Kaip matome iš tikslumo rezultato - klasifikatorius
-teisingai priskiria tik pusei reikiamų duomenų. Iš to galime teigti,
-kad klasifikatorius yra labai blogai apmokytas ir visiškai nesugeba
-apibendrinti turimų duomenų.
-
-\begin{table}[t]
-  \centering
-  \caption{Paslėpto Markovo modelio tikslumas ir taiklumas.}
-  \label{table:hmm_scores}
-  \begin{tabular}{|c|c|c|} \hline
-    & C1 & C2 \\ \hline
-    Tikslumas & 0.500 & 0.500 \\ \hline
-    Taiklumas & 0.000 & 1.000 \\ \hline
-  \end{tabular}
-\end{table}
-
-Naivus Bayes yra vienas iš pirmųjų statistinių metodu paremtu
-klasifikavimo mechanizmas. Jis veikia labai paprastai - ieškoma
-linijinės funkcijos, kuri geriausiai atskiria nagrinėjamus duomenis ir
-vieni žymenis priskiriami, jeigu duomenys yra vienoje linijos pusėje,
-atvirkšti žymenis priskiriami, jeigu duomenys yra kitoje linijos
-pusėje. 
-
-Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys.
-
-\begin{table}[t]
-  \centering
-  \caption{Naivaus Bayes klasifikatoriaus tikslumas ir taiklumas.}
-  \label{table:nb_scores}
-  \begin{tabular}{|c|c|c|} \hline
-    & C1 & C2 \\ \hline
-    Tikslumas & 0.508 & 0.508 \\ \hline
-    Taiklumas & 0.764 & 0.252 \\ \hline
-  \end{tabular}
-\end{table}
-
 
 \subsection{Duomenų analizės programos kūrimas}
 
