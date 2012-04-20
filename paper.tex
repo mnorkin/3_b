@@ -1,6 +1,6 @@
-\documentclass[10pt,onecolumn,draftcls]{IEEEtran}
+% \documentclass[10pt,onecolumn,draftcls]{IEEEtran}
 %\documentclass[10pt]{article}
-%% \documentclass[]{vgtuef}
+\documentclass[]{vgtuef}
 %\usepackage[bottom=20mm,left=20mm,right=20mm,top=20mm]{geometry}
 \usepackage{pgfplots}
 \usepackage{tikz}
@@ -27,7 +27,16 @@
 
 \begin{document}
 
-\maketitle
+\setcounter{page}{7}
+
+%\layout
+
+\onehalfspacing
+
+\tableofcontents
+
+\section*{Žymenys ir santrumpos}
+\addcontentsline{toc}{section}{Žymenys ir santrumpos}
 
 \section{Įvadas. Užduoties analizė}
 
@@ -40,7 +49,7 @@ vieningos vertinimo sistemos, kuri tiksliai atpažintų Parkinsono ligos
 simptomus. Vienas iš didžiausiai pasireiškiančių simptomų yra eisenos
 sutrikimas. Sutrikimo dažnumą r svarbą patvirtina ir viešai prieinama
 duomenų bazė, kurioje yra pateikiami sveikų ir sergančių Parinsono
-liga žmonių eisenos duomenys. Duomenų bazė vadinasi "PhysioBank".
+liga žmonių eisenos duomenys. Duomenų bazė vadinasi ``PhysioBank''.
 
 Darbo tikslas yra sukurti programą, gebančią atpažinti jėgos
 jutikliais gautus signalus, priklausančius Parkinsono liga sergantiems
@@ -85,7 +94,7 @@ klasifikavimo rezultatas. Darbe bus panaudotas Matlab platformoje
 plokštumą, kurį įgyvendino Boitech Franc savo magistriniam
 darbe. Darbas buvo apgintas 2000 metais, Čekijos technikos
 universitete, Prahoje. Tiesinio sklidimo dirbtinių neuronų
-klasifikatorių bus panaudotas iš Matlab "Neural Network Toolbox"
+klasifikatorių bus panaudotas iš Matlab ``Neural Network Toolbox''
 įrankio. Likusi sistemos dalis bus aprašyta šiame darbe. Problema kyla
 pirminiam signalų apdorojimo pasirinkime: visą gaunamą signalą pilnai
 perduoti ar taikyti slankiojančio lango principą ar kitais, logiškai
@@ -103,8 +112,8 @@ programą tolimesniam apdorojimui.
 Darbo tema, Parkinsono ligos eigos stebėjimo programa, reiškia, darbo
 rezultate bus sukurtas algoritmas, kuriuo bus parengta kompiuterinė
 programa. Pačiam kompiuteryje turi būti veikiantis Matlab programinis
-paketas. Programa bus rašoma Matlab 7.12.0 (R2011) versija su "Neural
-Network Toolbox" įrankiu. Eigos stebėjimas reiškia, kad visuomet
+paketas. Programa bus rašoma Matlab 7.12.0 (R2011) versija su ``Neural
+Network Toolbox'' įrankiu. Eigos stebėjimas reiškia, kad visuomet
 egzistuoja neapibrėžtas, galimas programos netikslumas. Visiškai
 programa remtis, diagnozuojant Parkinsono ligą nėra galima, kadangi,
 kaip jau buvo minėta ankščiau - eigos sutrikimas nėra vienintelis
@@ -119,7 +128,7 @@ bazės ir jų pateikimą sistemos algoritmui. Taip pat signalų generavimo
 programa (modulis“ bus naudojamas programos demonstracinei versijai
 įgyvendinti.
 
-Kaip buvo minėta, duomenys sistemai bus pateikiami iš "PhysioBank"
+Kaip buvo minėta, duomenys sistemai bus pateikiami iš ``PhysioBank''
 duomenų bazės. Duomenys duomenų bazėje buvo surinkti diskretizuojant
 signalus $100~Hz$ diskretizavimo dažniu. Kiekvienu laiko momentu, yra
 įrašoma nauja eilutė į duomenų tekstinę bylą. Eilutę sudaro 19
@@ -133,13 +142,13 @@ skilčių:
 \item Skiltis 19 nurodo dešinės kojos suminę VŽRJ, Niutonais;
 \end{itemize}
 
-Duomenų bazės bylų pavadinimai, pavyzdžiui: "GaCo01\_02.txt" ar
-"JuPt03\_06.txt", sudaryti nurodant duomenų rinkimų sesijų pavadinimus:
-"Ga" - "Galit Yogev et al" (dual tasking in PD; Eur J Neuro, 2005),
-"Ju" - "Hausdoff et al" (RAS in PD; Eur J Neuro, 2007), "Si" - "Silvi
-Frenkel-Toledo et al" (Treadmill walking in PD; Mov Disorders,
-2005). Toliau, "Co" nurodo kontrolinį subjektą arba nesergantį
-Parinsono liga subjektą, "Pt" nurodo Parkinsonu sergantį
+Duomenų bazės bylų pavadinimai, pavyzdžiui: ``GaCo01\_02.txt'' ar
+``JuPt03\_06.txt'', sudaryti nurodant duomenų rinkimų sesijų pavadinimus:
+``Ga'' - ``Galit Yogev et al'' (dual tasking in PD; Eur J Neuro, 2005),
+``Ju'' - ``Hausdoff et al'' (RAS in PD; Eur J Neuro, 2007), ``Si'' - ``Silvi
+Frenkel-Toledo et al'' (Treadmill walking in PD; Mov Disorders,
+2005). Toliau, ``Co'' nurodo kontrolinį subjektą arba nesergantį
+Parinsono liga subjektą, ``Pt'' nurodo Parkinsonu sergantį
 subjektą. Pirmas numeris nurodo subjekto identifikacinį numerį, po
 brūkšnio einantis antras numeris nurodo subjekto duomenų rinkimo seką.
 
@@ -169,9 +178,9 @@ subjekto tikimybę sirgti Parkinsono liga.
 bandymai sukurti sistemą, kuri, remiantis įvairių jutiklių pagalba,
 gebėtų atpažinti Parkinsono ligą.
 
-Pirmas darbas, kuris bus analizuojamas, yra "Biometrinė ir mobili
+Pirmas darbas, kuris bus analizuojamas, yra ``Biometrinė ir mobili
 eisenos analizavimo sistema ankstyvai Parkinsono ligos diagnozei ir % TODO: ref
-terapijai". 
+terapijai''. 
 
 Antras darbas, ...
 
@@ -203,25 +212,25 @@ išbandyti keli programos variantai ir suprastinus veikimo schemas,
 kiekvienas iš programos variantų veikė pagal bendrą schemą, kurią
 galima apibrėžti \ref{fig:pirmine_programos_schema} pav. Reikalaujama,
 kad kiekvienas iš algoritmų blokų būtų nepriklausomas nuo žemiau ar
-aukščiau einančio bloko, kas reiškia, kad "Pirminio signalų
-apdorojimo" bloko algoritmo pakeitimas neturi turėti jokios įtakos po
-jo einančiam "Savybių erdvės sudarymas" blokui. 
+aukščiau einančio bloko, kas reiškia, kad ``Pirminio signalų
+apdorojimo'' bloko algoritmo pakeitimas neturi turėti jokios įtakos po
+jo einančiam ``Savybių erdvės sudarymas'' blokui. 
 
 Kiekvieno bloko užduotis:
 
 \begin{enumerate}
-\item "Duomenys iš duomenų bazės" bloko užduotis yra nuskaityti iš
-  naudojamos "PhysioBank" duomenų bazės duomenis ir juos įkrauti į
+\item ``Duomenys iš duomenų bazės'' bloko užduotis yra nuskaityti iš
+  naudojamos ``PhysioBank'' duomenų bazės duomenis ir juos įkrauti į
   Matlab aplinką. Kadangi duomenys pateikiami tekstiniu pavidalu,
   Matlab aplinkoje yra labai patogi funkcija tokiems duomenims
   nuskaityti - $dlmread$.
-\item "Pirminis signalų apdorojimas" bloko užduotis yra pradinis
+\item ``Pirminis signalų apdorojimas'' bloko užduotis yra pradinis
   signalų filtravimas, nuolatinės komponentės pašalinimas. Taip pat, į
   šį bloką įeina ir atskirų signalų išskyrimas iš bendrai gaunamo
   signalo: signalo išskyrimas kuomet koja turi susilietimą su žeme,
   signalo išskyrimas, kuomet koja praranda susilietimą su žeme. Į
   bloką taip pat įeina ir slankiojančio lango algoritmo taikymas.
-\item "Savybių erdvės sudarymas" bloko paskirtis yra pateikti
+\item ``Savybių erdvės sudarymas'' bloko paskirtis yra pateikti
   pasirinktam klasifikatoriui išskirtas signalų savybes po pirminio
   signalo apdorojimo. Tokiomis savybės gali būti signalų dažninės
   komponentės (Furjė koeficientai), koreliacijos koeficientai tarp
@@ -231,7 +240,7 @@ Kiekvieno bloko užduotis:
   dimensijomis - dimensijų skaičiaus mažinimas ar naujos erdvės
   paieška, kurioje nagrinėjami duomenys yra geriau tiesiškai
   atskiriami.
-\item "Klasifikatoriaus projektavimas" bloko paskirtis yra
+\item ``Klasifikatoriaus projektavimas'' bloko paskirtis yra
   klasifikatoriaus apmokymas ir jo testavimas. Klasifikatoriaus
   pasirinkimas yra labai svarbus klausimas nagrinėjamam darbe. Jis
   turi būti parinktas argumentuotai, pateikiant detalius klasifikavimo
@@ -284,7 +293,7 @@ yra $read\_data$. Funkcijos kodas pateikiamas \ref{code:read_data} pav.
 \end{figure}
 
 Funkcijai užtenka nurodyti tik norimos nuskaityti bylos pavadinimą,
-kaip pavyzdžiui "SiPt30\_01.txt" ir funkcija gražins kairės kojos
+kaip pavyzdžiui ``SiPt30\_01.txt'' ir funkcija gražins kairės kojos
 duomenis. Duomenų analizėje naudojami tik vienos kojos duomenis,
 kadangi dešinės ir kairės kojos duomenys yra stipriai koreliuoti \cite{16053531},
 todėl nėra prasmės naudoti dviejų kojų duomenų. Pasirinkus tokį
@@ -361,7 +370,7 @@ būsenos yra, kai subjekto koja turi kontaktą su žeme ir nurodytas
 subjektas neturi kontakto su žeme. Kontakto su žeme signalo išskyrimui
 programos kodas yra pateikiamas \ref{code:signal_extraction} pav.
 
-Pirmiausiai, "Pt\_t" kintamojo struktūroje yra saugoma kairės kojos
+Pirmiausiai, ``Pt\_t'' kintamojo struktūroje yra saugoma kairės kojos
 Parkinsono liga sergančių subjektų duomenys. Kiekvienas signalas yra
 priskiriamas prie $signal$ kintamojo, su kuriuo toliau yra tęsiamas
 apdorojimo procesas. Jeigu signalas nėra lygus nuliui, tuomet jis
@@ -376,7 +385,7 @@ signalas yra atmetamas. Jeigu signalas yra ilgesnis už 200 verčių
 laiką pakelta nebuvo. Tokia klaida gali būti sukelta, kuomet subjektas
 ne eina, o stovi ant dviejų kojų arba tik ant kairės kojos. Jeigu visi
 kriterijai patenkinami, signalas yra priimamas ir kraunamas į
-laikinąją atmintį, pavadinimu "$data.Pt$". Signalas, kuriuo metu koja
+laikinąją atmintį, pavadinimu ``$data.Pt$''. Signalas, kuriuo metu koja
 neliečia žemės, yra randamas kartu su ankščiau išnagrinėtu
 metu. Algoritmas patikrina kiek praėjo laiko (arba kiek verčių yra
 priskaičiuota) nuo paskutinio užskaityto kojos ant žemės signalo ir
@@ -534,8 +543,8 @@ sekantį kriterijų:
   \mathfrak{J}(\mathbf{w}) = \frac{ \mathbf{w}^T S_B \mathbf{w} }{
     \mathbf{w}^T S_W \mathbf{w} },
 \end{equation}
-kur $S_B$ yra "išorinės klasės scatter matrica", $S_W$ yra "vidinė
-klasės scatter matrica". Scatter matricų apibrėžimas yra:
+kur $S_B$ yra ``išorinės klasės scatter matrica'', $S_W$ yra ``vidinė
+klasės scatter matrica''. Scatter matricų apibrėžimas yra:
 
 \begin{equation}
   S_B = \sum_c (\mu_c - \bar{x})(\mu_c - \bar{x})^T
@@ -684,8 +693,8 @@ erdvė pavaizduota \ref{fig:max_min} pav. Kaip matosi iš duotos erdvės,
 duomenys neturi jokio koncentracijos centro. Erdvėje jie pasiskirstę
 pagal nežinomą dėsnį.
 
-Tokių duomenų pateikti klasifikavimui nėra galima. Grafike "Co"
-taškai, pažymėti kryžiumi, parodo kontrolinį subjektą, "Pt" taškai,
+Tokių duomenų pateikti klasifikavimui nėra galima. Grafike ``Co''
+taškai, pažymėti kryžiumi, parodo kontrolinį subjektą, ``Pt'' taškai,
 pažymėti apskritimu, parodo Parkinsono liga sergančius subjektus.
 
 Sekančios savybės nagrinėjimui yra siūlomos atlikto tyrimo \cite{16053531}.
@@ -744,8 +753,8 @@ metu buvo išbandyti tokie dimensijų praskyrimo metodai:
 \begin{itemize}
 \item PCA;
 \item LDA;
-\item Kernel PCA (su "poly", "Gauss" branduoliais);
-\item Kernel LDA (su "poly", "Gauss" branduoliais);
+\item Kernel PCA (su polinominiu, Gauso branduoliais);
+\item Kernel LDA (su polinominiu, Gauso branduoliais);
 \end{itemize}
 
 \begin{figure}[!t]
@@ -914,7 +923,12 @@ vieni žymenis priskiriami, jeigu duomenys yra vienoje linijos pusėje,
 atvirkšti žymenis priskiriami, jeigu duomenys yra kitoje linijos
 pusėje. 
 
-Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys.
+Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo
+duomenys. Tikslumo koeficientas viršija pusę, $0.508$, tačiau tai yra
+mažai. Taiklumo koeficientas pirmuoju atveju yra neblogas, $0.764$,
+tačiau antruoju atveju koeficientas yra visiškai nepatenkinamas, viso
+$0.252$. Iš turimų rezultatų galima teigti, kad klasifikatorius veikia
+blogai ir duomenis vienmatėje erdvėje jis klasifikuoti teisingai negali.
 
 \begin{table}[t]
   \centering
@@ -927,8 +941,38 @@ Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys.
   \end{tabular}
 \end{table}
 
+Paskutinis klasifikatorius, kuris bus pritaikytas esamiems duomenims -
+tiesioginio sklidimo neuronų tinklas. Tai yra dirbtinių neuronų tinklų
+klasifikatorius, kuris veikia panašiai kaip ir Naivus Bayes - jis
+ieško funkcijos (linijinės arba polinominės), kuri geriausiai atskiria
+turimus duomenis. Bandymo metu buvo pasirinktas vienas įėjimas, du
+išėjimai ir vienas paslėptas sluoksnis. 
+
+Lentelėje \ref{table:ffn_scores} pateikiami tiesioginio sklidimo
+dirbtinių neuronų tinklų tikslumas ir taiklumas. Kaip matosi iš
+rezultatų - klasifikatoriaus tikslumas abiems atvejais yra $1.000$,
+taiklumas yra $1.000$. Klasifikatorius puikiai apibendrino turimus
+duomenis ir visus juos teisingai identifikavo.
+
+\begin{table}[t]
+  \centering
+  \caption{Tiesioginio sklidimo dirbtinių neuronų tinklų tikslumas ir taiklumas.}
+  \label{table:ffn_scores}
+  \begin{tabular}{|c|c|c|} \hline
+    & C1 & C2 \\ \hline
+    Tikslumas & 1.000 & 1.000 \\ \hline
+    Taiklumas & 1.000 & 1.000 \\ \hline
+  \end{tabular}
+\end{table}
+
+Iš pateiktos analizės galima spręsti, kad esamus vienmačius duomenis
+geriausiai apibendrina ir klasifikuoja tiesioginio sklidimo dirbtinių
+neuronų tinklas. Dėl jo paprastumo ir tik vieno paslėpto neurono, jį
+labai lengva realizuoti reikiamoje platformoje.
 
 \subsection{Duomenų analizės programos kūrimas}
+
+% TODO: reikia paklausti apie ką čia rašyti
 
 \section{Signalų analizės programos įgyvendinimas}
 
@@ -952,40 +996,239 @@ schema. Bendros schemos pavyzdys yra pateiktas
 detali algoritmo schema ir aptarta kiekviena jo bloko paskirtis, bei
 jame naudojamas metodas.
 
-\subsection{Požymių klasifikavimo programos algoritmo schemos
-  sudarymas}
+Viso programa yra sudaryta iš trijų fazių:
+
+\begin{itemize}
+\item Pirma fazė susideda iš savybių erdvės sudarymo;
+\item Antroji fazė skirta klasifikatoriaus apmokymui;
+\item Trečioji fazė skirta klasifikatoriaus tikrinimui.
+\end{itemize}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=250px]{figures/pirma_faze.eps}
+  \caption{Programos pirmos fazės grafikas.}
+  \label{fig:pirma_faze}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=250px]{figures/antra_faze.eps}
+  \caption{Antros fazės grafikas.}
+  \label{fig:antra_faze}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=250px]{figures/trecia_faze.eps}
+  \caption{Trečios fazės grafikas.}
+  \label{fig:trecia_faze}
+\end{figure}
+
+Programos pirmos fazės struktūrinė schema pavaizduota
+\ref{fig:pirma_faze} pav. Programos įėjime yra pateikiami pirminiai
+žingsnio duomenys, programa lygiagrečiai iš duomenų išskiria kojos
+susilietimo su žeme ir kojos pakilimo nuo žemės signalus, paskaičiuoja
+signalų ilgius, iš signalų ilgių sudaro duomenų langus, paskaičiuoja
+lange esančių signalų variacijos koeficientą. Toliau programa iš esamų
+dviejų dimensijų sudaro savybių erdvę, pritaiko LDA transformacija su
+Gauso branduoliu ir gražina erdvės modelį, kuris susideda iš tikrinio
+vektoriaus ir duomenų vidurkio.
+
+Programos antros fazės struktūrinė schema pavaizduota
+\ref{fig:antra_faze} pav. Struktūroje naudojamas erdvės modelis iš
+pirmos fazės. Jis reikalingas tam, kad kiekvieną kartą neprojektuoti
+naujos erdvės iš naujo, bet projektuoti naujus duomenis į jau esamą
+erdvę. Tai taip pat užtikrina, kad bus naudojama ta pati erdvė, kas
+leidžia užtikrinti duomenų apibendrinimą. Sistemos įėjimas yra toks
+pats, kaip ir pirmosios fazės. Skirtumas taip pirmosios ir antrosios
+fazės yra tas, kad antroje fazės išėjime yra klasifikatoriaus modelis,
+kuris yra apmokyto klasifikatoriaus parametrai, kurie bus panaudoti
+testuojant klasifikatorių.
+
+Trečios, paskutinės fazės struktūrine schema pavaizduota
+\ref{fig:trecia_faze} pav. Struktūroje naudojamas erdvės modelis iš
+pirmos fazės ir klasifikatoriaus modelis iš antros fazės. Fazės
+įėjimas yra toks pats, kaip ir antrosios fazės, išskyrus tai, kad šios
+fazės išėjime yra klasifikavimo rezultatas, kurį galima pateikti tiek
+grafiškai, tiek skaitine išraiška.
+
+Apibendrinus bendrą programos veikimo schemą, toliau paanalizuosim
+patį klasifikavimo mechanizmą - tiesioginio sklidimo dirbtinių neuronų tinklą.
+
+\subsection{Požymių klasifikavimo programos algoritmo schemos sudarymas}
 \label{subsec:class_scheme}
+
+Šiame poskyryje bus apžvelgtas naudojamas klasifikatorius, trumpai
+apžvelgta jo veikimo principas.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=250px]{figures/ffnn.eps}
+  \caption{Tiesioginio sklidimo dirbtinių neuronų tinklo schema.}
+  \label{fig:ffnn_schema}
+\end{figure}
+
+Darbe naudojamo tiesioginio sklidimo dirbtinių neuronų tinklo schema
+pavaizduota \ref{fig:ffnn_schema} pav. Įėjimo duomenys nagrinėjamu
+atveju yra vienos dimensijos, todėl įėjime reikalingas tik vienas
+neuronas. Bandymo metu, pasirinktas vienas paslėptas neuronas labai
+gerai atliko klasifikavimo užduotį, todėl jų skaičių didinti nėra
+prasmės. Išėjime yra du neuronai, kadangi tai yra binarinis
+klasifikavimo uždavinys.
+
+Duomenys Hilberto erdvėje yra labai gerai praskiriami linijine
+funkcija, todėl šiame sprendime yra naudojamas tokios paprastos
+struktūros klasifikavimo mechanizmas. Tuo labiau, kadangi duomenis yra
+vienmatėje erdvėje - mažinti dimensijų skaičių nelieka prasmės,
+ieškoti klasifikavimo algoritmo, kuris geriausiai apibendrintų turimus
+duomenis erdvėje nėra prasmės, kadangi duomenų apibendrinimą
+puikiausiai atliko LDA su Gauso branduoliu.
+
+Dažniausiai dirbtinių neuronų tinklai yra naudojami, kuomet nėra
+žinoma pagal kokį tiksliai dėsnį duomenys yra pasiskirstę savybių
+erdvėje. Taip klasifikatoriaus apmokymas vyksta tol, kol dirbtinių
+neuronų tinklas randa ``paslėptą'' duomenų priklausomybę. Tokiu atveju
+galima ieškoti optimaliausią paslėptų neuronų skaičių, galbūt keisti
+pačio tinklo struktūrą arba net pakeisti neuronų tinklo veikimo
+architektūrą. Taip pat, mechanizmas yra tiek lankstus, kad apmokymui
+galima taikyti ne tik ``pažymėtus'' duomenis, tačiau ir
+``nepažymėtus'', kuomet nėra žinoma kokie duomenys kokiai klasei
+priklauso. Tokie tinklai dar vadinami ``patys save struktūrizuojantys''.
 
 \subsection{Signalų analizės programos įgyvendinimas}
 \label{subsec:total_program}
 
-Šiame poskyryje 
+Šiame skyriuje apžvelgsime jau galutinę programą, aptarsime jos
+pritaikymo problemas, bei galimas pritaikymo platformas.
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=250px]{figures/galutine_programa.eps}
+  \caption{Galutinės programos struktūrinė schema.}
+  \label{fig:galutine_programa}
+\end{figure}
+
+Galutinė programos schema yra pavaizduota \ref{fig:galutine_programa}
+pav. Kaip buvo aptarta ankstesniuose poskyriuose - programa susideda
+iš trijų duomenų apdorojimo fazių. Kiekvienos fazės įėjimas yra toks
+pats, tačiau kiekvienos fazės išėjimas yra skirtingas. Kiekviena
+žemiau esanti fazė naudoja virš jos esančios fazės darbo
+rezultatą. Kritiškai svarbu yra kiekvienai fazei pateikti skirtingus
+duomenis.
+
+Darbe pateiktas metodas leidžia efektyviai atpažinti ar subjektas
+serga Parkinsono liga. Didžiausias metodo trūkumas yra tas, kad ji
+neatsižvelgia į kitus Parkinsono ligos simptomus - drebulys, eisenos
+sustingimas.
+
+Drebulys gali pasireikšti ne tik plaštakos raumenyse, tačiau ir kaklo
+srityje. Tai neleidžia tiksliai apibrėžti kurią kūno vietą reikia
+stebėti ir rinkti duomenis tyrimui. Eisenos sustingimas taip pat yra
+sunkiai apibrėžtas faktorius, kadangi jo aptikimas yra labai didelis
+iššūkis signalų apdorojimo srityje. Geriausią ką šiuo metu gali
+pasiūlyti mokslas, stebint tokius ligos simptomus - paciento
+stebėjimas kameros pagalba, jo veiklos automatinis
+nustatymas. Drebulys subjektui dažniausiai pasireiškia, kai jo kūnas
+yra visiškai atsipalaidavęs, t.y. kai subjektas stovi, sėdi, guli, kai
+jis išlaiko statišką poziciją, tuomet pasireiškia drebulys. Kameros
+pagalba galima nustatyti kokioje pozicijoje yra subjektas, tačiau
+identifikuoti drebulį yra labai sudėtinga, jeigu naudojama kamera yra
+mažos rezoliucijos. Drebulį veiklos nustatymo algoritmas gali
+palaikyti tiesiog pašaliniu triukšmu, kaip šešėlio sudarymą ant
+stebimo paviršiaus. 
+
+Darbas ties Parkinsono ligos identifikavimu ir jo diagnozavimui reikia
+įdėti dar daug darbo, tačiau besivystant kompiuteriniai technikai, bei
+atsirandant vis naujiems algoritmams nestandartinėms problemoms
+spręsti - šansas, kad ateityje šios ligos diagnozavimas pagerės,
+išlieka labai didelis.
 
 \section{Signalų analizės programos patikra}
 
 Šiame skyriuje bus parengtas ir įgyvendintas algoritmo patikros
-planas. Patikra bus atliekama su užduoties analizėje nurodytais
-duomenimis - ... Parkinsono liga sergančių asmenų ir ... nesergančių
-asmenų duomenimis.
+planas. Programos patikra yra kritinis aspektas jos patikimumo
+tikrinimui. Algoritmą galima tikrinti mažinant apmokymo verčių skaičių
+ir didinant tikrinimo verčių kiekį - taip bus sužinota kiek mažiausiai
+verčių reikia metodui, norint pilnai apibendrinti turimus
+duomenis.
+
+Tikrinant kiekvieno žmogaus žingsnio signalus, paaiškėjo, kad
+skirtingi subjektai sugeneruoja vis kitokį tikrinimą praėjusių
+žingsnių skaičių, todėl tikrinimas bus atliekamas ne atskiriant
+konkrečius žmones, tačiau jau išskirtus kojos pakilimo ir kojos
+prisilietimo prie žemės signalus, konkrečiau - iš tų signalų
+suformuotus jų ilgių duomenų langus.
+
+Po pirminio duomenų apdorojimo, kontrolinių subjektų grupėje liko
+$1790$ duomenų langų, Parkinsono subjektų grupėje liko $1619$ duomenų
+langų, todėl buvo nuspręsta iš kiekvienos grupės pasiimti po $1500$
+langų duomenų, visi jie padalinti po lygias tris dalis: viena dalis
+erdvės sudarymui, antra dalis klasifikatoriaus apmokymui, trečia dalis
+klasifikatoriaus testavimui. Jokie duomenys jokioje dalyje
+pasikartotinai nesikartoja. Tai yra kritinis faktorius mašininiam
+apmokyme \cite{824819}. Taip pat reikia užtikrinti duomenų praskyrimo
+ir klasifikatoriaus apmokymui dešimtį kartų didesnių duomenų skaičių,
+negu yra tų pačių duomenų dimensijų. Kadangi prieš duomenų praskyrimą
+turima tik $d=2$ dimensijas, tai teoriškai užtektų ir $n=21$ ($n/d >
+10$), tačiau dimensijų praskyrimas vyksta su $500$ taškų, kas tik
+užtikrina apibendrinimą. 
 
 \subsection{Eksperimentų plano rengimas}
 
-Detaliai ištiriant programos veikimo rezultatus, reikia nurodyti
-programos įvestyje kiek galima daugiau galimų signalo analizės
-scenarijų.
+Šiame poskyryje bus aptarti galimi eksperimentiniai algoritmo patikros
+planai. 
 
-Galimi signalų apdorojimo scenarijai:
-
-\begin{itemize}
-\item Reikia pagalvoti;
-\item Reikia pagalvoti.
-\end{itemize}
+% Koks numatytas eksperimentinis patikros planas?
 
 \subsection{Duomenų eksperimentams rengimas}
 
+Šiame poskyryje bus aptartas duomenų eksperimentams rengimas.
+
+% Kokie duomenys ir kodėl bus naudojami patikrai?
+
 \subsection{Programos patikros rezultatai}
 
-Algoritmo patikros metu buvo gauti tokie rezultatai...
+% Kaip bus vertinamas patikros rezultatas?
+
+Šiame poskyryje bus pateikti ir aptarti patikros rezultatai patikros
+rezultatai.
+
+% Kas buvo pakeista, atsižvelgus į patikros rezultatus?
+
+\section{Rezultatų apibendrinimas}
+
+% Ar buvo pasiektas užsibrėžtas tikslas?
+
+Darbo metu buvo ištirtos galimos žingsnio savybės, kuriomis remiantis
+galima sėkmingai atpažinti Parkinsono ligą pas subjektą. Nustatyta,
+kad dažninės žingsnio komponentės, koreliacijos koeficientas,
+dviejų maksimumų ir vieno minimumo savybės neturi pakankamai
+informacijos Parkinsono ligos atpažinimui. Daugiausiai informacijos
+turi kojos prisilietimo prie žemės ir kojos pakilimo nuo žemės signalo
+laiko variacijos.
+
+Turint duomenis, kurie turi daugiausiai informacijos ligos
+identifikavimui, sekantis pritaikytas žingsnis buvo galimų dimensijų
+praskyrimo metodų pritaikymas. Linijiniai PCA ir LDA reikiamo
+rezultato nepateikė. Geriausiai duomenis praskyrė LDA su Gauso
+branduoliu. Turimus vienmačius duomenis geriausiai klasifikavo
+tiesioginio sklidimo dirbtinių neuronų tinklas. 
+
+Iš gautų klasifikavimo duomenų galima padaryti išvadą, kad
+klasifikatorius veikia ir veikia gerai. Užsibrėžtas tikslas buvo
+pasiektas - buvo suprojektuota sistema, kuri geba atpažinti Parkinsono
+ligą, remiantis žmogaus eisenos duomenimis.
+
+% Ar visus iškeltus uždavinius pavyko sėkmingai išspręsti,
+% įgyvendinti?
+
+% Ką reiktų, galima būtų daryti kitaip, norint pagerinti gautus
+% rezultatus ?
+
+% Ar pasirinktos darbo priemonės pateisino lūkeščius?
+
+% Kiek gerai veikia sukurtas produktas?
 
 \bibliographystyle{plain}
 \bibliography{references}

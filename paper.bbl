@@ -12,6 +12,12 @@ T.~{Hofmann}, B.~{Sch{\"o}lkopf}, and A.~J. {Smola}.
 \newblock {Kernel methods in machine learning}.
 \newblock {\em ArXiv Mathematics e-prints}, January 2007.
 
+\bibitem{824819}
+A.K. Jain, R.P.W. Duin, and Jianchang Mao.
+\newblock Statistical pattern recognition: a review.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 22(1):4 --37, jan 2000.
+
 \bibitem{mano_darbas}
 Maksim Norkin.
 \newblock {Human activity recognition using Hidden Markov Models}, September
