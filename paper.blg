@@ -3,44 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: plain.bst
 Database file #1: references.bib
-You've used 9 entries,
+Warning--I'm ignoring vgtu's extra "pages" field
+--line 119 of file references.bib
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
+while executing---line 1090 of file plain.bst
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            557 strings with 6009 characters,
-and the built_in function-call counts, 3480 in all, are:
-= -- 329
-> -- 181
-< -- 2
-+ -- 71
-- -- 62
-* -- 268
-:= -- 564
-add.period$ -- 26
-call.type$ -- 9
-change.case$ -- 58
+            562 strings with 6243 characters,
+and the built_in function-call counts, 3874 in all, are:
+= -- 373
+> -- 188
+< -- 3
++ -- 75
+- -- 64
+* -- 289
+:= -- 621
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 126
-empty$ -- 260
-format.name$ -- 62
-if$ -- 734
+cite$ -- 10
+duplicate$ -- 146
+empty$ -- 292
+format.name$ -- 64
+if$ -- 824
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 8
-newline$ -- 47
-num.names$ -- 18
-pop$ -- 59
+int.to.str$ -- 10
+missing$ -- 9
+newline$ -- 52
+num.names$ -- 20
+pop$ -- 63
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 52
 quote$ -- 0
-skip$ -- 103
+skip$ -- 121
 stack$ -- 0
-substring$ -- 215
-swap$ -- 37
-text.length$ -- 2
+substring$ -- 253
+swap$ -- 47
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 40
 warning$ -- 0
-while$ -- 28
-width$ -- 10
-write$ -- 97
+while$ -- 33
+width$ -- 12
+write$ -- 108
+(There were 6 error messages)
