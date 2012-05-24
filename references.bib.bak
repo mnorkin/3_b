@@ -118,3 +118,13 @@ year = {2011},
 month={July},
 pages={1-2},
 }
+
+@INPROCEEDINGS{R22230,
+author={Irina Rish},
+title={An empyrical study if the naive Bayes classifier},
+booktitle={In proceeding of IJCAI-01 workshop on Empirical Methods in AI},
+pages={41-46},
+year={2001},
+month={November},
+day={2},
+}

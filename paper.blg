@@ -17,45 +17,45 @@ Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškeviči
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
 while executing---line 1090 of file plain.bst
-You've used 10 entries,
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            562 strings with 6243 characters,
-and the built_in function-call counts, 3874 in all, are:
-= -- 373
-> -- 188
-< -- 3
-+ -- 75
-- -- 64
-* -- 289
-:= -- 621
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 62
+            568 strings with 6379 characters,
+and the built_in function-call counts, 4245 in all, are:
+= -- 409
+> -- 195
+< -- 4
++ -- 79
+- -- 66
+* -- 308
+:= -- 672
+add.period$ -- 32
+call.type$ -- 11
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 146
-empty$ -- 292
-format.name$ -- 64
-if$ -- 824
+cite$ -- 11
+duplicate$ -- 167
+empty$ -- 330
+format.name$ -- 66
+if$ -- 913
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 9
-newline$ -- 52
-num.names$ -- 20
-pop$ -- 63
+int.to.str$ -- 11
+missing$ -- 10
+newline$ -- 57
+num.names$ -- 22
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 55
 quote$ -- 0
-skip$ -- 121
+skip$ -- 138
 stack$ -- 0
-substring$ -- 253
-swap$ -- 47
-text.length$ -- 3
+substring$ -- 279
+swap$ -- 56
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 44
 warning$ -- 0
-while$ -- 33
-width$ -- 12
-write$ -- 108
+while$ -- 37
+width$ -- 13
+write$ -- 119
 (There were 6 error messages)

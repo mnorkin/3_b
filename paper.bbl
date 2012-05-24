@@ -45,6 +45,12 @@ Maksim Norkin.
 \newblock {Human activity recognition using Hidden Markov Models}, September
   2011.
 
+\bibitem{R22230}
+Irina Rish.
+\newblock An empyrical study if the naive bayes classifier.
+\newblock In {\em In proceeding of IJCAI-01 workshop on Empirical Methods in
+  AI}, pages 41--46, November 2001.
+
 \bibitem{6091948}
 J.~Stamatakis, J.~Cremers, D.~Maquet, B.~Macq, and G.~Garraux.
 \newblock Gait feature extraction in parkinson's disease using low-cost
