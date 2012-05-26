@@ -1,0 +1,143 @@
+\begin{thebibliography}{10}
+
+\bibitem{vgtu}
+Artūras; Griškevičius Julius [Griskevicius Julius~]. Aubin, Patric
+  M.;~Serackis.
+\newblock A ground reaction force artificial neural network classifier for the
+  diagnosis of parkinson’s disease.
+\newblock {\em Proceedings of XXIIIrd ISB2011 Congress}, pages 428--437, July
+  2011.
+
+\bibitem{Burges98atutorial}
+Christopher~J.C. Burges.
+\newblock A tutorial on support vector machines for pattern recognition.
+\newblock {\em Data Mining and Knowledge Discovery}, 2:121--167, 1998.
+
+\bibitem{website:svm_implementation}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock Libsvm -- a library for support vector machines.
+
+\bibitem{Delval_Salleron_Bourriez_Bleuse_Moreau_Krystkowiak_Defebvre_Devos_Duhamel_2008}
+Arnaud Delval, Julia Salleron, Jean-Louis Bourriez, Séverine Bleuse, Caroline
+  Moreau, Pierre Krystkowiak, Luc Defebvre, Patrick Devos, and Alain Duhamel.
+\newblock Kinematic angular parameters in pd: reliability of joint angle curves
+  and comparison with healthy subjects.
+\newblock {\em Gait \& Posture}, 28(3):495--501, 2008.
+
+\bibitem{16053531}
+Silvi Frenkel-Toledo, Nir Giladi, Chava Peretz, Talia Herman, Leor
+  Gruendlinger, and Jeffrey Hausdorff.
+\newblock Effect of gait speed on gait rhythmicity in parkinson's disease:
+  variability of stride time and swing time respond differently.
+\newblock {\em Journal of NeuroEngineering and Rehabilitation}, 2(1):23, 2005.
+
+\bibitem{MDS:MDS870130310}
+Jeffrey~M. Hausdorff, Merit~E. Cudkowicz, Renée Firtion, Jeanne~Y. Wei, and
+  Ary~L. Goldberger.
+\newblock Gait variability and basal ganglia disorders: Stride-to-stride
+  variations of gait cycle timing in parkinson's disease and huntington's
+  disease.
+\newblock {\em Movement Disorders}, 13(3):428--437, 1998.
+
+\bibitem{Hausdorff01011997}
+Jeffrey~M. Hausdorff, Susan~L. Mitchell, Renée Firtion, C.~K. Peng, Merit~E.
+  Cudkowicz, Jeanne~Y. Wei, and Ary~L. Goldberger.
+\newblock Altered fractal dynamics of gait: reduced stride-interval
+  correlations with aging and huntington’s disease.
+\newblock {\em Journal of Applied Physiology}, 82(1):262--269, 1997.
+
+\bibitem{2007math......1907H}
+T.~{Hofmann}, B.~{Sch{\"o}lkopf}, and A.~J. {Smola}.
+\newblock {Kernel methods in machine learning}.
+\newblock {\em ArXiv Mathematics e-prints}, January 2007.
+
+\bibitem{824819}
+A.K. Jain, R.P.W. Duin, and Jianchang Mao.
+\newblock Statistical pattern recognition: a review.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 22(1):4 --37, jan 2000.
+
+\bibitem{website:hmm_implementation}
+1998 Kevin~Murphy.
+\newblock Hidden markov model (hmm) toolbox for matlab.
+
+\bibitem{KNUTSSON01011972}
+E.~KNUTSSON.
+\newblock An analysis of parkinsonian gait.
+\newblock {\em Brain}, 95(3):475--486, 1972.
+
+\bibitem{6151536}
+H.H. Manap, N.M. Tahir, and A.I.M. Yassin.
+\newblock Statistical analysis of parkinson disease gait classification using
+  artificial neural network.
+\newblock In {\em Signal Processing and Information Technology (ISSPIT), 2011
+  IEEE International Symposium on}, pages 060 --065, dec. 2011.
+
+\bibitem{stprtool}
+Vojtech~Franc Michal. I.~Schlesinger, Vaclav~Hlavac.
+\newblock Statistical pattern recognition toolbox, September 2000.
+
+\bibitem{932728}
+G.B. Moody, R.G. Mark, and A.L. Goldberger.
+\newblock Physionet: a web-based resource for the study of physiologic signals.
+\newblock {\em Engineering in Medicine and Biology Magazine, IEEE}, 20(3):70
+  --75, may-june 2001.
+
+\bibitem{mano_darbas}
+Maksim Norkin.
+\newblock {Human activity recognition using Hidden Markov Models}, September
+  2011.
+
+\bibitem{18626}
+L.R. Rabiner.
+\newblock A tutorial on hidden markov models and selected applications in
+  speech recognition.
+\newblock {\em Proceedings of the IEEE}, 77(2):257 --286, feb 1989.
+
+\bibitem{R22230}
+Irina Rish.
+\newblock An empyrical study if the naive bayes classifier.
+\newblock In {\em In proceeding of IJCAI-01 workshop on Empirical Methods in
+  AI}, pages 41--46, November 2001.
+
+\bibitem{citeulike:2695782}
+Jonathon Shlens.
+\newblock A tutorial on principal component analysis.
+\newblock http://www.snl.salk.edu/~shlens/pub/notes/pca.pdf, December 2005.
+
+\bibitem{6091948}
+J.~Stamatakis, J.~Cremers, D.~Maquet, B.~Macq, and G.~Garraux.
+\newblock Gait feature extraction in parkinson's disease using low-cost
+  accelerometers.
+\newblock In {\em Engineering in Medicine and Biology Society,EMBC, 2011 Annual
+  International Conference of the IEEE}, pages 7900 --7903, 30 2011-sept. 3
+  2011.
+
+\bibitem{S0966-6362(05)00058-5}
+B.~W. Stansfield, S.~J. Hillman, M.~E. Hazlewood, and J.~E. Robb.
+\newblock {\em Gait \& posture}, volume~23, chapter Regression analysis of gait
+  parameters with speed in normal children walking at self-selected speeds,
+  pages 288--294.
+\newblock Elsevier Sciencem, Apr 2006.
+
+\bibitem{5627904}
+I.~Tien, S.D. Glaser, and M.J. Aminoff.
+\newblock Characterization of gait abnormalities in parkinson's disease using a
+  wireless inertial sensor system.
+\newblock In {\em Engineering in Medicine and Biology Society (EMBC), 2010
+  Annual International Conference of the IEEE}, pages 3353 --3356, 31
+  2010-sept. 4 2010.
+
+\bibitem{welling2005fisher}
+M.~Welling.
+\newblock Fisher linear discriminant analysis.
+\newblock {\em Department of Computer Science, University of Toronto}, 2005.
+
+\bibitem{5280353}
+Yunfeng Wu and S.~Krishnan.
+\newblock Statistical analysis of gait rhythm in patients with parkinson's
+  disease.
+\newblock {\em Neural Systems and Rehabilitation Engineering, IEEE Transactions
+  on}, 18(2):150 --158, april 2010.
+
+\end{thebibliography}

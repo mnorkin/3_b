@@ -994,7 +994,37 @@ Darbe panaudotos priemonės lūkesčius pateisino dalinai. Išskirta savybė ide
 
 % Kiek gerai veikia sukurtas produktas?
 
+
+
+\addcontentsline{toc}{section}{Literatūros ir informacinių šaltinių sąrašas}
+\renewcommand\refname{Literatūros ir informacinių šaltinių sąrašas}
+
 \bibliographystyle{plain}
 \bibliography{references}
+
+\section*{Santrauka}
+\addcontentsline{toc}{section}{Santrauka}
+
+The goal of the Bachelor thesis was to develop an application, which is capable of Parkinson's disease recognition from gait analysis. The work was started from the alternatives methods review, with discussion of drawbacks and advantages. Based on this review, the methods, which will be used in this work, was derived. The second step was to find the features of the signals, which would most effectively separate the Parkinson's subjects from control subjects. The most logical feature had problems in feature space, so the dimensional reduction method had to be applied. The classification mechanism was chosen very simple, because of the one-dimensional data in feature space and classification only of two classes with no further information. System verification confirmed, that system is able to recognize Parkinson's subjects, but additional experiments with more data must be made.
+
+\section*{PRIEDAI}
+\addcontentsline{toc}{section}{PRIEDAI}
+
+\subsection*{1 priedas. PCA įgyvendinimas, panaudojus skirtingas metodikas.}
+\begin{cfigure}[h]
+  \centering
+  \caption{PCA įgyvendinimas, panaudojus SVD.}
+  \label{code:pca_svd}
+  \lstinputlisting{sources/pca2.m}
+\end{cfigure}
+
+
+\begin{cfigure}[t]
+  \centering
+  \caption{PCA įgyvendinimas, panaudojus tikrinių vektorių dekompoziciją.}
+  \label{code:pca_eig}
+  \lstinputlisting{sources/pca1.m}
+\end{cfigure}
+
 
 \end{document}

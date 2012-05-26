@@ -19,3 +19,6 @@
 \contentsline {subsection}{\numberline {5.2.}Duomen\IeC {\k u} eksperimentams rengimas}{51}
 \contentsline {subsection}{\numberline {5.3.}Programos patikros rezultatai}{51}
 \contentsline {section}{\numberline {6.}Rezultat\IeC {\k u} apibendrinimas}{54}
+\contentsline {section}{Literat\IeC {\=u}ros ir informacini\IeC {\k u} \IeC {\v s}altini\IeC {\k u} s\IeC {\k a}ra\IeC {\v s}as}{54}
+\contentsline {section}{Santrauka}{57}
+\contentsline {section}{PRIEDAI}{58}
