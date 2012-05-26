@@ -1,21 +1,21 @@
 \select@language {lithuanian}
-\contentsline {section}{\IeC {\v Z}ymenys ir santrumpos}{8}
-\contentsline {section}{\numberline {1.}\IeC {\k I}vadas. U\IeC {\v z}duoties analiz\IeC {\.e}}{9}
-\contentsline {section}{\numberline {2.}Informacini\IeC {\k u} Parkinsono ligos diagnostikos sistem\IeC {\k u} ap\IeC {\v z}valga}{12}
-\contentsline {section}{\numberline {3.}Signal\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{17}
-\contentsline {subsection}{\numberline {3.1.}Bendros programos strukt\IeC {\=u}rin\IeC {\.e}s schemos sudarymas}{17}
-\contentsline {subsection}{\numberline {3.2.}Pirminio signal\IeC {\k u} apdorojimo programos k\IeC {\=u}rimas}{18}
-\contentsline {subsection}{\numberline {3.3.}Po\IeC {\v z}ymi\IeC {\k u} i\IeC {\v s}skyrimo programos k\IeC {\=u}rimas}{23}
-\contentsline {subsubsection}{\numberline {3.3.1.}Dimensij\IeC {\k u} ma\IeC {\v z}inimas}{23}
-\contentsline {subsubsection}{\numberline {3.3.2.}Savybi\IeC {\k u} tyrimas}{26}
-\contentsline {subsection}{\numberline {3.4.}Po\IeC {\v z}ymi\IeC {\k u} klasifikavimo programos k\IeC {\=u}rimas}{33}
-\contentsline {subsection}{\numberline {3.5.}Duomen\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{35}
-\contentsline {section}{\numberline {4.}Signal\IeC {\k u} analiz\IeC {\.e}s programos \IeC {\k i}gyvendinimas}{38}
-\contentsline {subsection}{\numberline {4.1.}Bendro programos algoritmo schemos sudarymas}{38}
-\contentsline {subsection}{\numberline {4.2.}Po\IeC {\v z}ymi\IeC {\k u} klasifikavimo programos algoritmo schemos sudarymas}{39}
-\contentsline {subsection}{\numberline {4.3.}Signal\IeC {\k u} analiz\IeC {\.e}s programos \IeC {\k i}gyvendinimas}{41}
-\contentsline {section}{\numberline {5.}Signal\IeC {\k u} analiz\IeC {\.e}s programos patikra}{43}
-\contentsline {subsection}{\numberline {5.1.}Eksperiment\IeC {\k u} plano rengimas}{43}
-\contentsline {subsection}{\numberline {5.2.}Duomen\IeC {\k u} eksperimentams rengimas}{44}
-\contentsline {subsection}{\numberline {5.3.}Programos patikros rezultatai}{44}
-\contentsline {section}{\numberline {6.}Rezultat\IeC {\k u} apibendrinimas}{47}
+\contentsline {section}{\IeC {\v Z}ymenys ir santrumpos}{10}
+\contentsline {section}{\numberline {1.}\IeC {\k I}vadas. U\IeC {\v z}duoties analiz\IeC {\.e}}{11}
+\contentsline {section}{\numberline {2.}Informacini\IeC {\k u} Parkinsono ligos diagnostikos sistem\IeC {\k u} ap\IeC {\v z}valga}{14}
+\contentsline {section}{\numberline {3.}Signal\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{22}
+\contentsline {subsection}{\numberline {3.1.}Bendros programos strukt\IeC {\=u}rin\IeC {\.e}s schemos sudarymas}{22}
+\contentsline {subsection}{\numberline {3.2.}Pirminio signal\IeC {\k u} apdorojimo programos k\IeC {\=u}rimas}{23}
+\contentsline {subsection}{\numberline {3.3.}Po\IeC {\v z}ymi\IeC {\k u} i\IeC {\v s}skyrimo programos k\IeC {\=u}rimas}{29}
+\contentsline {subsubsection}{\numberline {3.3.1.}Dimensij\IeC {\k u} ma\IeC {\v z}inimas}{29}
+\contentsline {subsubsection}{\numberline {3.3.2.}Savybi\IeC {\k u} tyrimas}{31}
+\contentsline {subsection}{\numberline {3.4.}Po\IeC {\v z}ymi\IeC {\k u} klasifikavimo programos k\IeC {\=u}rimas}{38}
+\contentsline {subsection}{\numberline {3.5.}Duomen\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{42}
+\contentsline {section}{\numberline {4.}Signal\IeC {\k u} analiz\IeC {\.e}s programos \IeC {\k i}gyvendinimas}{44}
+\contentsline {subsection}{\numberline {4.1.}Bendro programos algoritmo schemos sudarymas}{44}
+\contentsline {subsection}{\numberline {4.2.}Po\IeC {\v z}ymi\IeC {\k u} klasifikavimo programos algoritmo schemos sudarymas}{45}
+\contentsline {subsection}{\numberline {4.3.}Signal\IeC {\k u} analiz\IeC {\.e}s programos \IeC {\k i}gyvendinimas}{48}
+\contentsline {section}{\numberline {5.}Signal\IeC {\k u} analiz\IeC {\.e}s programos patikra}{50}
+\contentsline {subsection}{\numberline {5.1.}Eksperiment\IeC {\k u} plano rengimas}{50}
+\contentsline {subsection}{\numberline {5.2.}Duomen\IeC {\k u} eksperimentams rengimas}{51}
+\contentsline {subsection}{\numberline {5.3.}Programos patikros rezultatai}{51}
+\contentsline {section}{\numberline {6.}Rezultat\IeC {\k u} apibendrinimas}{54}

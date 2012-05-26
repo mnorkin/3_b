@@ -45,6 +45,15 @@ ABSTRACT = {BACKGROUND:The ability to maintain a steady gait rhythm is impaired 
     month = Sep,
 }
 
+@misc{stprtool,
+	author = {Michal. I. Schlesinger,  Vaclav Hlavac, Vojtech Franc},
+	title = {Statistical Pattern Recognition Toolbox},
+	keywords = {Linear discriminant function, Feature extraction, Density estimation and clustering},
+	year = {2000},
+	month = Sep
+
+}
+
 @ARTICLE{5280353, 
 author={Yunfeng Wu and Krishnan, S.}, 
 journal={Neural Systems and Rehabilitation Engineering, IEEE Transactions on}, title={Statistical Analysis of Gait Rhythm in Patients With Parkinson's Disease}, 
@@ -127,4 +136,138 @@ pages={41-46},
 year={2001},
 month={November},
 day={2},
+}
+
+@article{Hausdorff01011997,
+author = {Hausdorff, Jeffrey M. and Mitchell, Susan L. and Firtion, Renée and Peng, C. K. and Cudkowicz, Merit E. and Wei, Jeanne Y. and Goldberger, Ary L.}, 
+title = {Altered fractal dynamics of gait: reduced stride-interval correlations with aging and Huntington’s disease}, 
+volume = {82}, 
+number = {1}, 
+pages = {262-269}, 
+year = {1997}, 
+abstract ={
+Hausdorff, Jeffrey M., Susan L. Mitchell, Renée Firtion, C. K. Peng, Merit E. Cudkowicz, Jeanne Y. Wei, and Ary L. Goldberger. Altered fractal dynamics of gait: reduced stride-interval correlations with aging and Huntington’s disease.J. Appl. Physiol. 82(1): 262–269, 1997.—Fluctuations in the duration of the gait cycle (the stride interval) display fractal dynamics and long-range correlations in healthy young adults. We hypothesized that these stride-interval correlations would be altered by changes in neurological function associated with aging and certain disease states. To test this hypothesis, we compared the stride-interval time series of 1) healthy elderly subjects and young controls and of 2) subjects with Huntington’s disease and healthy controls. Using detrended fluctuation analysis, we computed α, a measure of the degree to which one stride interval is correlated with previous and subsequent intervals over different time scales. The scaling exponent α was significantly lower in elderly subjects compared with young subjects (elderly: 0.68 ± 0.14; young: 0.87 ± 0.15; P < 0.003). The scaling exponent α was also smaller in the subjects with Huntington’s disease compared with disease-free controls (Huntington’s disease: 0.60 ± 0.24; controls: 0.88 ± 0.17; P < 0.005). Moreover, α was linearly related to degree of functional impairment in subjects with Huntington’s disease (r = 0.78, P < 0.0005). These findings demonstrate that stride-interval fluctuations are more random (i.e., less correlated) in elderly subjects and in subjects with Huntington’s disease. Abnormal alterations in the fractal properties of gait dynamics are apparently associated with changes in central nervous system control.}, 
+URL = {http://jap.physiology.org/content/82/1/262.abstract}, 
+eprint = {http://jap.physiology.org/content/82/1/262.full.pdf+html}, 
+journal = {Journal of Applied Physiology} 
+}
+
+@article{KNUTSSON01011972,
+author = {KNUTSSON, E.}, 
+title = {AN ANALYSIS OF PARKINSONIAN GAIT}, 
+volume = {95}, 
+number = {3}, 
+pages = {475-486}, 
+year = {1972}, 
+doi = {10.1093/brain/95.3.475}, 
+URL = {http://brain.oxfordjournals.org/content/95/3/475.short}, 
+eprint = {http://brain.oxfordjournals.org/content/95/3/475.full.pdf+html}, 
+journal = {Brain} 
+}
+
+@article{Delval_Salleron_Bourriez_Bleuse_Moreau_Krystkowiak_Defebvre_Devos_Duhamel_2008, 
+title={Kinematic angular parameters in PD: reliability of joint angle curves and comparison with healthy subjects.}, 
+volume={28}, 
+url={http://www.ncbi.nlm.nih.gov/pubmed/18434159}, 
+number={3}, 
+journal={Gait \& Posture}, 
+author={Delval, Arnaud and Salleron, Julia and Bourriez, Jean-Louis and Bleuse, Séverine and Moreau, Caroline and Krystkowiak, Pierre and Defebvre, Luc and Devos, Patrick and Duhamel, Alain}, 
+year={2008}, 
+pages={495--501}
+}
+
+@INBOOK{S0966-6362(05)00058-5,
+author="Stansfield, B. W.
+and Hillman, S. J.
+and Hazlewood, M. E.
+and Robb, J. E.",
+chapter="Regression analysis of gait parameters with speed in normal children walking at self-selected speeds",
+title="Gait \& posture",
+year="2006",
+month="Apr",
+day="01",
+publisher="Elsevier Sciencem",
+volume="23",
+number="3",
+pages="288--294",
+keywords="Walking",
+keywords="Children",
+keywords="Regression",
+keywords="Kinematics",
+keywords="Kinetics",
+issn="0966-6362",
+url="http://linkinghub.elsevier.com/retrieve/pii/S0966636205000585?showall=true"
+}
+
+@INPROCEEDINGS{6151536, 
+author={Manap, H.H. and Tahir, N.M. and Yassin, A.I.M.}, 
+booktitle={Signal Processing and Information Technology (ISSPIT), 2011 IEEE International Symposium on}, title={Statistical analysis of parkinson disease gait classification using Artificial Neural Network}, 
+year={2011}, 
+month={dec.}, 
+volume={}, 
+number={}, 
+pages={060 -065}, 
+keywords={Parkinson disease gait classification;abnormal gait pattern;ankle;artificial neural network;basic gait parameters;cadence;ground reaction force parameters;hip;joint angle;kinematic gait parameters;kinetic gait parameters;knee;normal walking;statistical analysis;step length;vertical parameter;walking speed;diseases;gait analysis;medical computing;neural nets;statistical analysis;}, 
+doi={10.1109/ISSPIT.2011.6151536}, 
+ISSN={},}
+
+@misc{website:hmm_implementation,
+  author={Kevin Murphy, 1998},
+  title={Hidden Markov Model (HMM) Toolbox for Matlab},
+  url={http://www.cs.ubc.ca/~murphyk/Software/HMM/hmm.html},
+}
+@misc{website:svm_implementation,
+  author={Chih-Chung Chang and Chih-Jen Lin},
+  title={LIBSVM -- A Library for Support Vector Machines},
+  url={http://www.csie.ntu.edu.tw/~cjlin/libsvm/},
+}
+
+@misc{citeulike:2695782,
+  added-at = {2008-06-17T16:01:02.000+0200},
+  author = {Shlens, Jonathon},
+  biburl = {http://www.bibsonomy.org/bibtex/29e59bfc95e50ce0719e21d475734a368/pprett},
+  citeulike-article-id = {2695782},
+  howpublished = {http://www.snl.salk.edu/~shlens/pub/notes/pca.pdf},
+  institution = {Systems Neurobiology Laboratory, Salk Insitute for Biological Studies
+La Jolla, CA 92037 and
+Institute for Nonlinear Science, University of California, San Diego
+La Jolla, CA 92093-0402},
+  interhash = {f902cafbbafa78bf28747a78324a09e2},
+  intrahash = {9e59bfc95e50ce0719e21d475734a368},
+  keywords = {pca, tutorial},
+  month = {December},
+  posted-at = {2008-04-21 13:01:03},
+  priority = {0},
+  timestamp = {2008-06-17T16:01:02.000+0200},
+  title = {A Tutorial on Principal Component Analysis},
+  url = {http://www.snl.salk.edu/~shlens/pub/notes/pca.pdf},
+  year = 2005
+}
+
+@ARTICLE{18626, 
+author={Rabiner, L.R.}, 
+journal={Proceedings of the IEEE}, title={A tutorial on hidden Markov models and selected applications in speech recognition}, 
+year={1989}, 
+month={feb}, 
+volume={77}, 
+number={2}, 
+pages={257 -286}, 
+keywords={balls-in-urns system;coin-tossing;discrete Markov chains;ergodic models;hidden Markov models;hidden states;left-right models;probabilistic function;speech recognition;Markov processes;speech recognition;}, 
+doi={10.1109/5.18626}, 
+ISSN={0018-9219},}
+
+@ARTICLE{Burges98atutorial,
+    author = {Christopher J.C. Burges},
+    title = {A Tutorial on Support Vector Machines for Pattern Recognition},
+    journal = {Data Mining and Knowledge Discovery},
+    year = {1998},
+    volume = {2},
+    pages = {121--167}
+}
+
+@article{welling2005fisher,
+  title={Fisher linear discriminant analysis},
+  author={Welling, M.},
+  journal={Department of Computer Science, University of Toronto},
+  year={2005}
 }

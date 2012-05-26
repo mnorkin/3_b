@@ -5,7 +5,10 @@
 \ProvidesClass{vgtuef}
 
 
-\LoadClass[12pt,a4paper,twoside]{article}
+\LoadClass[12pt,a4paper,twoside,openright]{article}
+
+
+
 
 % Table of contents
 % \RequirePackage{tocloft}
@@ -17,6 +20,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{layout}
 \RequirePackage{color}
+\RequirePackage[hmarginratio=1:1]{geometry}
 
 %% Table
 \RequirePackage{multirow}
@@ -45,6 +49,22 @@
 \counterwithin{figure}{section}
 \counterwithin{equation}{section}
 \counterwithin{table}{section}
+\RequirePackage{newfloat}
+
+%% Source code float environment
+%\RequirePackage{float}
+\RequirePackage{floatrow}
+%\floatname{cfigure}{programinis kodas}
+%\floatplacement{cfigure}{tp}
+\newfloat{cfigure}{tbp}{lop}[section]
+\DeclareFloatStyle{cfigure-fs}{
+	capposition=top,
+	heightadjust=all
+}
+\floatsetup[cfigure]{style=cfigure-fs}
+\DeclareCaptionLabelFormat{cfigure-st}{#2 programinis kodas.}
+\captionsetup[cfigure]{position=above,labelformat=cfigure-st,justification=justified,singlelinecheck=false}
+\counterwithin{cfigure}{section}
 
 %% Source code style
 \lstset{
@@ -52,6 +72,9 @@
   basicstyle=\footnotesize,
   numbers=left
 }
+
+% COLORS
+\definecolor{b1}{cmyk}{0.68,0.15,0.0, 0.59}
 
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\rmdefault}{ptm}
@@ -65,37 +88,40 @@
 
 \pagestyle{fancy}
 
-\fancypagestyle{plain}{}
+\fancypagestyle{plain}{
+
+}
 
 \fancyhead{} % clear all the headers
 \renewcommand{\headrulewidth}{0pt} % and lines
 %\fancyhead[LE]{LEFT EVEN} % 
 %\fancyhead{} % Clear all the headers
-%\fancyhead[CO]{\includegraphics[width=483pt]{img/CE_HEADER}} % 
+\fancyhead[CO]{\includegraphics[width=483pt]{img/CE_HEADER}} % 
+\fancyhead[CE]{\includegraphics[width=483pt]{img/CO_HEADER}}
+\fancyheadoffset[E]{0pt}
+%\fancyhead[CE]{Labas}
 %\fancyhead[L]{\includegraphics[height=10pt]{img/CO_HEADER}} % 
 %\fancyhead[R]{TT}
 %\fancyhead[RO,LE]{RIGHT ODD}
 %\fancyhead[LE]{LEFT EVEN}
 \fancyfoot{} % Clear all the footer stuff
-\fancyfoot[C]{\thepage}
+\fancyfoot[C]{\color{b1}\thepage}
 
 \setlength{\hoffset}{-1in}
-\setlength{\voffset}{-46pt}
+%\setlength{\voffset}{-46pt}
 \setlength{\textwidth}{483pt}
-\setlength{\marginparwidth}{28pt}
-\setlength{\oddsidemargin}{62pt}
-\setlength{\evensidemargin}{28pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\oddsidemargin}{70pt}
+\setlength{\evensidemargin}{40pt}
 \setlength{\marginparsep}{0pt}
-\setlength{\topmargin}{0pt}
-\setlength{\textheight}{715pt}
+%\setlength{\topmargin}{0pt}
+\setlength{\textheight}{680pt}
 \setlength{\footskip}{20pt}
+
 %\setlength{\headheight}{}
 
 %% Enable font
 \normalfont\selectfont
-
-% COLORS
-\definecolor{b1}{cmyk}{0.68,0.15,0.0, 0.59}
 
 % Table of contents
 \renewcommand\thesection{\arabic{section}.}
