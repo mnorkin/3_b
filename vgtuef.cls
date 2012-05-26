@@ -8,8 +8,6 @@
 \LoadClass[12pt,a4paper,twoside,openright]{article}
 
 
-
-
 % Table of contents
 % \RequirePackage{tocloft}
 \RequirePackage{graphicx}
@@ -64,6 +62,7 @@
 }
 \floatsetup[cfigure]{style=cfigure-fs}
 \DeclareCaptionLabelFormat{cfigure-st}{#2 programinis kodas.}
+\floatsetup[table]{style=cfigure-fs}
 \captionsetup[cfigure]{position=above,labelformat=cfigure-st,justification=justified,singlelinecheck=false}
 \counterwithin{cfigure}{section}
 
