@@ -95,7 +95,8 @@ ISSN={0739-5175},}
 
 @INPROCEEDINGS{6091948, 
 author={Stamatakis, J. and Cremers, J. and Maquet, D. and Macq, B. and Garraux, G.}, 
-booktitle={Engineering in Medicine and Biology Society,EMBC, 2011 Annual International Conference of the IEEE}, title={Gait feature extraction in Parkinson's disease using low-cost accelerometers}, 
+booktitle={Engineering in Medicine and Biology Society,EMBC, 2011 Annual International Conference of the IEEE}, 
+title={Gait feature extraction in Parkinson's disease using low-cost accelerometers}, 
 year={2011}, 
 month={30 2011-sept. 3}, 
 volume={}, 

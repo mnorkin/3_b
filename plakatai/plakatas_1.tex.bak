@@ -1,0 +1,35 @@
+\documentclass[a4paper,11pt,twocolumn]{IEEEtran}
+
+%% Language and encoding
+\usepackage[utf8x]{inputenc}
+\usepackage[L7x]{fontenc}
+\usepackage[lithuanian]{babel}
+
+\author{Maksim Norkin\\Vilniaus Gedimino technikos universitetas\\Elektronikos fakultetas\\Elektroninių sistemų katedra\\\texttt{maksim.norkin@ieee.org}}
+\title{Bakalauro baigiamasis darbas\\Parkinsono ligos eigos stebėjimo priemonė\\1 Plakatas}
+
+\begin{document}
+
+	\maketitle
+	
+	\section{Užduotis}
+	
+	Darbo tikslas yra sukurti programą, gebančią atpažinti jėgos jutikliais gautus signalus, priklausančius Parkinsono liga sergantiems subjektams. Programa bus įgyvendinta Matlab platformoje. Tokia platforma buvo pasirinkta dėl plataus įrankių kiekio, kuris yra prieinamas Matlab aplinkoje. Taip pat nurodytoje platformoje yra labai patogu ir greita realizuoti signalų apdorojimo sistemas dėl architektūros - visi kintamieji yra matricos. 
+	
+	Sukurtas produktas gebės pateikti diagnozę - ar subjektas turi Parkinsono liga sergančių subjektų eisenos požymių ar jų neturi. Produktas neatsižvelgs į kitus ligos simptomus: drebulys (rankų, kojų, žandikaulio, galvos), standumas (galūnių arba liemens sustingimas), bradikinezija (judesių lėtumas), pozicijos nestabilumas (arba sutrikęs balansas). Pati programa duomenis analizuos jau po duomenų surinkimo. Tai reiškia, kad pirmiausiai duomenys bus surenkami, o vėliau įkeliami į programą tolimesniam apdorojimui.
+
+	Darbo tema, Parkinsono ligos eigos stebėjimo programa, reiškia, darbo rezultate bus sukurtas algoritmas, kuriuo bus parengta kompiuterinė programa. Pačiam kompiuteryje turi būti veikiantis Matlab programinis paketas. Programa bus rašoma Matlab 7.12.0 (R2011) versija su ``Neural Network Toolbox'' įrankiu. Eigos stebėjimas reiškia, kad visuomet egzistuoja neapibrėžtas, galimas programos netikslumas. Visiškai programa remtis, diagnozuojant Parkinsono ligą nėra galima, kadangi, kaip jau buvo minėta ankščiau - eigos sutrikimas nėra vienintelis ligos požymis. Turi būti atlikti ir kiti tyrimai, norint tiksliai diagnozuoti ligą.
+	
+	\vfill
+	
+	\section{Rezultatai}
+	
+	Darbo metu buvo ištirtos galimos žingsnio savybės, kuriomis remiantis galima sėkmingai atpažinti Parkinsono ligą pas subjektą. Nustatyta, kad dažninės žingsnio komponentės, koreliacijos koeficientas, dviejų maksimumų ir vieno minimumo savybės neturi pakankamai informacijos Parkinsono ligos atpažinimui. Daugiausiai informacijos turi kojos prisilietimo prie žemės ir kojos pakilimo nuo žemės signalo laiko variacijos.
+	
+	Turint duomenis, kurie turi daugiausiai informacijos ligos identifikavimui, sekantis pritaikytas žingsnis buvo galimų dimensijų praskyrimo metodų pritaikymas. Linijiniai PCA ir LDA reikiamo rezultato nepateikė. Geriausiai duomenis praskyrė LDA su Gauso branduoliu. 
+
+	Turimus vienmačius duomenis realiu laiku geriausiai klasifikavo naivus Bayes klasifikatorius, tačiau klasifikavimo tikslumas ir taiklumas buvo nepatenkinamas. Pritaikius papildomą metodikos žingsnį - laikinosios atminties bloką, kuriame būtų saugomas pirmas transformacijos diskriminantas, klasifikavimo tikslumas buvo pagerintas iki $80~\%$, kas nurodo, kad tik kas penktas diagnozavimo rezultatas gali būti klaidingas.
+	
+	Darbe panaudotos priemonės lūkesčius pateisino dalinai. Išskirta savybė identifikuoja ligos požymius tik esant ilgos eisenos prielaidai - subjektas turi atlikti eisenos patikrą ilgiau negu $2~min$. Rekomenduojama eisenos trukmė yra $5~min$. Tokiu atveju sistema geriausiai identifikuos ligos simptomą pagal parinktą savybę.
+
+\end{document}

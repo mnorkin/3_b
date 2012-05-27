@@ -20,6 +20,7 @@
 \RequirePackage{color}
 \RequirePackage[hmarginratio=1:1]{geometry}
 \RequirePackage[toc,page]{appendix}
+\RequirePackage[bookmarks]{hyperref}
 
 %% Table
 \RequirePackage{multirow}
