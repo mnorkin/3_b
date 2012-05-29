@@ -20,14 +20,15 @@
 \addcontentsline{toc}{section}{Žymenys ir santrumpos}
 
 \begin{itemize}
-\item VŽRJ -- Vertikali žemės reakcijos jėga (angl. Vertical Ground Reaction Force);
-\item PCA -- principinė komponenčių analizė (angl. Principal Component Analysis);
-\item LDA -- linijinė disktriminanto analizė (angl. Linear Diskriminant Analysis);
+\item VŽRJ -- Vertikali žemės reakcijos jėga (angl. \textit{Vertical Ground Reaction Force});
+\item PCA -- principinė komponenčių analizė (angl. \textit{Principal Component Analysis});
+\item LDA -- tiesinė disktriminanto analizė (angl. \textit{Linear Diskriminant Analysis});
+\item SVM -- vektoriaus palaikymo mašina (angl. \textit{Support Vector Machine});
+\item STC -- signalo nuokrypio skaitiklis (angl. \textit{Signal Turn Counter});
 \item Co -- kontrolinis subjektas, kurio ligos istorijoje nebuvo užregistruota jokių neurologinių susirgimų;
 \item Pt -- Parkinsono liga sergantis subjektas;
-\item Hz -- ciklų skaičius per vieną sekundę (angl. Hertz);
-\item SVM -- vektoriaus palaikymo mašina (angl. Support Vector Machine);
-\item STC -- signalo nuokrypio skaitiklis (angl. Signal Turn Counter);
+\item Hz -- ciklų skaičius per vieną sekundę;
+\item s -- sekundė;
 \end{itemize}
 
 \section{Įvadas. Užduoties analizė}
@@ -36,19 +37,19 @@ Bakalauro baigiamojo darbo tema -- Parkinsono ligos eigos stebėjimo programa. P
 
 Darbo tikslas -- sukurti programą, kuri atpažintų sveiką ir Parkinsono liga sergantį žmogų, remiantis vertikalios jėgos jutikliais gautais signalais. Programa įgyvendinta Matlab platformoje. Ji pasirinkta dėl plataus įrankių kiekio, kuris yra įgyvendintas Matlab aplinkoje. Nurodytoje platformoje taip pat yra labai patogu ir greita realizuoti signalų apdorojimo sistemas dėl jos architektūros -- visi kintamieji yra matricos. 
 
-Darbe naudojami duomenys, kuriuos pateikia jėgos jutikliai. Jie matuoja vertikalią žemės reakcijos jėgą (VŽRJ) (angl. Vertical Ground Reaction Force (vGRF)). Fizikoje, ir būtent biomechanikoje, VŽRJ nurodo kokia jėga žemė atsako ją veikiančiam objektui. Kaip pavyzdžiui, stovinti žmogus slegia žemę jėga, kuri lygi jo masei ir tuo pat metu, žemė slegia žmogų priešinga, lygiai tokia pačia jėga. Jutikliai parinkti dėl šaltinyje \cite{S0966-6362(05)00058-5} pateiktos informacijos, kad VŽRJ yra geras žmogaus kūno stabilumo indikatorius. Duomenų surinkimo platformos ir duomenų surinkimo sesijų atlikinėti nereikėjo, kadangi naudojami duomenys yra prieinami duomenų bazėje.
-
 Šiuo metu Parkinsono liga yra aktyviai tiriama \cite{vgtu}, kadangi ją susirgęs žmogus praranda galimybę laisvai gyventi. Motorinės funkcijos sutrikimai padaro gyvenimą problematišką: drebulys sukelia nepatogumų atliekant didesnio kruopštumo reikalaujančius darbus, galūnių sustingimas sukelia didelių nepatogumų atliekant paprasčiausius kasdienes procedūras. Toliau pasireiškia psichiniai sutrikimai, dėl neurologinio sutrikimo: depresija, apatija, miego sutrikimas. Tik ankstyva ligos diagnozė gali sulėtinti ligos plitimą ir pagelbėti ją susirgusiems žmonėms. Dėl šios priežasties darbo tema pasirinkta Parkinsono liga.
 
-Didžiausia ligos atpažinimo problema slypi savybių, kurios geriausiai identifikuos sergantį Parkinsono liga nuo sveiko, nesergančio asmens. Darbe apžvelgtos kelios galimos savybės, kurios gali atskirti tokius subjektus, remiantis analoginių sistemų apžvalga. Iš galimų savybių sudaroma savybių erdvė, kurią naudojantis atliekamas subjektų atpažinimas. Blogiausia galimas variantas būtų nelinijinė funkcija atskirti didelių dimensijų savybių duomenys. Geriausias galimas variantas būtų mažos dimensijos duomenys (iki 3 dimensijų) ir linijiškai atskiriami duomenys (kadangi linijinę funkciją realizuoti yra lengviausia). Turint didelių dimensijų duomenis, planuojamos sistemos aparatiniai reikalavimai automatiškai didėja, kadangi būtina apdoroji didelį kiekį duomenų. Tokią problemą galima išspręsti panaudojus dimensijų mažinimo algoritmus, kurių dažniausiai taikomi \cite{824819}: Principinių komponenčių analizė (angl. Principal Component Analysis (PCA)), linijinė diskriminanto analizė (anl. Linear Discriminant Analysis (LDA)). Dar žinomi kaip dimensijų praskyrimo algoritmai. Jie taikomi, kuomet duomenys yra atskirti netiesiškai. Duomenims, kurie atskirti tiesiniu dėsniu, galima taikyti paprastą klasifikavimo algoritmą. Jeigu duomenis taip ir nepavyksta atskirti tiesiškai, tenka taikyti kompleksinį klasifikatorių, ko pasekoje gali labai sumažėti klasifikavimo tikslumas ir taiklumas. Darbe panaudotas Matlab aplinkoje įgyvendintas įrankis, kuris skirtas suprojektuoti naują dimensijų plokštumą, kurį įgyvendino Vojtech Franc savo magistriniam darbe \cite{stprtool}. 
+Darbe naudojami signalai, kuriuos pateikia jėgos jutikliai. Jie matuoja vertikalią žemės reakcijos jėgą (VŽRJ) (angl. \textit{Vertical Ground Reaction Force -- vGRF}). Fizikoje, ir būtent biomechanikoje, VŽRJ nurodo kokia jėga žemė atsako ją veikiančiam objektui. Kaip pavyzdžiui, stovinti žmogus slegia žemę jėga, kuri lygi jo masei ir tuo pat metu, žemė slegia žmogų priešinga, lygiai tokia pačia jėga. Jutikliai parinkti dėl šaltinyje \cite{S0966-6362(05)00058-5} pateiktos informacijos, kad VŽRJ yra geras žmogaus kūno stabilumo indikatorius. Duomenų surinkimo platformos ir duomenų surinkimo sesijų atlikinėti nereikėjo, kadangi naudojami duomenys yra prieinami duomenų bazėje.
 
-Sukurtas produktas gebės pateikti diagnozės rezultatą -- ar subjektas turi Parkinsono liga sergančių subjektų eisenos požymių ar jų neturi. Produktas neatsižvelgs į kitus ligos simptomus: drebulys (rankų, kojų, žandikaulio, galvos), standumas (galūnių arba liemens sustingimas), bradikinezija (judesių lėtumas), pozicijos nestabilumas (arba sutrikęs balansas). Pati programa duomenis analizuos jau po duomenų surinkimo. Tai reiškia, kad pirmiausiai duomenys yra surenkami, o vėliau įkeliami į programą tolimesniam apdorojimui.
+Didžiausia ligos atpažinimo problema slypi signalo savybių, kurios geriausiai identifikuos sergantį Parkinsono liga nuo sveiko, nesergančio asmens, parinkime. Darbe apžvelgtos kelios galimos signalo savybės, kurių reikšmės geriausiai identifikuos skirtumus tarp signalų, remiantis analoginių sistemų apžvalga. Iš galimų savybių sudaroma savybių erdvė, kurią naudojantis atliekamas subjektų atpažinimas. Darbe panaudotas Matlab aplinkoje įgyvendintas įrankis, kuris skirtas suprojektuoti naują matmenų plokštumą, kurį įgyvendino Vojtech Franc savo magistriniam darbe \cite{stprtool}. 
 
-Darbo tema, Parkinsono ligos eigos stebėjimo programa, reiškia, darbo rezultate yra sukurtas algoritmas, įgyvendintas kompiuterine programa. Pačiam kompiuteryje turi būti veikiantis Matlab programinis paketas. Programa parašyta naudojantis Matlab 7.12.0 (R2011) versija su ``Neural Network Toolbox'' ir ``Statistical Toolbox'' įrankiu. Eigos stebėjimas reiškia, kad visuomet egzistuoja neapibrėžtas, galimas programos netikslumas. Visiškai programa remtis, diagnozuojant Parkinsono ligą nėra galima, kadangi, kaip jau minėta ankščiau -- eigos sutrikimas nėra vienintelis ligos požymis. Turi būti atlikti ir kiti tyrimai, norint tiksliai diagnozuoti ligą.
+Sukurtas produktas pateikia diagnozės rezultatą -- ar subjektas turi Parkinsono liga sergančių subjektų eisenos požymių ar jų neturi. Produktas neatsižvelgs į kitus ligos simptomus: drebulys (rankų, kojų, žandikaulio, galvos), standumas (galūnių arba liemens sustingimas), bradikinezija (judesių lėtumas), pozicijos nestabilumas (arba sutrikęs balansas). Pati programa duomenis analizuos jau po duomenų surinkimo. Tai reiškia, kad pirmiausiai duomenys yra surenkami, o vėliau įkeliami į programą tolimesniam apdorojimui.
+
+Parkinsono ligos eigos stebėjimo programa -- sukurtas algoritmas, įgyvendintas kompiuterine programa. Pačiam kompiuteryje turi būti veikiantis Matlab programinis paketas. Programa parašyta naudojantis Matlab 7.12.0 (R2011) versija su ``Neural Network Toolbox'' ir ``Statistical Toolbox'' įrankiu. Eigos stebėjimu turima omenyje visuomet egzistuojantį neapibrėžtų, galimą programos netikslumą. Visiškai programa remtis, diagnozuojant Parkinsono ligą, nėra galima, kadangi, kaip jau minėta ankščiau -- eigos sutrikimas nėra vienintelis ligos požymis. Turi būti atlikti ir kiti tyrimai, norint tiksliai diagnozuoti ligą.
 
 Darbo objekto sudėtis yra asmeniniam kompiuteriui skirta programa, jėgos jutiklių signalų generavimo programa. Kokiam kompiuteriui kuriama programa, paminėta darbo užduoties aprašyme. Jėgos jutiklių generavimo programa (modulis) atsakinga už signalų nuskaitymą iš duomenų bazės ir jų pateikimą sistemos algoritmui. Taip pat signalų generavimo programa (modulis) naudojamas programos demonstracinei versijai įgyvendinti.
 
-Duomenys sistemai pateikiami iš ``PhysioBank'' duomenų bazės \cite{932728}. Duomenys duomenų bazėje surinkti diskretizuojant signalus $100~Hz$ diskretizavimo dažniu. Kiekvienu laiko momentu yra įrašoma nauja eilutė į duomenų tekstinę bylą. Eilutę sudaro 19 skilčių:
+Duomenys sistemai pateikiami iš ``PhysioBank'' duomenų bazės \cite{932728}. Duomenys duomenų bazėje surinkti diskretizuojant jėgos jutiklių signalus $100$ Hz diskretizavimo dažniu. Kiekvienu laiko momentu yra įrašoma nauja eilutė į duomenų tekstinę bylą. Eilutę sudaro 19 skilčių:
 
 \begin{itemize}
 \item Skiltis 1 nurodo laiką (sekundėmis);
@@ -58,7 +59,8 @@ Duomenys sistemai pateikiami iš ``PhysioBank'' duomenų bazės \cite{932728}. D
 \item Skiltis 19 nurodo dešinės kojos suminę VŽRJ, Niutonais;
 \end{itemize}
 
-Duomenų bazės bylų pavadinimai, pavyzdžiui: ``GaCo01\_02.txt'' ar ``JuPt03\_06.txt'', sudaryti nurodant duomenų rinkimų sesijų pavadinimus: ``Ga'' -- ``Galit Yogev et al'' (dual tasking in PD; Eur J Neuro, 2005), ``Ju'' -- ``Hausdoff et al'' (RAS in PD; Eur J Neuro, 2007), ``Si'' -- ``Silvi Frenkel-Toledo et al'' (Treadmill walking in PD; Mov Disorders, 2005). Toliau, ``Co'' nurodo kontrolinį subjektą arba nesergantį Parinsono liga subjektą, ``Pt'' nurodo Parkinsonu sergantį subjektą. Pirmas numeris nurodo subjekto identifikacinį numerį, po brūkšnio einantis antras numeris nurodo subjekto duomenų rinkimo seką. Aprašyme nurodyta, kad visuose duomenų rinkimų sesijose iš viso dalyvavo $93$ sergantis subjektas ir $73$ Parkinsono liga sergantis subjektas.
+
+Duomenys surinkti: ``Galit Yogev et al'' (dual tasking in PD; Eur J Neuro, 2005), ``Hausdoff et al'' (RAS in PD; Eur J Neuro, 2007), ``Silvi Frenkel-Toledo et al'' (Treadmill walking in PD; Mov Disorders, 2005). Duomenų rinkimo sesijų autorių vardais pažymimas pirmosios bylos pavadinimo dvi raidės: ``Ga'' priklauso ``Galit Yogev et al'', ``Ju'' -- ``Hausdoff et al'', ``Si'' -- ``Silvi Frenkel-Toledo et al''. Sesijose dalyvavo du subjektų tipai: kontroliniai (sveiki) subjektai ir Parkinsono liga sergantys subjektai. Bylojos pavadinime jie pažymėti ``Co'' ir ``Pt'' raidžių rinkiniais. Sekantis pirmas numeris nurodo subjekto atpažinimo numerį, po brūkšnio einantis antras numeris nurodo subjekto duomenų rinkimo seką. Aprašyme nurodyta, kad visuose duomenų rinkimų sesijose iš viso dalyvavo $93$ sergantis subjektas ir $73$ Parkinsono liga sergantis subjektas.
 
 Programos veikimas, atliekamas klasifikavimo mechanizmu, vertinamas taiklumu ir jautrumu. Parametrai yra apskaičiuojami iš pasikliovimo matricos.
 
@@ -66,9 +68,41 @@ Programos veikimas, atliekamas klasifikavimo mechanizmu, vertinamas taiklumu ir 
 
 Šiame skyriuje apžvelgtos analoginės informacinės sistemos arba bandymai sukurti sistemą, kuri, remiantis įvairių jutiklių pagalba, gebėtų atpažinti Parkinsono ligą. Apibendrintai aptarti nagrinėjamų sistemų teigiamos ir neigiamos savybės -- ar pasirinkti požymiai yra argumentuoti ar naudojamas klasifikatorius yra parinktas atsižvelgus į naudojamą savybių erdvę, kokie gauti rezultatai.
 
+\subsection{Tiesinių jėgos jutiklių metodas}
+
 %% PIRMAS DARBAS
 
-Pirmas darbas apžvelgtai yra ``Statistical Analysis of Gait Rhythm in Patients With Parkinson's Disease'' \cite{5280353}. Šis darbas nagrinėja galimas žingsnio variacijos galimybes ir pateikia signalo nuokrypio skaičiavimą kaip pagrindinę savybę, atskiriančią kontrolinius subjektus nuo sergančių. Nagrinėjime panaudoti žingsnio pakilimo nuo žemės ilgis, žingsnio prisilietimo prie žemės ilgis ir bendras žingsnio ilgis. Duomenys gaunami iš vertikalios žemės reakcijos jėgos matavimų. Autorių teigimu, žingsnio pakilimo ir nusileidimo ilgiai turi aukštą koreliacijos koeficientą su bendro žingsnio ilgiu, todėl nagrinėjime panaudotas tik kairės kojos žingsnio ilgis (\ref{table:stance_swing_string_corr} lentelė). Gautas savybių vektorius apskaičiuotas, naudojantis ``vieno palikimo-išmetimo tarpusavio patikros'' (angl. leave-one-out cross-validation) metodu. Jis parodė, kad mažiausių šaknų vektoriaus palaikymo mašina (angl. Support Vector Machine), su daugianariu branduoliu sugeba klasifikuoti duomenis su $90,32~\%$ tikslumu. 
+Pirmas apžvalgai darbas yra ``Gait feature extraction in Parkinson's disease using low-cost accelerometers'' \cite{6091948}, nėra naudojama vertikali žemės reakcijos jėga, skaičiuojant savybes. Sprendime panaudoti pigūs, keturi tiesinio pagreičio jutikliai. Toks sprendimas yra lengvesnis, už prieš tai apžvelgtą, kadangi jame panaudoti šešiolika vertikalios žemės reakcijos jutiklių. Nagrinėjamos Parkinsono ligos eisenos stingimo ir nesimetriškumo požymiai. Iš pirminės sprendimo apžvalgos iškarto išryškėja sprendimo trūkumas -- tiriant galimas savybes, panaudotas tik vienas Parkinsono liga sergantis ir vienas kontrolinis subjektas. Taip atliekant tyrimą, egzistuoja didelė tikimybė, kad visos gaunamos signalo eisenos savybės gali būti būdingos tik nagrinėjamam subjektui, tačiau gali visiškai negalioti kitiems subjektams ar subjektų grupei. Egzistuoja ir tokia tikimybė, kad ištirtos savybės, kurios galioja Parkinsono subjektui, gali galioti ir tyrime nedalyvavusiam kontroliniam subjektui, kadangi panaudotas tik vienas kontrolinis subjektas tyrimo metu.
+
+Nepriklausomai nuo atlikto tyrimo siaurumo, darbe pateiktos svarbios eisenos analizės išvados. Kontrolinio subjekto eisenoje nepastebėta jokių eisenos sustingimo požymių, kairės ir dešinės kojos motorinės operacijos atliekamos simetriškai, išskyrus kairės kojos kelio didžiausios amplitudės pagreičio kojos susilietimo ir pakilimo su žeme metu. Abiejų kojų susilietimo su žeme laiko ilgis simetriškas, kas ir patvirtina pusiausvyrą eiseną. Parkinsono subjektas parodė dešinės kojos eisenos sąstingio nesimetriškumą. Pacientas naudojo kompensacijos mechanizmą -- jis peržengdavo dešinės pusės judesius, kuomet pradėdavo ėjimą. Kairės pusės judesiai atliekami tik palaikant balansą. Pati eisena yra labai lėta, o sustingimas įvyksta tik dešinėje pusėje. Iš gautų rezultatų galima padaryti išvadą, kad analizuojamas pacientas visuomet bando kompensuoti eisenos pokytį, naudodamasis vieno kūno šonu. Tyrimas atliktas tik su vienu pacientu, todėl nėra galima tiksliai teigti, kad kompensacija vyksta tik iš dešinės pusės, tačiau ką galima tvirtai sakyti, kad naudojantis kompensacijos mechanizmu -- egzistuoja žingsnio variacijos tikimybė. Tokią hipotezę sėkmingai patvirtina ir prieš tai atlikta darbo analizė \cite{5280353}. Kompensacijos nebuvimas kontrolinio subjekto atveju garantuoja, kad žingsnio ilgio variacija nėra didelė, o atvirkščiai -- artės į nulį.
+
+\subsection{Dirbtinių neuronų tinklų metodas}
+
+%% KETVIRTAS DARBAS
+
+Tolimesnis darbas apžvalgai yra ``A ground reaction force artificial neural network classifier for the diagnosis of Parkinson's disease'' \cite{vgtu}. Duomenys analizei panaudoti tokie patys, kokie naudojami ir šiame darbe, iš tos pačios duomenų bazės, tačiau pagrindinis nagrinėjamo darbo skirtumas yra naudojamų subjektų skaičius -- analizei pasirinkta $40$ subjektu, turinčių Parkinsono ligą ir $40$ subjektų, neturinčių neurologinių sutrikimų. Nėra argumentuota kodėl toks subjektų skaičius panaudotas analizei, kadangi duomenų bazėje yra $93$ subjektai su Parkinsono ligos sutrikimais ir $73$ kontroliniai, sveiki subjektai. Iš atliktos pirminės analizės pastebėta, kad Parkinsono subjektai vŽRJ signale turi mažiau galios aukštuose dažniuose, žemesnę pirmo ir antro maksimumo amplitudę ir pavėluotą pirmą maksimumą. Atlikta DFA (angl. \textit{Detrended fluctation analysis}) parodė, kad Parkinsono subjektai turi ilgesnį vidurinį ilgo laikotarpio žingsnio pakilimo nuo žemės fazės koreliacija.
+
+Darbe panaudoti $8$ signalo požymiai: vidutinė galia tarp $0,5$ Hz ir $1,5$ Hz (dB), vidutinė galia tarp $1,5$ Hz ir $20$ Hz (dB), kojos pakilimo nuo žemės santykis viso žingsnio atžvilgiu (procentais), pirmo maksimumo reikšmė (N/BW); antro maksimumo reikšmė (N/BW), kairės kojos atliktos DFA analizės skalės $\alpha$ eksponentė, dešinės kojos atliktos DFA analizės skalės $\alpha$ eksponentė \cite{Hausdorff01011997}. Matmenų mažinimo metodas nepritaikytas. Klasifikavimui pasirinktas dirbtinių neuronų tinklas su $8$ paslėptais neuronais, apmokymas vyko naudojantis porinio mastelio gradiento atvirkštinį dauginimą (angl. \textit{scaled conjugate gradient backpropagation algorithm}). Apmokymui pasirinkta po $20$ subjektų iš kiekvienos grupės, dirbtinių neuronų tinklo tikrinimas vykdytas panaudojus po $10$ subjektų iš kiekvienos grupės, testavimas atliekamas panaudojus po $10$ subjektų duomenis iš kiekvienos grupės. Klasifikavimo taiklumas ir tikslumas yra pateikti \ref{table:vgtu_ann_scores} lentelėje. Klasifikatoriaus tikslumas yra $95~\%$, kontroliniai subjektai atpažinti su $90~\%$ taiklumu (vienas iš dešimt subjektų atpažinti klaidingai), Parkinsono liga sergantys subjektai atpažinti su $100~\%$ taiklumu, visi subjektai atpažinti teisingai.
+
+\begin{table}
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \caption{Klasifikavimo taiklumas ir tikslumas, panaudojus dirbtinių neuronų tinklo klasifikatorių \cite{vgtu}}
+  \label{table:vgtu_ann_scores}
+  \begin{tabular}{|c|c|c|} \hline
+    & C1 & C2 \\ \hline
+    Tikslumas & 0,950 & 0,950 \\ \hline
+    Taiklumas & 0,900 & 1,000 \\ \hline
+  \end{tabular}
+\end{table}
+
+Atliktas tyrimas pateikia gerus klasifikavimo rezultatus. Metodo trūkumas yra naudojamas dirbtinių neuronų klasifikatoriaus. Jis neleidžia įžvelgti kaip būtent yra apibendrintos naudojamos savybės savybių erdvėje. Taip pat nepavaizduota kaip esami duomenys pasiskirstę savybių erdvėje. Kadangi naudojamos $8$ savybės (kas apibrėžia ir savybių erdvės matmenų skaičių), galima panaudoti matmenų mažinimo algoritmą ir pateikti esamus rezultatus grafiniu pavidalu, vizualinei analizei. Taip pat nurodytos savybės yra skirtingos skalės. Kiekviena iš išvardintų savybių gali turėti savo amplitudės diapazoną. Labai svarbu yra normuoti naudojamas signalo savybės taip užtikrinant kiekvienos savybės lygų įvertį klasifikatoriui apibendrinant duomenis. Šiuo metu nėra įmanoma nustatyti kiek viena savybė turi įtakos bendram algoritmo atpažinimo veikimo efektyvumui.
+
+\subsection{Atraminių vektorių mašinos metodas}
+
+%% ANTRAS DARBAS
+
+Tolimesnis darbas, pateikiamas apžvalgai ``Statistical Analysis of Gait Rhythm in Patients With Parkinson's Disease'' \cite{5280353}. Šis darbas nagrinėja galimas žingsnio variacijos galimybes ir pateikia signalo nuokrypio skaičiavimą kaip pagrindinę savybę, atskiriančią kontrolinius subjektus nuo sergančių. Nagrinėjime panaudoti žingsnio pakilimo nuo žemės ilgis, žingsnio prisilietimo prie žemės ilgis ir bendras žingsnio ilgis. Duomenys gaunami iš vertikalios žemės reakcijos jėgos matavimų. Autorių teigimu, žingsnio pakilimo ir nusileidimo ilgiai turi aukštą koreliacijos koeficientą su bendro žingsnio ilgiu, todėl nagrinėjime panaudotas tik kairės kojos žingsnio ilgis (\ref{table:stance_swing_string_corr} lentelė). Gautas savybių vektorius apskaičiuotas, naudojantis ``vieno palikimo-išmetimo tarpusavio patikros'' (angl. \textit{leave-one-out cross-validation}) metodu. Jis parodė, kad mažiausių šaknų atraminių vektorių mašina (angl. \textit{Support Vector Machine}), su daugianariu branduoliu sugeba klasifikuoti duomenis su $90,32~\%$ tikslumu. 
 
 Nagrinėjime naudoti duomenis, pateikti ``Hausdorff et al'' \cite{MDS:MDS870130310}, kurie yra laisvai prieinami iš PhysioNet duomenų bazės \cite{932728}. Tokie duomenys yra panaudoti ir šiame darbe, todėl reikia įsigilinti ir į subjektus, kurie dalyvavo duomenų rinkimo metu. Tyrime dalyvavo $16$ sveikų subjektų, $20-74$ metų amžiaus. Kontroliniai subjektai yra visiškai sveiki neurologiškai, neturi jokių širdies ligų sutrikimų. Parkinsono subjektų skaičius yra $15$, kurių amžius variavo nuo $44$ iki $80$ metų. Ūgis ir svoris žymiai nesiskyrė tarp kontrolinių ir Parkinsono subjektų, todėl į tokius duomenis dėmesys nebuvo kreipiamas. Parkinsono subjektai vertinami pagal ``Hoehn and Yahr (HAY)'' vertinimo sistemą, nustatant jų ligos stadiją. Du pacientai surinko $1,5$ HAY balo (lengva stadija), keturi pacientai surinko tarp $2$ ir $2,5$ HAY balo, penki surinko $3$ HAY balo (vidutinė stadija), likusieji surinko virš $3$ HAY balų, jie turėjo žymesnių eisenos sutrikimų. 
 
@@ -95,7 +129,7 @@ Remiantis gauta pasiskirstymo funkcija, kuri žymima  $\hat{p}(x_b)$, kur $x_b, 
 \sigma^2 = \sum_{b=1}^{B} (x_b - \mu)^2 \hat{p}(x_b).
 \end{equation}
 
-Tyrimo metu nustatyta, kad Parkinsono subjektų žingsnio ilgio variacija yra žymiai padidėjusi, lyginant su kontroliniais subjektais (\ref{table:gait_corr_params} lentelė), tačiau žingsnio vidurkis lieka beveik nepakitęs. Lentelėje taip pat pateikiami signalo nuokrypio skatiklio duomenys (angl. Signal Turn Counter \textit{STC}) savybės vertės. Signalo $x(i)$ STC skaičiuojamas, remiantis tokiu loginiu ryšiu:
+Tyrimo metu nustatyta, kad Parkinsono subjektų žingsnio ilgio variacija yra žymiai padidėjusi, lyginant su kontroliniais subjektais (\ref{table:gait_corr_params} lentelė), tačiau žingsnio vidurkis lieka beveik nepakitęs. Lentelėje taip pat pateikiami signalo nuokrypio skatiklio duomenys (angl. \textit{Signal Turn Counter --STC}) savybės vertės. Signalo $x(i)$ STC skaičiuojamas, remiantis tokiu loginiu ryšiu:
 
 \begin{equation}
  if \left\{ \begin{array}{l}
@@ -133,17 +167,69 @@ Tokia savybė taip pat turi žymių skirtumų tarp kontrolinio subjekto ir Parki
 
 Iš gauto tyrimo rezultato, galima spręsti, kad bendro žingsnio, kojos pakilimo, kojos prisilietimo prie žemės signalo ilgio dispersija ($\sigma$) gali būti panaudoti kaip savybės, norint identifikuoti Parkinsono subjektą.
 
-%% ANTRAS DARBAS
 
-Tolimesnis darbas, pateikiamas apžvalgai ``Gait feature extraction in Parkinson's disease using low-cost accelerometers'' \cite{6091948}, nėra naudojama vertikali žemės reakcijos jėga, skaičiuojant savybes. Sprendime panaudoti pigūs, keturi linijinio pagreičio jutikliai. Toks sprendimas yra lengvesnis, už prieš tai apžvelgtą, kadangi jame panaudoti šešiolika vertikalios žemės reakcijos jutiklių. Nagrinėjamos Parkinsono ligos eisenos stingimo ir nesimetriškumo požymiai. Iš pirminės sprendimo apžvalgos iškarto išryškėja sprendimo trūkumas -- tiriant galimas savybes, panaudotas tik vienas Parkinsono liga sergantis ir vienas kontrolinis subjektas. Taip atliekant tyrimą, egzistuoja didelė tikimybė, kad visos gaunamos signalo eisenos savybės gali būti būdingos tik nagrinėjamam subjektui, tačiau gali visiškai negalioti kitiems subjektams ar subjektų grupei. Egzistuoja ir tokia tikimybė, kad ištirtos savybės, kurios galioja Parkinsono subjektui, gali galioti ir tyrime nedalyvavusiam kontroliniam subjektui, kadangi panaudotas tik vienas kontrolinis subjektas tyrimo metu.
 
-Nepriklausomai nuo atlikto tyrimo siaurumo, darbe pateiktos svarbios eisenos analizės išvados. Kontrolinio subjekto eisenoje nepastebėta jokių eisenos sustingimo požymių, kairės ir dešinės kojos motorinės operacijos atliekamos simetriškai, išskyrus kairės kojos kelio didžiausios amplitudės pagreičio kojos susilietimo ir pakilimo su žeme metu. Abiejų kojų susilietimo su žeme laiko ilgis simetriškas, kas ir patvirtina pusiausvyrą eiseną. Parkinsono subjektas parodė dešinės kojos eisenos sąstingio nesimetriškumą. Pacientas naudojo kompensacijos mechanizmą -- jis peržengdavo dešinės pusės judesius, kuomet pradėdavo ėjimą. Kairės pusės judesiai atliekami tik palaikant balansą. Pati eisena yra labai lėta, o sustingimas įvyksta tik dešinėje pusėje. Iš gautų rezultatų galima padaryti išvadą, kad analizuojamas pacientas visuomet bando kompensuoti eisenos pokytį, naudodamasis vieno kūno šonu. Tyrimas atliktas tik su vienu pacientu, todėl nėra galima tiksliai teigti, kad kompensacija vyksta tik iš dešinės pusės, tačiau ką galima tvirtai sakyti, kad naudojantis kompensacijos mechanizmu -- egzistuoja žingsnio variacijos tikimybė. Tokią hipotezę sėkmingai patvirtina ir prieš tai atlikta darbo analizė \cite{5280353}. Kompensacijos nebuvimas kontrolinio subjekto atveju garantuoja, kad žingsnio ilgio variacija nėra didelė, o atvirkščiai -- artės į nulį.
+
+
+
+
+\subsection{Statistinės analizės metodas}
+
+%% PENKTAS DARBAS
+
+\begin{table}
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Pagrindiniai eisenos parametrai remiantis atlikta analize \cite{6151536}}
+	\label{table:statistics_st_wa}
+	\begin{tabular}{|c|c|c|} \hline
+		\multirow{2}{*}{Žingsnio ypatybė} & Kontrolinis subjektas & Parkinsono subjektas \\ \cline{2-3}
+			& Vidurkis $\pm$ nukrypimas & Vidurkis $\pm$ nukrypimas \\ \hline
+		Žingsnio ilgis (m)    & $0,550\pm0,080$ & $0,420\pm0,200$ \\ \hline
+		Eisenos greitis (m/s) & $0,920\pm0,160$ & $0,650\pm0,330$ \\ \hline
+	\end{tabular}
+\end{table}
+
+Penktas ir paskutinis darbas apžvalgai yra gilesnės statistinės eisenos analizės darbas, ``Statistical Analysis of Parkinson Disease Gait Classification using Artificial Neural Network'' \cite{6151536}. Darbe išnagrinėtos trys grupės eisenos savybių: pagrindinės, kinetinės ir kinematinės. Pagrindinės savybės: žingsnio laikas, žingsnių skaičius per minutę, žingsnio ilgis, eisenos greitis. Kinetinės savybės: maksimalus pėdos kontaktas su žeme pagal vertikalę; maksimalus pėdos kontaktas su žeme pėdos pakilimo metu pagal vertikalę; minimali jėga tarp dviejų kojos prisilietimo prie žemės maksimumų pagal vertikalę; maksimali pėdos jėga pagal horizontalę, kuomet pėda prisiliečia prie žemės; maksimali pėdos jėga pagal horizontalę, kuomet koja pakyla nuo žemės. Kinematinės savybės: kulkšnies kampas, kuomet pėda prisiliečia prie žemės; kelio kampas, kuomet pėda prisiliečia prie žemės; klubo kampas kuomet koja prisiliečia prie žemės; maksimalus kulkšnies, kelio ir klubo kampas ėjimo metu. Duomenys išskirti tokiomis savybėmis surinkti pasitelkus slėgiui jautrų paviršių, kurio diskretizavimo dažnis yra $200$ Hz ir $37$ markerių, kurie buvo pritvirtinti prie subjektų kojų ir stebėti infraraudonųjų spindulių kamerų. Visi duomenys apdorojami \textit{Vicon\textsuperscript{\textregistered}} programinio paketo. Norint išvengti slėgiui jautriam paviršiumi surenkamų duomenų priklausomybės nuo subjektų svorio, duomenys normuojami pagal svorį:
+
+\begin{equation}
+Normuotas~GRF(\%) = \frac{GRN(N)}{Svoris (N)} * 100\%
+\end{equation}
+Iš viso duomenų surinkimo metu dalyvavo $12$ Parkinsono liga sergančių subjektų ir $20$ kontrolinių subjektų, kurie neturėjo savo ligos istorijoje jokių neurologinių susirgimų.
+
+Klasifikavimo uždaviniui spręsti panaudotas dirbtinis neuronų tinklas su daugiasluoksniu perceptronu. Duomenis algoritmui pateikiami padalinus visus turimus duomenis į keturis rinkinius.
+
+Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis ir padaryti hipotezę, kokios eisenos savybės geriausiai identifikuoja subjektų grupes. Vėliau, pagal klasifikatoriaus tikslumo ir taiklumo rezultatus, parinkti geriausius požymius, pagal kuriuos vyks subjektų atpažinimas. Pagrindiniai eisenos parametrai, kurie labiausiai skyrėsi tarp subjektų, yra pateikti \ref{table:statistics_st_wa} lentelėje. Pastebėta, kad kontrolinių subjektų žingsnio ilgis yra ilgesnis už Parkinsono subjektų žingsnio ilgį. Iš pagrindinių savybių išskirtas ėjimo greitis. Parkinsono subjektų eisenos greitis pažymėtas kaip lėtesnis, lyginant su kontroliniais subjektais. Jėgos jutiklių parametrų palyginimas parodė, kad daugiausiai informacijos pateikia minimumas, kuris yra tarp pėdos pirmo prisilietimo prie žemės maksimumo ir pėdos pakilimo nuo žemės maksimumo. Iš kinematinių savybių, didžiausias skirtumas tarp subjektų yra klubo maksimalus kampas: $19,904\pm8,623$ laipsnių kontrolinių subjektų atveju ir $11,271\pm6,157$ laipsnių Parkinsono subjektų atveju.
+
+\begin{table}
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\caption{Dirbtinių neuronų tinklo klasifikavimo rezultatai, panaudojus skirtingas savybių grupes \cite{6151536}}
+	\label{table:ann_table_results}
+	\begin{tabular}{|c|c|} \hline
+		Savybių grupė & Klasifikavimo taiklumas \\ \hline
+		Pagrindiniai & $81,25~\%$ \\ \hline
+		Kinetiniai & $81,25~\%$ \\ \hline
+		Kinematiniai & $84,38~\%$ \\ \hline
+		Pagrindiniai ir kinetiniai & $87,50~\%$ \\ \hline
+		Pagrindiniai ir kinematiniai & $87,50~\%$ \\ \hline
+		Kinetiniai ir kinematiniai & $84,38~\%$ \\ \hline
+		Pagrindiniai, kinetiniai ir kinematiniai & $87,25~\%$ \\ \hline	
+		Keturios didžiausio skirtumo savybės & $95,63~\%$ \\ \hline	
+	\end{tabular}
+\end{table}
+
+Atlikus analitinį palyginimą, toliau atliktas savybių tikrinimas klasifikatoriaus taiklumo rezultatais. Rezultatai yra pateikiami \ref{table:ann_table_results} lentelėje. Pagrindinių ir kinetinių savybių grupės surinko po vienodą klasifikavimo taiklumo rezultatą. Tai leidžia daryti išvadą, kad abi šios savybių grupės rodo panašias eisenos savybes. Kinematinių savybių taiklumo rezultatas yra $84,38~\%$ ir yra didesnis už dviejų savybių grupių taiklumą. Sujungus pagrindines ir kinetines savybių grupes pasiektas didesnis klasifikavimo taiklumo rezultatas $87,50~\%$, tokį patį rezultatą pateikė ir pagrindinių su kinematinėmis savybėmis sujungimas. Kiti galimi savybių grupių sujungimai nepateikė geresnių klasifikavimo taiklumo rezultatų. Geriausią rezultatą pateikė keturių savybių grupė, kuri paaiškėjo po atliktos statistinės analizės: žingsnio ilgis, eisenos greitis, klubo maksimumo kampas ir minimumas tarp dviejų pėdos prisilietimo prie žemės maksimumų. Klasifikavimo taiklumas $95,63~\%$.
+
+Iš aptarto darbo, šiame darbe yra panaudotos savybės savybių erdvei sudaryti, bei pritaikytas dirbtinių neuronų tinklas, klasifikavimui atlikti.
+
+\subsection{Parkinsono ligos stadijos nustatytmo metodas}
 
 %% TRECIAS DARBAS DARBAS
 
-Tolimesnė sistema apžvalgai siūlo jau konkretų algoritmą ir techninę įrangą jo įgyvendinimui -- ``Characterization of gait abnormalities in Parkinson's disease using a wireless inertial sensor system'' \cite{5627904}. Darbe panaudoti žingsnio, siūbavimo ir nuokrypio sukimo fizinės eisenos savybės ėjimo metu, panaudota principinė komponenčių analizė (angl. Principal Component Analysis (PCA)) savybių erdvės sudarymui ir palaikymo vektorių mašina (angl. support vector machine (SVM)) klasifikavimo mechanizmui įgyvendinti. Naudojama sensorinė Micro-AHRS sensorinė platforma į kurią įeina $50-g$ trijų ašių linijinio pagreičio jutiklis ir $1200~^\circ/s$ trijų ašių kampinio pagreičio jutiklis. Gautas modelis sėkmingai veikia $93~\%$ tikslumu ir taiklumu. Naudojamas svoriui jautrus (angl. cost-sensetive) apmokymas tam, kad nustatyti kokios savybės turi didesnę reikšmę formuojant savybių erdvę, bei atliekant klasifikavimą. Sprendimas atliktas, panaudojus pakankamą skaičių subjektų -- $23$ su Parkinsono ligos diagnoze ir $16$ kontroliniai subjektai, kurie neturi jokių neurologinių susirgimų ligos istorijoje. Tyrimo metu taip pat nustatytas tikslas identifikuoti mažą ir didelį eisenos sutrikimo atvejus. Iš dalyvaujančių Parkinsono subjektų, $11$ turi didelį eisenos sutrikimą, $12$ turi mažesnį eisenos sutrikimą. 
+Tolimesnė sistema apžvalgai siūlo jau konkretų algoritmą ir techninę įrangą jo įgyvendinimui -- ``Characterization of gait abnormalities in Parkinson's disease using a wireless inertial sensor system'' \cite{5627904}. Darbe panaudoti žingsnio, siūbavimo ir nuokrypio sukimo fizinės eisenos savybės ėjimo metu, panaudota PCA savybių erdvės sudarymui ir SVM klasifikavimo mechanizmui įgyvendinti. Naudojama sensorinė Micro-AHRS sensorinė platforma į kurią įeina $50-g$ trijų ašių tiesinio pagreičio jutiklis ir $1200~^\circ/s$ trijų ašių kampinio pagreičio jutiklis. Gautas modelis sėkmingai veikia $93~\%$ tikslumu ir taiklumu. Naudojamas svoriui jautrus (angl. \textit{cost-sensetive}) apmokymas tam, kad nustatyti kokios savybės turi didesnę reikšmę formuojant savybių erdvę, bei atliekant klasifikavimą. Sprendimas atliktas, panaudojus pakankamą skaičių subjektų -- $23$ su Parkinsono ligos diagnoze ir $16$ kontroliniai subjektai, kurie neturi jokių neurologinių susirgimų ligos istorijoje. Tyrimo metu taip pat nustatytas tikslas identifikuoti mažą ir didelį eisenos sutrikimo atvejus. Iš dalyvaujančių Parkinsono subjektų, $11$ turi didelį eisenos sutrikimą, $12$ turi mažesnį eisenos sutrikimą. 
 
-Tyrime iš viso panaudotos $67$ normalizuotos laiko srities savybės, kurios yra svarbios motorinei veiklai. Duomenys normalizuoti dėl skirtingų savybių amplitudės srities. Normalizacija yra labai svarbi procedūra, prieš pateikiant duomenis dimensijų mažinimo metodui. Taip yra užtikrinama, kad naudojamos savybės turi vienodą įtakos faktorių, projektuojant naują dimensijų erdvę \cite{824819}. Po dimensijų mažinimo metodo pritaikymo, liko tik $11$ savybių, kurių bendra variacija yra $80,20~\%$. Parkinsono ligos eigos sunkumui nustatyti, prie bendros savybių erdvės pridėtos dar papildomos keturios savybės. Sprendimas, pateikti klasifikatoriui dar papildomas keturias dimensijas nėra tiksliai argumentuotas. Nėra nurodyta ar savybės įterptos po dimensijų mažinimo ar prieš tai. Jeigu tai atlikta po dimensijų mažinimo, tai kelia abejonių naujai sukonstruota erdvė -- sistema nėra gerai apibendrinta, jinai yra ``priderinta'' prie esamų duomenų, todėl kelia abejonių ir pačio produkto lankstumas naujų, nematytų duomenų atžvilgiu. 
+Tyrime iš viso panaudotos $67$ normuojami laiko srities savybės, kurios yra svarbios motorinei veiklai. Duomenys normuoti dėl skirtingų savybių amplitudės srities. Normavimas yra labai svarbi procedūra, prieš pateikiant duomenis matmenų mažinimo metodui. Taip yra užtikrinama, kad naudojamos savybės turi vienodą įtakos faktorių, projektuojant naują matmenų erdvę \cite{824819}. Po matmenų mažinimo metodo pritaikymo, liko tik $11$ savybių, kurių bendra variacija yra $80,20~\%$. Parkinsono ligos eigos sunkumui nustatyti, prie bendros savybių erdvės pridėtos dar papildomos keturios savybės. Sprendimas, pateikti klasifikatoriui dar papildomus keturis matmenis, nėra tiksliai argumentuotas. Nėra nurodyta ar savybės įterptos po matmenų mažinimo ar prieš tai. Jeigu tai atlikta po matmenų mažinimo, tai kelia abejonių naujai sukonstruota erdvė -- sistema nėra gerai apibendrinta, jinai yra ``priderinta'' prie esamų duomenų, todėl kelia abejonių ir pačio produkto lankstumas naujų, nematytų duomenų atžvilgiu. 
 
 \begin{table}
 	\centering
@@ -178,87 +264,19 @@ Atliekant sudėtingesnį klasifikavimą tarp lengvos eisenos sutrikimo, sunkios 
 
 Aptartas metodas siūlo konkrečią įrangą, algoritmą ir savybes, naudojamas savybių erdvei sudaryti, tačiau užsibrėžtas tikslas pasiektas tik iš dalies -- suprojektuota sistema, naudojanti pigius vertikalaus pagreičio jutiklius, kuri atpažįsta Parkinsono liga sergančių subjektų eigos sutrikimus, tačiau sistema labai blogai atpažįsta lengvą ir sunkų eisenos sutrikimą. Nurodyta kryptimi reikia atlikti didelį darbo kiekį, norint sėkmingai identifikuoti Parkinsono ligos stadiją ir atitinkamai pateikti HAY skalės vertinimą, analizuojat žmogaus eisenos požymius.
 
-%% KETVIRTAS DARBAS
-
-Tolimesnis darbas apžvalgai yra ``A ground reaction force artificial neural network classifier for the diagnosis of Parkinson's disease'' \cite{vgtu}. Duomenys analizei panaudoti tokie patys, kokie naudojami ir šiame darbe, iš tos pačios duomenų bazės, tačiau pagrindinis nagrinėjamo darbo skirtumas yra naudojamų subjektų skaičius -- analizei pasirinkta $40$ subjektu, turinčių Parkinsono ligą ir $40$ subjektų, neturinčių neurologinių sutrikimų. Nėra argumentuota kodėl toks subjektų skaičius panaudotas analizei, kadangi duomenų bazėje yra $93$ subjektai su Parkinsono ligos sutrikimais ir $73$ kontroliniai, sveiki subjektai. Iš atliktos pirminės analizės pastebėta, kad Parkinsono subjektai vŽRJ signale turi mažiau galios aukštuose dažniuose, žemesnę pirmo ir antro maksimumo amplitudę ir pavėluotą pirmą maksimumą. Atlikta DFA (angl. Detrended fluctation analysis) parodė, kad Parkinsono subjektai turi ilgesnį vidurinį ilgo laikotarpio žingsnio pakilimo nuo žemės fazės koreliacija.
-
-Darbe panaudoti $8$ signalo požymiai: vidutinė galia tarp $0,5~Hz$ ir $1,5~Hz$ (dB), vidutinė galia tarp $1,5~Hz$ ir $20~Hz$ (dB), kojos pakilimo nuo žemės santykis viso žingsnio atžvilgiu (procentais), pirmo maksimumo reikšmė (N/BW); antro maksimumo reikšmė (N/BW), kairės kojos atliktos DFA analizės skalės $\alpha$ eksponentė, dešinės kojos atliktos DFA analizės skalės $\alpha$ eksponentė \cite{Hausdorff01011997}. Dimensijų mažinimo metodas nepritaikytas. Klasifikavimui pasirinktas dirbtinių neuronų tinklas su $8$ paslėptais neuronais, apmokymas vyko naudojantis porinio mastelio gradiento atvirkštinį dauginimą (angl. scaled conjugate gradient backpropagation algorithm). Apmokymui pasirinkta po $20$ subjektų iš kiekvienos grupės, dirbtinių neuronų tinklo tikrinimas vykdytas panaudojus po $10$ subjektų iš kiekvienos grupės, testavimas atliekamas panaudojus po $10$ subjektų duomenis iš kiekvienos grupės. Klasifikavimo taiklumas ir tikslumas yra pateikti \ref{table:vgtu_ann_scores} lentelėje. Klasifikatoriaus tikslumas yra $95~\%$, kontroliniai subjektai atpažinti su $90~\%$ taiklumu (vienas iš dešimt subjektų atpažinti klaidingai), Parkinsono liga sergantys subjektai atpažinti su $100~\%$ taiklumu, visi subjektai atpažinti teisingai.
-
-\begin{table}
-  \centering
-  \renewcommand{\arraystretch}{1.3}
-  \caption{Klasifikavimo taiklumas ir tikslumas, panaudojus dirbtinių neuronų tinklo klasifikatorių \cite{vgtu}}
-  \label{table:vgtu_ann_scores}
-  \begin{tabular}{|c|c|c|} \hline
-    & C1 & C2 \\ \hline
-    Tikslumas & 0,950 & 0,950 \\ \hline
-    Taiklumas & 0,900 & 1,000 \\ \hline
-  \end{tabular}
-\end{table}
-
-Atliktas tyrimas pateikia gerus klasifikavimo rezultatus. Metodo trūkumas yra naudojamas dirbtinių neuronų klasifikatoriaus. Jis neleidžia įžvelgti kaip būtent yra apibendrintos naudojamos savybės savybių erdvėje. Taip pat nepavaizduota kaip esami duomenys pasiskirstę savybių erdvėje. Kadangi naudojamos $8$ savybės (kas apibrėžia ir savybių erdvės dimensijų skaičių), galima panaudoti dimensijų mažinimo algoritmą ir pateikti esamus rezultatus grafiniu pavidalu, vizualinei analizei. Taip pat nurodytos savybės yra skirtingos skalės. Kiekviena iš išvardintų savybių gali turėti savo amplitudės diapazoną. Labai svarbu yra normalizuoti naudojamas signalo savybės taip užtikrinant kiekvienos savybės lygų įvertį klasifikatoriui apibendrinant duomenis. Šiuo metu nėra įmanoma nustatyti kiek viena savybė turi įtakos bendram algoritmo atpažinimo veikimo efektyvumui.
-
-%% PENKTAS DARBAS
-
-\begin{table}
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\caption{Pagrindiniai eisenos parametrai remiantis atlikta analize \cite{6151536}}
-	\label{table:statistics_st_wa}
-	\begin{tabular}{|c|c|c|} \hline
-		\multirow{2}{*}{Žingsnio ypatybė} & Kontrolinis subjektas & Parkinsono subjektas \\ \cline{2-3}
-			& Vidurkis $\pm$ nukrypimas & Vidurkis $\pm$ nukrypimas \\ \hline
-		Žingsnio ilgis (m)    & $0,550\pm0,080$ & $0,420\pm0,200$ \\ \hline
-		Eisenos greitis (m/s) & $0,920\pm0,160$ & $0,650\pm0,330$ \\ \hline
-	\end{tabular}
-\end{table}
-
-Penktas ir paskutinis darbas apžvalgai yra gilesnės statistinės eisenos analizės darbas, ``Statistical Analysis of Parkinson Disease Gait Classification using Artificial Neural Network'' \cite{6151536}. Darbe išnagrinėtos trys grupės eisenos savybių: pagrindinės, kinetinės ir kinematinės. Pagrindinės savybės: žingsnio laikas, žingsnių skaičius per minutę, žingsnio ilgis, eisenos greitis. Kinetinės savybės: maksimalus pėdos kontaktas su žeme pagal vertikalę; maksimalus pėdos kontaktas su žeme pėdos pakilimo metu pagal vertikalę; minimali jėga tarp dviejų kojos prisilietimo prie žemės maksimumų pagal vertikalę; maksimali pėdos jėga pagal horizontalę, kuomet pėda prisiliečia prie žemės; maksimali pėdos jėga pagal horizontalę, kuomet koja pakyla nuo žemės. Kinematinės savybės: kulkšnies kampas, kuomet pėda prisiliečia prie žemės; kelio kampas, kuomet pėda prisiliečia prie žemės; klubo kampas kuomet koja prisiliečia prie žemės; maksimalus kulkšnies, kelio ir klubo kampas ėjimo metu. Duomenys išskirti tokiomis savybėmis surinkti pasitelkus slėgiui jautrų paviršių, kurio diskretizavimo dažnis yra $200~Hz$ ir $37$ markerių, kurie buvo pritvirtinti prie subjektų kojų ir stebėti infraraudonųjų spindulių kamerų. Visi duomenys apdorojami \textit{Vicon\textsuperscript{\textregistered}} programinio paketo. Norint išvengti slėgiui jautriam paviršiumi surenkamų duomenų priklausomybės nuo subjektų svorio, duomenys normalizuojami pagal svorį:
-
-\begin{equation}
-Normalizuotas~GRF(\%) = \frac{GRN(N)}{Svoris (N)} * 100\%
-\end{equation}
-Iš viso duomenų surinkimo metu dalyvavo $12$ Parkinsono liga sergančių subjektų ir $20$ kontrolinių subjektų, kurie neturėjo savo ligos istorijoje jokių neurologinių susirgimų.
-
-Klasifikavimo uždaviniui spręsti panaudotas dirbtinis neuronų tinklas su daugiasluoksniu perceptronu. Duomenis algoritmui pateikiami padalinus visus turimus duomenis į keturis rinkinius.
-
-Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis ir padaryti hipotezę, kokios eisenos savybės geriausiai identifikuoja subjektų grupes. Vėliau, pagal klasifikatoriaus tikslumo ir taiklumo rezultatus, parinkti geriausius požymius, pagal kuriuos vyks subjektų atpažinimas. Pagrindiniai eisenos parametrai, kurie labiausiai skyrėsi tarp subjektų, yra pateikti \ref{table:statistics_st_wa} lentelėje. Pastebėta, kad kontrolinių subjektų žingsnio ilgis yra ilgesnis už Parkinsono subjektų žingsnio ilgį. Iš pagrindinių savybių išskirtas ėjimo greitis. Parkinsono subjektų eisenos greitis pažymėtas kaip lėtesnis, lyginant su kontroliniais subjektais. Jėgos jutiklių parametrų palyginimas parodė, kad daugiausiai informacijos pateikia minimumas, kuris yra tarp pėdos pirmo prisilietimo prie žemės maksimumo ir pėdos pakilimo nuo žemės maksimumo. Iš kinematinių savybių, didžiausias skirtumas tarp subjektų yra klubo maksimalus kampas: $19,904\pm8,623$ laipsnių kontrolinių subjektų atveju ir $11,271\pm6,157$ laipsnių Parkinsono subjektų atveju.
-
-\begin{table}
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\caption{Dirbtinių neuronų tinklo klasifikavimo rezultatai, panaudojus skirtingas savybių grupes \cite{6151536}}
-	\label{table:ann_table_results}
-	\begin{tabular}{|c|c|} \hline
-		Savybių grupė & Klasifikavimo taiklumas \\ \hline
-		Pagrindiniai & $81,25~\%$ \\ \hline
-		Kinetiniai & $81,25~\%$ \\ \hline
-		Kinematiniai & $84,38~\%$ \\ \hline
-		Pagrindiniai ir kinetiniai & $87,50~\%$ \\ \hline
-		Pagrindiniai ir kinematiniai & $87,50~\%$ \\ \hline
-		Kinetiniai ir kinematiniai & $84,38~\%$ \\ \hline
-		Pagrindiniai, kinetiniai ir kinematiniai & $87,25~\%$ \\ \hline	
-		Keturios didžiausio skirtumo savybės & $95,63~\%$ \\ \hline	
-	\end{tabular}
-\end{table}
-
-Atlikus analitinį palyginimą, toliau atliktas savybių tikrinimas klasifikatoriaus taiklumo rezultatais. Rezultatai yra pateikiami \ref{table:ann_table_results} lentelėje. Pagrindinių ir kinetinių savybių grupės surinko po vienodą klasifikavimo taiklumo rezultatą. Tai leidžia daryti išvadą, kad abi šios savybių grupės rodo panašias eisenos savybes. Kinematinių savybių taiklumo rezultatas yra $84,38~\%$ ir yra didesnis už dviejų savybių grupių taiklumą. Sujungus pagrindines ir kinetines savybių grupes pasiektas didesnis klasifikavimo taiklumo rezultatas $87,50~\%$, tokį patį rezultatą pateikė ir pagrindinių su kinematinėmis savybėmis sujungimas. Kiti galimi savybių grupių sujungimai nepateikė geresnių klasifikavimo taiklumo rezultatų. Geriausią rezultatą pateikė keturių savybių grupė, kuri paaiškėjo po atliktos statistinės analizės: žingsnio ilgis, eisenos greitis, klubo maksimumo kampas ir minimumas tarp dviejų pėdos prisilietimo prie žemės maksimumų. Klasifikavimo taiklumas $95,63~\%$.
-
-Iš aptarto darbo, šiame darbe yra panaudotos savybės savybių erdvei sudaryti, bei pritaikytas dirbtinių neuronų tinklas, klasifikavimui atlikti.
-
 \section{Signalų analizės programos kūrimas}
 
 % Kas bus pateikta šiame skyriuje ir kam to reikia?
+
+Šiame skyriuje apžvelgtos kylančios problemos kuriant signalų analizės programą, pateikti galimi jų sprendimo būdai. Skyrius prasidės bendros programos struktūrinės schemos sudarymo poskyriu. Jame pateikta bendra programos veikimo struktūra, nurodytas funkcinių modulių skaičius, kiekvieno nurodyto modulio paskirtis. Toliau aptarti galimi pirminio signalo apdorojimo etapai. Tai yra vienas iš svarbiausių programos žingsnių, kadangi nuo pirminio signalo apdorojimo kokybės priklauso ir visos programos rezultatas. Požymių išskyrimo poskyryje atliktas signalo savybių nagrinėjimas, signalo savybių analizė. Nagrinėjama savybių erdvė yra naudojama klasifikavimo metu, todėl būtina rasti tokias savybes, kurios skiriasi tarp kontrolinio ir Parkinsono subjekto. Požymio klasifikavimo programos kūrimo metu aptarti galimi naudoti klasifikatoriai, kiekvienam iš jų pateikti vienodi duomenys klasifikavimo užduočiai atlikti ir nuspręsta koks klasifikatorius geriausiai tinka nagrinėjamų savybių erdvei. Galiausiai, duomenų analizės programos kūrimo poskyryje pateiktas geriausiai užduotį atliekantis pirminis signalų apdorojimo metodas, matmenų mažinimo algoritmas, bei klasifikavimo mechanizmas.
+
+\subsection{Bendros programos struktūrinės schemos sudarymas}
 
 % Kas turi būti kuriamoje programoje?
 
 % Į ką reiktų atsižvelgti sudarant programos struktūrinę schemą?
 
 % Be kokių elementų negalima kurti programos? Koks šių elementų išdėstymo eiliškumas? 
-
-Šiame skyriuje apžvelgtos kylančios problemos kuriant signalų analizės programą, pateikti galimi jų sprendimo būdai. Skyrius prasidės bendros programos struktūrinės schemos sudarymo poskyriu. Jame pateikta bendra programos veikimo struktūra, nurodytas funkcinių modulių skaičius, kiekvieno nurodyto modulio paskirtis. Toliau aptarti galimi pirminio signalo apdorojimo etapai. Tai yra vienas iš svarbiausių programos žingsnių, kadangi nuo pirminio signalo apdorojimo kokybės priklauso ir visos programos rezultatas. Požymių išskyrimo poskyryje atliktas signalo savybių nagrinėjimas, signalo savybių analizė. Nagrinėjama savybių erdvė yra naudojama klasifikavimo metu, todėl būtina rasti tokias savybes, kurios skiriasi tarp kontrolinio ir Parkinsono subjekto. Požymio klasifikavimo programos kūrimo metu aptarti galimi naudoti klasifikatoriai, kiekvienam iš jų pateikti vienodi duomenys klasifikavimo užduočiai atlikti ir nuspręsta koks klasifikatorius geriausiai tinka nagrinėjamų savybių erdvei. Galiausiai, duomenų analizės programos kūrimo poskyryje pateiktas geriausiai užduotį atliekantis pirminis signalų apdorojimo metodas, dimensijų mažinimo algoritmas, bei klasifikavimo mechanizmas.
-
-\subsection{Bendros programos struktūrinės schemos sudarymas}
 
 \begin{figure}[!b]
   \centering
@@ -267,7 +285,7 @@ Iš aptarto darbo, šiame darbe yra panaudotos savybės savybių erdvei sudaryti
   \label{fig:pirmine_programos_schema}
 \end{figure}
 
-Priklausomai nuo taikomos metodikos, programos struktūrinės schemos skiriasi, kadangi vienas sprendimas reikalauja vieno tipo duomenų struktūros, kitas -- kitos struktūros. Programos projektavimo metu išbandyti keli programos variantai ir suprastinus veikimo schemas, kiekvienas iš programos variantų veikė pagal bendrą schemą, kurią galima apibrėžti \ref{fig:pirmine_programos_schema} pav. Reikalaujama, kad kiekvienas iš algoritmų blokų būtų nepriklausomas nuo žemiau ar aukščiau einančio bloko, kas reiškia, kad ``Pirminio signalų apdorojimo'' bloko algoritmo pakeitimas neturi turėti jokios įtakos po jo einančiam ``Savybių erdvės sudarymas'' blokui. 
+Priklausomai nuo taikomos metodikos, programos struktūrinės schemos skiriasi, kadangi vienas sprendimas reikalauja vieno tipo duomenų struktūros, kitas -- kitos struktūros. Programos projektavimo metu išbandyti kelios programos versijos ir suprastinus naudojamas veikimo schemas, kiekviena iš programos versijų veikė pagal bendrą schemą, kurią galima apibrėžti \ref{fig:pirmine_programos_schema} pav. Reikalaujama, kad kiekvienas iš algoritmų blokų būtų nepriklausomas nuo žemiau ar aukščiau einančio bloko, kas reiškia, kad ``Pirminio signalų apdorojimo'' bloko algoritmo pakeitimas neturi turėti jokios įtakos po jo einančiam ``Savybių erdvės sudarymas'' blokui. 
 
 Kiekvieno bloko užduotis:
 
@@ -276,7 +294,7 @@ Kiekvieno bloko užduotis:
 
 \item ``Pirminis signalų apdorojimas'' bloko užduotis yra pradinis signalų filtravimas, nuolatinės komponentės pašalinimas. Taip pat, į šį bloką įeina ir atskirų signalų išskyrimas iš bendrai gaunamo signalo: pėdos prisilietimas prie žemės signalas ir pėdos pėdos pakilimo nuo žemės signalas. Į bloką taip pat įeina ir slankiojančio lango algoritmo taikymas.
 
-\item ``Savybių erdvės sudarymas'' bloko paskirtis yra pateikti pasirinktam klasifikatoriui išskirtas signalų savybes po pirminio signalo apdorojimo. Tokiomis savybės gali būti signalų dažninės komponentės (Furjė koeficientai), koreliacijos koeficientai tarp dešinės ir kairės kojos, savi-koreliacijos koeficientai dešinės ar kairės kojos. Detaliau nagrinėjamas savybes aptartos tolimesniuose poskyriuose. Į bloką taip pat įeina ir darbas su dimensijomis -- dimensijų skaičiaus mažinimas ar naujos erdvės paieška, kurioje nagrinėjami duomenys yra geriau tiesiškai atskiriami.
+\item ``Savybių erdvės sudarymas'' bloko paskirtis yra pateikti pasirinktam klasifikatoriui išskirtas signalų savybes po pirminio signalo apdorojimo. Tokiomis savybės gali būti signalų dažninės komponentės (Furjė koeficientai), koreliacijos koeficientai tarp dešinės ir kairės kojos, savi-koreliacijos koeficientai dešinės ar kairės kojos. Detaliau nagrinėjamas savybes aptartos tolimesniuose poskyriuose. Į bloką taip pat įeina ir darbas su matmenimis -- matmenų skaičiaus mažinimas ar naujos erdvės paieška, kurioje nagrinėjami duomenys yra geriau tiesiškai atskiriami.
 
 \item ``Klasifikatoriaus modelio sudarymas'' bloko paskirtis yra klasifikatoriaus apmokymas ir jo testavimas. Klasifikatoriaus pasirinkimas yra labai svarbus klausimas darbe. Jis turi būti parinktas argumentuotai, išanalizavus kiekvieno naudojamo klasifikatoriaus taiklumo ir tikslumo rezultatus. Svarbus klasifikatoriaus aspektas yra savybių erdvės bendro dėsnio radimas arba erdvės aproksimacija. Šį faktą galima apibrėžti iš klasifikatoriaus rezultatų grafiko. Jeigu ilgą laiko tarpą į klasifikatorių yra siunčiami vienos klasės duomenys, o klasifikavimo rezultatai yra nestabilus, ilgą laiką neturintis pastovaus rezultato, vadinasi, galima teigti, kad klasifikatorius blogai atliko erdvės duomenų pasiskirstymo dėsnio aproksimavimą, jis nėra tinkamas nagrinėjamai savybių erdvei.
 \end{enumerate}
@@ -300,7 +318,7 @@ Programos kūrimo patogumui, parinkta direktorijų architektūra:
 
 Kadangi programos kūrimo metu yra svarbu saugoti ankstesnes programos versijas, parinktas kasdienis programos versijos saugojimas: kiekvienos pradžioje darbas pradedamas su ankstesnės dienos kopija. Taip buvo išsaugotas kiekvienos darbo dienos programos versija ir taip galima peržiūrėti kokiu analitiniu keliu eita prie dabartinės programos versijos.
 
-Pirmoji funkcija, priklausanti pirminio signalo apdorojimo programai yra $read\_data$. Funkcijos kodas pateikiamas \ref{code:read_data} pav.
+% @REWRITE
 
 \begin{cfigure}
   \centering
@@ -309,7 +327,7 @@ Pirmoji funkcija, priklausanti pirminio signalo apdorojimo programai yra $read\_
   \lstinputlisting{sources/read_data.m}
 \end{cfigure}
 
-Funkcijai užtenka nurodyti tik norimos nuskaityti bylos pavadinimą, kaip pavyzdžiui ``SiPt30\_01.txt'' ir funkcija gražins kairės kojos duomenis. Duomenų analizėje naudojami tik vienos kojos duomenis, kadangi dešinės ir kairės kojos duomenys yra stipriai koreliuoti \cite{16053531}, todėl nėra prasmės naudoti dviejų kojų duomenų. Pasirinkus tokį sprendimą taip pat yra sumažinamas skaičiavimų skaičius programoje. Duomenų bazės direktorija nurodyti kintamojo vietoje yra taip pat svarbus aspektas, kadangi pakitus duomenų bazės vietai, užteks tik pakeisti vieną kintamąjį, o ne visą kodą, nors kodas ir nėra ilgas. Matlab funkcija $dlmread$ gražina duomenis masyvo pavidalu, kur stulpelis nurodo įvade aptartus duomenis, o eilutė nurodo duomenų vertes tam tikru laiko momentu.
+Pirmoji funkcija, priklausanti pirminio signalo apdorojimo programai yra $read\_data$. Funkcijos kodas pateikiamas \ref{code:read_data} pav. Funkcijai užtenka nurodyti tik norimos nuskaityti bylos pavadinimą, kaip pavyzdžiui ``SiPt30\_01.txt'' ir funkcija gražins kairės kojos duomenis. Duomenų analizėje naudojami tik vienos kojos duomenis, kadangi dešinės ir kairės kojos duomenys yra stipriai koreliuoti \cite{16053531}, todėl nėra prasmės naudoti dviejų kojų duomenų. Pasirinkus tokį sprendimą taip pat yra sumažinamas skaičiavimų skaičius programoje. Duomenų bazės direktorija nurodyti kintamojo vietoje yra taip pat svarbus aspektas, kadangi pakitus duomenų bazės vietai, užteks tik pakeisti vieną kintamąjį, o ne visą kodą, nors kodas ir nėra ilgas. Matlab funkcija $dlmread$ gražina duomenis masyvo pavidalu, kur stulpelis nurodo įvade aptartus duomenis, o eilutė nurodo duomenų vertes tam tikru laiko momentu.
 
 \begin{cfigure}
   \centering
@@ -333,7 +351,7 @@ Funkcija yra tiek lanksti, kad nėra svarbu kokio tipo duomenys yra pateikiami -
   \end{lstlisting}
 \end{cfigure}
 
-Sekanti programos dalis atlieka paprastą signalo filtravimą su dvejais $Butterworth$ skaitmeniniais filtrais. Pirmasis, aukštų dažnių filtras, skirtas pašalinti signalo nuolatinei komponentei. Antras, žemų dažnių filtras, skirtas pašalinti aukšto dažnio triukšmą, kuris neneša visiškai jokios naudingos informacijos. Filtras įgyvendinamas labai paprastai. Kodo pavyzdys pateikiamas \ref{code:filter} pav. Abiejų filtrų eilė yra 9-ta, žemų dažnių filtro ribinis dažnis parinktas $40~Hz$. Duomenys diskretizuojami $100~Hz$ dažniu, vadinasi didžiausias galimas signalo dažnis yra $50~Hz$. Didžiausias žmogaus generuojamas dažnis ėjimo metu, remiantis šaltiniu, yra $20~Hz$. Užtikrintumui parinktas $40~Hz$ dažnis. Nuolatinė dedamoji pašalinama su aukšto dažnio filtru, kurio ribinis dažnis yra $1~Hz$. Nuolatinė dedamoji neneša jokios informacijos apie eisena, kadangi ji tiktais nurodo naudojamų jutiklių jautrumą.
+Sekanti programos dalis atlieka paprastą signalo filtravimą su dvejais $Butterworth$ skaitmeniniais filtrais. Pirmasis, aukštų dažnių filtras, skirtas pašalinti signalo nuolatinei komponentei. Antras, žemų dažnių filtras, skirtas pašalinti aukšto dažnio triukšmą, kuris neneša visiškai jokios naudingos informacijos. Filtras įgyvendinamas labai paprastai. Kodo pavyzdys pateikiamas \ref{code:filter} pav. Abiejų filtrų eilė yra 9-ta, žemų dažnių filtro ribinis dažnis parinktas $40$ Hz. Duomenys diskretizuojami $100$ Hz dažniu, vadinasi didžiausias galimas signalo dažnis yra $50$ Hz. Didžiausias žmogaus generuojamas dažnis ėjimo metu, remiantis šaltiniu, yra $20$ Hz. Užtikrintumui parinktas $40$ Hz dažnis. Nuolatinė dedamoji pašalinama su aukšto dažnio filtru, kurio ribinis dažnis yra $1$ Hz. Nuolatinė dedamoji neneša jokios informacijos apie eisena, kadangi ji tiktais nurodo naudojamų jutiklių jautrumą.
 
 \begin{cfigure}
   \centering
@@ -344,7 +362,7 @@ Sekanti programos dalis atlieka paprastą signalo filtravimą su dvejais $Butter
 
 Toliau seka, priklausomai nuo pasirinkto pirminio signalų apdorojimo būdo, signalo išskyrimas pagal fizinę veiklą. Dominančios signalo būsenos yra, kai subjekto koja turi kontaktą su žeme ir nurodytas subjektas neturi kontakto su žeme. Kontakto su žeme signalo išskyrimui programos kodas yra pateikiamas \ref{code:signal_extraction} pav.
 
-Pirmiausiai, ``Pt\_t'' kintamojo struktūroje yra saugoma kairės kojos Parkinsono liga sergančių subjektų duomenys. Kiekvienas signalas yra priskiriamas prie $signal$ kintamojo, su kuriuo toliau yra tęsiamas apdorojimo procesas. Jeigu signalas nėra lygus nuliui, tuomet jis įdedamas į laikinąją atmintį. Taip signalas yra tikrinamas iki tol, kol signalas tampa lygus nuliui ir tęsiamas tolimesnis apdorojimas. Apdorojimas susideda iš signalo ilgio patikros. Jeigu signalas yra trumpesnis už 10 verčių, arba turint omenyje, kad signalas diskretizuojamas $100~Hz$, tai $0,1~s$, vadinasi, signalas yra tiesiog aukšto dažnio triukšmas arba blogas pavyzdys ir signalas yra atmetamas. Jeigu signalas yra ilgesnis už 200 verčių ($2~s$), vadinasi, duomenų rinkimo metu įvyko klaida ir koja per tokį laiką nebuvo pakelta. Tokia klaida gali būti sukelta, kuomet subjektas ne eina, o stovi ant dviejų kojų arba tik ant kairės kojos. Jeigu visi kriterijai patenkinami, signalas yra priimamas ir kraunamas į laikinąją atmintį, pavadinimu ``$data.Pt$''. Signalas, kuriuo metu koja neliečia žemės, yra randamas kartu su ankščiau išnagrinėtu metu. Algoritmas patikrina kiek praėjo laiko (arba kiek verčių yra priskaičiuota) nuo paskutinio užskaityto kojos ant žemės signalo ir įrašo tą signalą į laikiną atmintį, jeigu po praeito signalo nepraėjo mažiau negu 50 verčių arba $0,5~s$ ir nedaugiau nei 200 verčių arba $2~s$. Kojos signalas yra pateiktas \ref{fig:stance_phase} pav.
+Pirmiausiai, ``Pt\_t'' kintamojo struktūroje yra saugoma kairės kojos Parkinsono liga sergančių subjektų duomenys. Kiekvienas signalas yra priskiriamas prie $signal$ kintamojo, su kuriuo toliau yra tęsiamas apdorojimo procesas. Jeigu signalas nėra lygus nuliui, tuomet jis įdedamas į laikinąją atmintį. Taip signalas yra tikrinamas iki tol, kol signalas tampa lygus nuliui ir tęsiamas tolimesnis apdorojimas. Apdorojimas susideda iš signalo ilgio patikros. Jeigu signalas yra trumpesnis už 10 verčių, arba turint omenyje, kad signalas diskretizuojamas $100$ Hz, tai $0,1$ s, vadinasi, signalas yra tiesiog aukšto dažnio triukšmas arba blogas pavyzdys ir signalas yra atmetamas. Jeigu signalas yra ilgesnis už 200 verčių ($2$ s), vadinasi, duomenų rinkimo metu įvyko klaida ir koja per tokį laiką nebuvo pakelta. Tokia klaida gali būti sukelta, kuomet subjektas ne eina, o stovi ant dviejų kojų arba tik ant kairės kojos. Jeigu visi kriterijai patenkinami, signalas yra priimamas ir kraunamas į laikinąją atmintį, pavadinimu ``$data.Pt$''. Signalas, kuriuo metu koja neliečia žemės, yra randamas kartu su ankščiau išnagrinėtu metu. Algoritmas patikrina kiek praėjo laiko (arba kiek verčių yra priskaičiuota) nuo paskutinio užskaityto kojos ant žemės signalo ir įrašo tą signalą į laikiną atmintį, jeigu po praeito signalo nepraėjo mažiau negu 50 verčių arba $0,5$ s ir nedaugiau nei 200 verčių arba $2$ s. Kojos signalas yra pateiktas \ref{fig:stance_phase} pav.
 
 \begin{figure}[!t]
   \centering
@@ -378,38 +396,38 @@ Pirminio signalų apdorojimo programa baigiasi nurodytais metodais. Sekantis ži
 
 \subsection{Požymių išskyrimo programos kūrimas}
 
-Požymių išskyrimas priklauso nuo pirminio signalo apdorojimo mechanizmo. Jeigu ankstesniame bloke pakeisime ribinį filtro dažnį ir kaip nagrinėjamą požymį yra parinkti koreliacijos koeficientai ar dažninės komponentės -- požymio vektorius pakis, todėl prieš kiekvieną požymių analizavimo ciklą yra pateikta ir pirminiam signalų apdorojimo bloke naudojami metodai. Taip pat, kadangi požymių išskyrimo programos kūrimas taip pat sprendžia ir dimensijų klausimą -- skyriaus pradžioje trumpai apžvelgti populiariausi šiame darbe panaudoti dimensijų mažinimo metodai.
+Požymių išskyrimas priklauso nuo pirminio signalo apdorojimo mechanizmo. Jeigu ankstesniame bloke pakeisime ribinį filtro dažnį ir kaip nagrinėjamą požymį yra parinkti koreliacijos koeficientai ar dažninės komponentės -- požymio vektorius pakis, todėl prieš kiekvieną požymių analizavimo ciklą yra pateikta ir pirminiam signalų apdorojimo bloke naudojami metodai. Taip pat, kadangi požymių išskyrimo programos kūrimas taip pat sprendžia ir matmenų klausimą -- skyriaus pradžioje trumpai apžvelgti populiariausi šiame darbe panaudoti matmenų mažinimo metodai.
 
-\subsubsection{Dimensijų mažinimas}
+\subsubsection{Matmenų mažinimas}
 
-Dimensijų mažinimas suteikia dideles galimybes supaprastinti klasifikavimo uždavinį. Kuomet duomenys savybių erdvėje nėra linijiškai atskirti, yra sunku nustatyti ar klasifikatorius ras apibendrintą duomenų praskyrimo funkciją. Norint užtikrinti, kad klasifikatorius veiks teisingai -- yra atliekamas dimensijų praskyrimas. Metodas taip pat taikomas, kuomet norima sumažinti dimensijų skaičių. Problema iškyla, kuomet norima įgyvendinti sukurtą sprendimą įterptinėje sistemoje, kurioje negalima pasiekti didelių aparatinių resursų. Turint didelių dimensijų duomenis taip pat kyla ir pačios sistemos kaina, dėl tų pačių aparatinių resursų reikalavimų. Norint išvengti tokių problemų -- taikomi dimensijų mažinimo algoritmai. Populiariausi dimensijų mažinimo algoritmai yra:
+Matmenų mažinimas suteikia dideles galimybes supaprastinti klasifikavimo uždavinį. Kuomet duomenys savybių erdvėje nėra tiesiškai atskirti, yra sunku nustatyti ar klasifikatorius ras apibendrintą duomenų praskyrimo funkciją. Norint užtikrinti, kad klasifikatorius veiks teisingai -- yra atliekamas matmenų praskyrimas. Metodas taip pat taikomas, kuomet norima sumažinti matmenų skaičių. Problema iškyla, kuomet norima įgyvendinti sukurtą sprendimą įterptinėje sistemoje, kurioje negalima pasiekti didelių aparatinių resursų. Turint didelių matmenų duomenis taip pat kyla ir pačios sistemos kaina, dėl tų pačių aparatinių resursų reikalavimų. Norint išvengti tokių problemų -- taikomi matmenų mažinimo algoritmai. Populiariausi matmenų mažinimo algoritmai yra:
 
 \begin{itemize}
-\item Linijinė diskrtiminanto analizė (angl. Linear Discriminant Analysis (LDA));
-\item Principinė komponenčių analizė (angl. Principal Component Analysis (PCA)).
+\item Tiesinė diskrtiminanto analizė (angl. \textit{Linear Discriminant Analysis -- LDA});
+\item Principinė komponenčių analizė (angl. \textit{Principal Component Analysis PCA}).
 \end{itemize}
 
-Taip pat, kiekvienas iš paminėtų būdu taip pat gali būti papildytas branduolio (angl. Kernel) funkcija. Metodų apibūdinimas pradėtas nuo paprasčiausios iš dviejų -- PCA.
+Taip pat, kiekvienas iš paminėtų būdu taip pat gali būti papildytas branduolio (angl. \textit{Kernel}) funkcija. Metodų apibūdinimas pradėtas nuo paprasčiausios iš dviejų -- PCA.
 
-Principinė komponenčių analizė \cite{citeulike:2695782} yra statmena ir paprasta transformacija, kuri yra daug kur naudojama dėl paprastos matematinės pusės ir lengvo įgyvendinimo. Egzistuoja skirtingi PCA metodo įgyvendinimo algoritmai. Vienas iš jų yra vienetinės reikšmės skaidymas (angl. Singular Value Decomposition (SVD)). Literatūroje PCA ir SVD dažniausiai minimi kaip sinonimai. SVD yra greitas, tačiau didelių atminties resursų reikalaujantis metodas. Kuomet dideli atminties resursai nėra prieinami (įterptinėje sistemoje), reikia naudoti kitą įgyvendinimo variantą -- naudoti tikrinių vektorių skaidymą. Toks sprendimas užima didesnius laiko resursus, lyginant su SVD, tačiau jam reikia mažesnių atminties resursų ir jis tinka nagrinėti didelių dimensijų duomenis. Toks sprendimas taikomas ir šiame darbe. PCA įgyvendinimas naudojant SVD ir tikrinių vektorių skaidymą yra pateiktas priede. Toliau seka PCA matematinis nagrinėjimas.
+Principinė komponenčių analizė \cite{citeulike:2695782} yra statmena ir paprasta transformacija, kuri yra daug kur naudojama dėl paprastos matematinės pusės ir lengvo įgyvendinimo. Egzistuoja skirtingi PCA metodo įgyvendinimo algoritmai. Vienas iš jų yra vienetinės reikšmės skaidymas (angl. \textit{Singular Value Decomposition -- SVD}). Literatūroje PCA ir SVD dažniausiai minimi kaip sinonimai. SVD yra greitas, tačiau didelių atminties resursų reikalaujantis metodas. Kuomet dideli atminties resursai nėra prieinami (įterptinėje sistemoje), reikia naudoti kitą įgyvendinimo versiją -- naudoti tikrinių vektorių skaidymą. Toks sprendimas užima didesnius laiko resursus, lyginant su SVD, tačiau jam reikia mažesnių atminties resursų ir jis tinka nagrinėti didelių matmenų duomenis. Toks sprendimas taikomas ir šiame darbe. PCA įgyvendinimas naudojant SVD ir tikrinių vektorių skaidymą yra pateiktas priede. Toliau seka PCA matematinis nagrinėjimas.
 
-Matematiškai, PCA apibrėžiamas kaip statmena linijinė transformacija, kuri transformuoja duomenis į naują koordinačių sistemą, kurioje didžiausią variaciją projektuojama į pirmą ašį, antroji didžiausia variacija (statmena pirmajai) projektuojama į antrą ašį. Procesas tęsiasi tol, kol yra pasiekiamas norimas dimensijų skaičius.
+Matematiškai, PCA apibrėžiamas kaip statmena tiesinė transformacija, kuri transformuoja duomenis į naują koordinačių sistemą, kurioje didžiausią variaciją projektuojama į pirmą ašį, antroji didžiausia variacija (statmena pirmajai) projektuojama į antrą ašį. Procesas tęsiasi tol, kol yra pasiekiamas norimas matmenų skaičius.
 
-Apibrėžta duomenų matrica $\textbf{X}^T$, su empiriniu vidurkiu, kuris lygus nuliui (empirinis vidurkis reiškia vidurkio apskaičiavimą ir jo atėmimą iš duomenų), kur kiekviena eilutė $n$ atspindi duomenų rinkinį, o stulpelis $m$ -- turimas duomenų dimensijas. Matricos $\textbf{X}$ vienetinės reikšmės skaidymas išreiškiamas:
+Apibrėžta duomenų matrica $\textbf{X}^T$, su empiriniu vidurkiu, kuris lygus nuliui (empirinis vidurkis reiškia vidurkio apskaičiavimą ir jo atėmimą iš duomenų), kur kiekviena eilutė $n$ atspindi duomenų rinkinį, o stulpelis $m$ -- turimas duomenų matmenis. Matricos $\textbf{X}$ vienetinės reikšmės skaidymas išreiškiamas:
 
 \begin{equation}
   \mathbf{X} = \mathbf{W} \Sigma \mathbf{V}^T,
 \end{equation}
-kur $m*n$ matrica $\mathbf{W}$ yra matricos $\textbf{XX}^T$ tikrinių vektorių matrica, $\Sigma$ matrica yra $m*n$ stačiakampio įstrižainės matrica su realiais skaičiais įstrižainėje ir $n*n$ tikrinių vektorių $\mathbf{X}^T\mathbf{X}$ matrica $\mathbf{V}$. PCA transformacija, kuri sukonstruoja naujas dimensijas, yra apibrėžiama:
+kur $m*n$ matrica $\mathbf{W}$ yra matricos $\textbf{XX}^T$ tikrinių vektorių matrica, $\Sigma$ matrica yra $m*n$ stačiakampio įstrižainės matrica su realiais skaičiais įstrižainėje ir $n*n$ tikrinių vektorių $\mathbf{X}^T\mathbf{X}$ matrica $\mathbf{V}$. PCA transformacija, kuri sukonstruoja naujas matmenis, yra apibrėžiama:
 
 \begin{equation}
   \mathbf{Y}^T = \mathbf{X}^T \mathbf{W} = \mathbf{V} \Sigma^T
   \mathbf{W}^T \mathbf{W} = \mathbf{V} \Sigma^T .
 \end{equation}
 
-Kadangi $\textbf{W}$ yra statmena matrica, kiekviena $\textbf{Y}^T$ eilutė yra matricos $\textbf{X}^T$ eilutės sukimas. Pirmasis $\textbf{Y}^T$ stulpelis yra pirmosios komponentės rezultatas, antras stulpelis yra antrosios komponentės rezultatas. Kiek stulpelių $\textbf{Y}^T$ turi, tiek ir rezultatų (dimensijų) yra po transformacijos. Matlab aplinkoje 
+Kadangi $\textbf{W}$ yra statmena matrica, kiekviena $\textbf{Y}^T$ eilutė yra matricos $\textbf{X}^T$ eilutės sukimas. Pirmasis $\textbf{Y}^T$ stulpelis yra pirmosios komponentės rezultatas, antras stulpelis yra antrosios komponentės rezultatas. Kiek stulpelių $\textbf{Y}^T$ turi, tiek ir rezultatų (matmenų) yra po transformacijos. Matlab aplinkoje 
 
-Linijinė diskriminanto analizė \cite{welling2005fisher} yra dimensijų mažinimo metodas (kuris kartu yra naudojamas kaip ir klasifikatorius), yra vienas iš metodų, kuris neša kartu ir duomenų žymėjimo informaciją. Tai reiškia, kad mažinant dimensijų skaičių, metodas turi žinoti kokie duomenys priklauso kokiai duomenų klasei. Pagrindinis LDA tikslas yra didinti sekantį kriterijų:
+Tiesinė diskriminanto analizė \cite{welling2005fisher} yra matmenų mažinimo metodas (kuris kartu yra naudojamas kaip ir klasifikatorius), yra vienas iš metodų, kuris neša kartu ir duomenų žymėjimo informaciją. Tai reiškia, kad mažinant matmenų skaičių, metodas turi žinoti kokie duomenys priklauso kokiai duomenų klasei. Pagrindinis LDA tikslas yra didinti sekantį kriterijų:
 
 \begin{equation}
   \mathfrak{J}(\mathbf{w}) = \frac{ \mathbf{w}^T S_B \mathbf{w} }{
@@ -471,7 +489,7 @@ Galimų savybių analizavimas gali būti pradėtas nuo signalo dažninių kompon
 \end{figure}
 
 
-Toliau seka išanalizuotos Parkinsono liga sergančių subjektų ir kontrolinių subjektų žingsnių signalų dažninės komponentės. Kontrolinių subjektų kairės kojos žingsnių dažninės komponentės yra pateiktos \ref{fig:co_fft} pav. Parkinsono liga sergančių subjektų kairės kojos žingsnių dažninės komponentės yra pateiktos \ref{fig:pt_fft} pav. Kaip matoma iš duotų komponenčių grafikų -- tiek kontrolinių subjektų, tiek Parkinsono liga sergančių subjektų pagrindinės dažninės komponentės išsidėsto iki $5~Hz$ ruože. Ties $0~Hz$ dažninių komponenčių nėra, kadangi jos pašalintos filtro pagalba. Už $10~Hz$ ribos, komponentės neneša visiškai jokios informacijos. Iš to galima padaryti išvadą, kad tiek Parkinsono liga sergančių subjektų, tiek kontrolinių subjektų eisenos yra visiškai vienodos dažnių srityje ir vien remiantis šita informacija nėra galima nustatyti ar subjektas serga Parkinsono liga ar ne.
+Toliau seka išanalizuotos Parkinsono liga sergančių subjektų ir kontrolinių subjektų žingsnių signalų dažninės komponentės. Kontrolinių subjektų kairės kojos žingsnių dažninės komponentės yra pateiktos \ref{fig:co_fft} pav. Parkinsono liga sergančių subjektų kairės kojos žingsnių dažninės komponentės yra pateiktos \ref{fig:pt_fft} pav. Kaip matoma iš duotų komponenčių grafikų -- tiek kontrolinių subjektų, tiek Parkinsono liga sergančių subjektų pagrindinės dažninės komponentės išsidėsto iki $5$ Hz ruože. Ties $0$ Hz dažninių komponenčių nėra, kadangi jos pašalintos filtro pagalba. Už $10$ Hz ribos, komponentės neneša visiškai jokios informacijos. Iš to galima padaryti išvadą, kad tiek Parkinsono liga sergančių subjektų, tiek kontrolinių subjektų eisenos yra visiškai vienodos dažnių srityje ir vien remiantis šita informacija nėra galima nustatyti ar subjektas serga Parkinsono liga ar ne.
 
 Tolimesnė analizė gali būti atlikta, remiantis koreliacijos koeficientais. Analizuojant šias savybes, galima remtis tokiu pačiu pirminiu signalo apdorojimo bloku, kaip ir analizuojant dažnines komponentes. Dėl to, kad esama tikrais kairės kojos signalai, galima taikyti tik savi-koreliacijos koeficientus. Narinėjama savybė parodė efektyviai identifikavo subjektus, remiantis eisenos duomenimis, ankstesniame tyrime, kuriame, remiantis tiesinio pagreičio ir kampinio pagreičio jutiklių parodymais, reikėjo suprojektuoti algoritmą, gebantį atskirti tokias žmogaus veiklas: stovėjimas, ėjimas, ėjimas aukštyn laiptais, ėjimas žemyn laiptais.
 
@@ -498,7 +516,7 @@ Kontrolinių subjektų kairės kojos savi-koreliacijos koeficientai parodyti \re
   \label{fig:max_min}
 \end{figure}
 
-Sudėtingesnė analizė seka iš dviejų globalių maksimumų ir vieno lokalaus minimumo savybių erdvės. Šios tris savybės sudaro trijų dimensijų plokštumą, kurią galima lengvai pavaizduoti. Pilna savybių erdvė pavaizduota \ref{fig:max_min} pav. Kaip matosi iš duotos erdvės, duomenys neturi jokio koncentracijos centro. Erdvėje jie pasiskirstę pagal nežinomą dėsnį.
+Sudėtingesnė analizė seka iš dviejų globalių maksimumų ir vieno lokalaus minimumo savybių erdvės. Šios tris savybės sudaro trijų matmenų plokštumą, kurią galima lengvai pavaizduoti. Pilna savybių erdvė pavaizduota \ref{fig:max_min} pav. Kaip matosi iš duotos erdvės, duomenys neturi jokio koncentracijos centro. Erdvėje jie pasiskirstę pagal nežinomą dėsnį.
 
 Tokių duomenų pateikti klasifikavimui nėra galima. Grafike ``Co'' taškai, pažymėti kryžiumi, parodo kontrolinį subjektą, ``Pt'' taškai, pažymėti apskritimu, parodo Parkinsono liga sergančius subjektus.
 
@@ -511,7 +529,7 @@ Sekančios savybės nagrinėjimui yra siūlomos atliktų tyrimų \cite{16053531,
   \label{fig:stance_swing_extract}
 \end{figure}
 
-Išskiriant variacijos savybes iš signalo, reikalinga nuo pagrindų pakeisti pirminio signalo apdorojimo algoritmą. Kadangi kojos pakilimas nuo žemės ir kojos susilietimas su žeme gali būti vienas nuo kito nepriklausomi (subjektas sustojo ir stovi dviem kojomis ant žemės arba subjektas stovi tik ant kairės kojos), pirminis signalo apdorojimas turi būti atliekamas lygiagrečiai, t.y. tuo pat metu išskiriamas tiek kojos pakilimo nuo žemės signalas, tiek ir kojos susilietimas su žeme signalas. Tokios sistemos struktūrinis grafikas yra parodytas \ref{fig:stance_swing_extract} pav. Sekantis žingsnis yra signalo išskaidymas slankiojančio lango principu. Abiejų signalų slankiojančio lango ilgis parinktas $4$ verčių ilgio, su $2$ verčių perdanga. Kuomet tiek kojos susilietimo su žeme, tiek kojos pakilimo nuo žemės keturi signalai patenkina keliamus reikalavimus -- iš jų yra apskaičiuojami signalų ilgiai. Vėliau, abiejų etapų signalams yra paskaičiuojama jų variacija ir taip yra sudaroma savybių erdvė. Toliau nagrinėjamos abiejų signalų variacijos vienos dimensijos plokštumoje.
+Išskiriant variacijos savybes iš signalo, reikalinga nuo pagrindų pakeisti pirminio signalo apdorojimo algoritmą. Kadangi kojos pakilimas nuo žemės ir kojos susilietimas su žeme gali būti vienas nuo kito nepriklausomi (subjektas sustojo ir stovi dviem kojomis ant žemės arba subjektas stovi tik ant kairės kojos), pirminis signalo apdorojimas turi būti atliekamas lygiagrečiai, t.y. tuo pat metu išskiriamas tiek kojos pakilimo nuo žemės signalas, tiek ir kojos susilietimas su žeme signalas. Tokios sistemos struktūrinis grafikas yra parodytas \ref{fig:stance_swing_extract} pav. Sekantis žingsnis yra signalo išskaidymas slankiojančio lango principu. Abiejų signalų slankiojančio lango ilgis parinktas $4$ verčių ilgio, su $2$ verčių perdanga. Kuomet tiek kojos susilietimo su žeme, tiek kojos pakilimo nuo žemės keturi signalai patenkina keliamus reikalavimus -- iš jų yra apskaičiuojami signalų ilgiai. Vėliau, abiejų etapų signalams yra paskaičiuojama jų variacija ir taip yra sudaroma savybių erdvė. Toliau nagrinėjamos abiejų signalų variacijos vieno matmens plokštumoje.
 
 \begin{figure}[!t]
   \centering
@@ -527,7 +545,7 @@ Išskiriant variacijos savybes iš signalo, reikalinga nuo pagrindų pakeisti pi
   \label{fig:swing_var}
 \end{figure}
 
-Abiejų signalų variacijų pasiskirstymai yra parodyti \ref{fig:stance_var} pav. ir \ref{fig:swing_var} pav. Abu pasiskirstymai turi vieną trūkumą -- jų vidurkiai sutampa, tačiau gera žinia yra tai, kad jų variacijos skirtingos. Norint išspręsti iškilusią problemą, reikia taikyti dimensijų praskyrimo metodus. Darbo metu išbandyti tokie dimensijų praskyrimo metodai:
+Abiejų signalų variacijų pasiskirstymai yra parodyti \ref{fig:stance_var} pav. ir \ref{fig:swing_var} pav. Abu pasiskirstymai turi vieną trūkumą -- jų vidurkiai sutampa, tačiau gera žinia yra tai, kad jų variacijos skirtingos. Norint išspręsti iškilusią problemą, reikia taikyti matmenų praskyrimo metodus. Darbo metu išbandyti tokie matmenų praskyrimo metodai:
 
 \begin{itemize}
 \item PCA;
@@ -543,7 +561,7 @@ Abiejų signalų variacijų pasiskirstymai yra parodyti \ref{fig:stance_var} pav
   \label{fig:linear_pca}
 \end{figure}
 
-Vienmatė linijinė PCA transformacija pavaizduota \ref{fig:linear_pca} pav. Vizualiai įvertinus gaunamą grafiką -- vidurkis nepasikeitė, tačiau pakito variacija. Vidurkio pokyčio nėra pastebima, todėl teikti duomenis klasifikavimui nėra prasmės, kadangi to pačio vidurkio duomenis atskirti nėra įmanoma.
+Vienmatė tiesinė PCA transformacija pavaizduota \ref{fig:linear_pca} pav. Vizualiai įvertinus gaunamą grafiką -- vidurkis nepasikeitė, tačiau pakito variacija. Vidurkio pokyčio nėra pastebima, todėl teikti duomenis klasifikavimui nėra prasmės, kadangi to pačio vidurkio duomenis atskirti nėra įmanoma.
 
 \begin{figure}[!t]
   \centering
@@ -552,7 +570,7 @@ Vienmatė linijinė PCA transformacija pavaizduota \ref{fig:linear_pca} pav. Viz
   \label{fig:linear_lda}
 \end{figure}
 
-Sekantis metodas yra LDA. Transformacijos rezultatas yra pavaizduotas \ref{fig:linear_lda} pav. Vizualiai įvertinus gaunamą grafiką -- tiek po LDA, tiek po PCA duomenų pasiskirstymas nėra gerai atskirtas. Galima daryti hipotezę, kad linijinis duomenų atskyrimas šiuo atveju naudoti nėra tinkamas. Reikia papildyti esamus algoritmus branduolio metodu ir papildyti transformacijas daugianariu arba Gauso branduoliu.
+Sekantis metodas yra LDA. Transformacijos rezultatas yra pavaizduotas \ref{fig:linear_lda} pav. Vizualiai įvertinus gaunamą grafiką -- tiek po LDA, tiek po PCA duomenų pasiskirstymas nėra gerai atskirtas. Galima daryti hipotezę, kad tiesinis duomenų atskyrimas šiuo atveju naudoti nėra tinkamas. Reikia papildyti esamus algoritmus branduolio metodu ir papildyti transformacijas daugianariu arba Gauso branduoliu.
 
 \begin{figure}[!t]
   \centering
@@ -593,10 +611,10 @@ Remiantis pateikta analize galima teigti, kad geriausiai duomenis savybių erdv�
 Šiame skyriuje išnagrinėti ir pritaikyti populiariausi šiuo metu naudojami klasifikatorių metodai. Tokie klasifikatoriai yra \cite{824819}:
 
 \begin{itemize}
-\item Vektoriaus palaikymo mašina (angl. Support Vector Machine (SVM));
-\item Paslėptas Markovo modelis (angl. Hidden Markov Model (HMM));
-\item Naivusis Bayes klasifikatorius (angl. NayveBayes);
-\item Tiesioginio sklidimo neuronų tinklas (angl. Feed-Forward Neural Network (FFNN));
+\item Atraminių vektorių mašina (angl. \textit{Support Vector Machine -- SVM});
+\item Paslėptas Markovo modelis (angl. \textit{Hidden Markov Model -- HMM});
+\item Naivusis Bayes klasifikatorius (angl. \textit{NayveBayes});
+\item Tiesioginio sklidimo neuronų tinklas (angl. \textit{Feed-Forward Neural Network -- FFNN});
 \end{itemize}
 
 Labai svarbu yra atskirti duomenis, kuriais klasifikatorius yra apmokamas ir kuriais jis yra testuojamas. Jeigu klasifikatoriaus apmokymo duomenys yra pakankamai apibendrinti, tuomet naujus duomenis klasifikatorius turėtų gerai atpažinti. Pateikiant klasifikatoriaus testavime tokius pačius duomenis, kaip ir apmokyme -- atliekamas tikrinimas ar klasifikatorius teisingai ``suprato'' nagrinėjamus duomenis, tačiau tai neapibrėžia kiek gerai jis apdoros naujus duomenis.
@@ -614,13 +632,13 @@ Tikslumas apskaičiuojamas:
 Tikslumas = \frac{T_P}{T_P + F_P}
 \end{equation}
 
-Visos tolesnės klasifikatorių patikros atliekamos remiantis tokia schema: iš turimų duomenų išskirta kojos prisilietimo ir pakilimo nuo žemės laiko ilgio variacijos savybė. Visi duomenys padalinti į lygias tris dalis: dimensijų operacijai atlikti duota $500$ reikšmių, klasifikatoriaus apmokymui tolimesnės eilės $500$ reikšmių, klasifikatoriaus testavimui tolimesnės eilės $500$ reikšmių. Klasifikavimas atliekamas realiu laiku, t.y. klasifikatoriui pateikiami duomenis apie žingsnio stadijos variaciją po transformacijos ir klasifikatorius pateikia savo spėjimą.
+Visos tolesnės klasifikatorių patikros atliekamos remiantis tokia schema: iš turimų duomenų išskirta kojos prisilietimo ir pakilimo nuo žemės laiko ilgio variacijos savybė. Visi duomenys padalinti į lygias tris dalis: matmenų operacijai atlikti duota $500$ reikšmių, klasifikatoriaus apmokymui tolimesnės eilės $500$ reikšmių, klasifikatoriaus testavimui tolimesnės eilės $500$ reikšmių. Klasifikavimas atliekamas realiu laiku, t.y. klasifikatoriui pateikiami duomenis apie žingsnio stadijos variaciją po transformacijos ir klasifikatorius pateikia savo spėjimą.
 
 Vektoriaus palaikymo mašina \cite{Burges98atutorial} šiuo metu yra populiariausias klasifikatorius nagrinėjant netiesiškai atskiriamus duomenis. Įgyvendinimas Matlab aplinkoje panaudotas iš \cite{website:svm_implementation}. Klasifikatoriaus testavimo metu naudojami tokie parametrai:
 
 \begin{itemize}
 \item SVM tipas -- Siquential Minimal Optimization;
-\item Branduolio tipas -- linijinis;
+\item Branduolio tipas -- tiesinis;
 \item Sureguliavimo konstanta -- 2;
 \item Branduolio argumentas -- 2;
 \end{itemize}
@@ -661,7 +679,7 @@ Lentelėje \ref{table:hmm_scores} pateikti tikslumo ir taikumo duomenys. Kaip ma
   \end{tabular}
 \end{table}
 
-Naivus Bayes \cite{R22230} yra vienas iš pirmųjų statistinių metodu paremtu klasifikavimo mechanizmas. Jis veikia labai paprastai -- ieškoma linijinės funkcijos, kuri geriausiai atskiria nagrinėjamus duomenis ir vieni žymenis priskiriami, jeigu duomenys yra vienoje linijos pusėje, atvirkšti žymenis priskiriami, jeigu duomenys yra kitoje linijos pusėje. 
+Naivus Bayes \cite{R22230} yra vienas iš pirmųjų statistinių metodu paremtu klasifikavimo mechanizmas. Jis veikia labai paprastai -- ieškoma tiesinės funkcijos, kuri geriausiai atskiria nagrinėjamus duomenis ir vieni žymenis priskiriami, jeigu duomenys yra vienoje linijos pusėje, atvirkšti žymenis priskiriami, jeigu duomenys yra kitoje linijos pusėje. 
 
 Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys. Tikslumo koeficientas viršija pusę, $0,508$, tačiau tai yra mažai. Taiklumo koeficientas pirmuoju atveju yra neblogas, $0,764$, tačiau antruoju atveju koeficientas yra visiškai nepatenkinamas, viso $0,252$. Iš turimų rezultatų galima teigti, kad klasifikatorius veikia blogai ir duomenis vienmatėje erdvėje jis klasifikuoti teisingai negali.
 
@@ -676,7 +694,7 @@ Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys. Tikslum
   \end{tabular}
 \end{table}
 
-Paskutinis klasifikatorius, kuris pritaikytas turimiems duomenims -- tiesioginio sklidimo neuronų tinklas. Tai yra dirbtinių neuronų tinklų klasifikatorius, kuris veikia panašiai kaip ir Naivus Bayes -- jis ieško funkcijos (linijinės arba daugianarės), kuri geriausiai atskiria turimus duomenis. Bandymo metu pasirinktas vienas įėjimas, du išėjimai ir vienas paslėptas sluoksnis. 
+Paskutinis klasifikatorius, kuris pritaikytas turimiems duomenims -- tiesioginio sklidimo neuronų tinklas. Tai yra dirbtinių neuronų tinklų klasifikatorius, kuris veikia panašiai kaip ir Naivus Bayes -- jis ieško funkcijos (tiesinės arba daugianarės), kuri geriausiai atskiria turimus duomenis. Bandymo metu pasirinktas vienas įėjimas, du išėjimai ir vienas paslėptas sluoksnis. 
 
 Lentelėje \ref{table:ffn_scores} pateikiami tiesioginio sklidimo dirbtinių neuronų tinklų tikslumas ir taiklumas. Kaip matosi iš rezultatų -- klasifikatoriaus tikslumas pirmos klasės atžvilgiu yra $0,282$, taiklumas $0,000$, antros klasės atžvilgiu klasifikavimo tikslumas yra artimas pirmai $0,287$, tačiau turi geresnį taiklumą $0,392$. Iš turimos patikros rezultatų galima spręsti, kad tiesioginio sklidimo neuronų tinklas užduotį atlieka blogai.
 
@@ -697,9 +715,9 @@ Iš pateiktos analizės galima spręsti, kad realiu laiku pateikti klasifikavimo
 
 Šiame poskyryje aptartas duomenų analizės programos kūrimas. Pasinaudojus prieš tai esančių skyrių informacija yra pateiktas sprendimas, kuris leidžia efektyviai kiek įmanoma efektyviau atpažinti subjektų tipus.
 
-Poskyryje ``Požymių išskyrimo programos kūrimas'' atlikta savybių ir dimensijų mažinimo metodų analizė. Geriausia savybė, kuri atskiria kontrolinį subjektą nuo Parkinsono subjekto yra kojos pakilimo ir prisilietimo prie žemės laiko variacija. Geriausiai dimensijų mažinimo klausimą išsprendė linijinė diskriminanto analizė, naudojant Gauso branduolį, tačiau iškilo klasifikavimo problema -- klasifikuojant duomenis realiu laiku, klasifikavimo rezultatas nepatenkinamas. 
+Poskyryje ``Požymių išskyrimo programos kūrimas'' atlikta savybių ir matmenų mažinimo metodų analizė. Geriausia savybė, kuri atskiria kontrolinį subjektą nuo Parkinsono subjekto yra kojos pakilimo ir prisilietimo prie žemės laiko variacija. Geriausiai matmenų mažinimo klausimą išsprendė tiesinė diskriminanto analizė, naudojant Gauso branduolį, tačiau iškilo klasifikavimo problema -- klasifikuojant duomenis realiu laiku, klasifikavimo rezultatas nepatenkinamas. 
 
-Pagrindinė problema, kodėl joks nagrinėjamas klasifikatorius neatliko korektiško klasifikavimo, tai dėl jam pateikiamų duomenų. Kaip pavyzdys yra pateikiamas klasifikatoriaus testavimo metu naudoti duomenis, pavaizduoti \ref{fig:testing_sample} pav. Duomenis yra pateikiami po atliktos transformacijos, todėl jie yra vienos dimensijos. Horizontalėje yra pateiktas požymio eilės numeris, vertikalėje -- pirmas LDA diskriminantas. Pirmi $500$ požymiai priklauso kontroliniam subjektui, nuo $501$ iki $1000$ požymiai priklauso Parkinsono subjektui. Lyginant matomus duomenis su jų pasiskirstymu \ref{fig:gauss_lda} pav., jie atrodo chaotiški. Iš vaizdinės analizės nėra įmanoma spėti kuri signalo dalis kuriai subjektų grupei priklauso. 
+Pagrindinė problema, kodėl joks nagrinėjamas klasifikatorius neatliko korektiško klasifikavimo, tai dėl jam pateikiamų duomenų. Kaip pavyzdys yra pateikiamas klasifikatoriaus testavimo metu naudoti duomenis, pavaizduoti \ref{fig:testing_sample} pav. Duomenis yra pateikiami po atliktos transformacijos, todėl jie yra vieno matmens. Horizontalėje yra pateiktas požymio eilės numeris, vertikalėje -- pirmas LDA diskriminantas. Pirmi $500$ požymiai priklauso kontroliniam subjektui, nuo $501$ iki $1000$ požymiai priklauso Parkinsono subjektui. Lyginant matomus duomenis su jų pasiskirstymu \ref{fig:gauss_lda} pav., jie atrodo chaotiški. Iš vaizdinės analizės nėra įmanoma spėti kuri signalo dalis kuriai subjektų grupei priklauso. 
 
 \begin{figure}
 	\centering
@@ -710,7 +728,7 @@ Pagrindinė problema, kodėl joks nagrinėjamas klasifikatorius neatliko korekti
 
 Tokios išvados verčia projektuoti kitą klasifikavimo mechanizmą, kuris duomenis klasifikuotų ne kiekvieną pagal kiekvieną nagrinėjamą savybę, o pagal savybės grupę -- į laikiną atmintį yra rašoma požymio reikšmės, laukiama, kol laikina atmintis užsipildys iki tam tikros $n$ eilės ir iš gautos sekos yra skaičiuojamas vidurkis (vidurkis skaičiuojamas todėl, nes pagal duomenų pasiskirstymą, kuris parodytas \ref{fig:gauss_lda} pav., pasiskirstymų vidurkiai skiriasi, tačiau variacijos lieka tokios pačios) ir apskaičiuota reikmė naudojama kaip nauja savybė klasifikatoriaus apmokymui, bei testavimui. 
 
-Dėl gaunamų duomenų dimensijos ir jų mažo kiekio (kuris priklauso nuo laikinos atminties dydžio, į kurią rašomos naudos erdvės vertės), yra panaudotas paprasčiausias naivaus Bayes klasifikatoriaus mechanizmas. Duomenys nesikartojo jokiam algoritmo modulyje. Viso erdvės sudarymui panaudota $400$ (nuo $1$ iki $400$), apmokymui $500$ (nuo $501$ iki $1000$), testavimui $500$ ($1001$ iki $1500$) reikšmių. Laikinos atminties ilgis pasirinktas $50$ verčių, iš kurių skaičiuojamas vidurkis. Apmokymo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei, testavimo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei. Gauti tikslumo ir taiklumo rezultatai pateikti \ref{table:classification_results} lentelėje.
+Dėl gaunamų duomenų matmenų ir jų mažo kiekio (kuris priklauso nuo laikinos atminties dydžio, į kurią rašomos naudos erdvės vertės), yra panaudotas paprasčiausias naivaus Bayes klasifikatoriaus mechanizmas. Duomenys nesikartojo jokiam algoritmo modulyje. Viso erdvės sudarymui panaudota $400$ (nuo $1$ iki $400$), apmokymui $500$ (nuo $501$ iki $1000$), testavimui $500$ ($1001$ iki $1500$) reikšmių. Laikinos atminties ilgis pasirinktas $50$ verčių, iš kurių skaičiuojamas vidurkis. Apmokymo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei, testavimo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei. Gauti tikslumo ir taiklumo rezultatai pateikti \ref{table:classification_results} lentelėje.
 
 \begin{table}
 	\centering
@@ -763,9 +781,9 @@ Viso programa sudaryta iš trijų modulių:
   \label{fig:trecia_faze}
 \end{figure}
 
-Programos pirmo modulio struktūrinė schema pavaizduota \ref{fig:pirma_faze} pav. Programos įėjime yra pateikiami pirminiai žingsnio duomenys, programa lygiagrečiai iš duomenų išskiria kojos susilietimo su žeme ir kojos pakilimo nuo žemės signalus, paskaičiuoja signalų ilgius, iš signalų ilgių sudaro duomenų langus, paskaičiuoja lange esančių signalų variacijos koeficientą. Toliau programa iš esamų dviejų dimensijų sudaro savybių erdvę, pritaiko LDA transformacija su Gauso branduoliu ir gražina erdvės modelį, kuris susideda iš tikrinio vektoriaus ir duomenų vidurkio.
+Programos pirmo modulio struktūrinė schema pavaizduota \ref{fig:pirma_faze} pav. Programos įėjime yra pateikiami pirminiai žingsnio duomenys, programa lygiagrečiai iš duomenų išskiria kojos susilietimo su žeme ir kojos pakilimo nuo žemės signalus, paskaičiuoja signalų ilgius, iš signalų ilgių sudaro duomenų langus, paskaičiuoja lange esančių signalų variacijos koeficientą. Toliau programa iš esamų dviejų matmenų sudaro savybių erdvę, pritaiko LDA transformacija su Gauso branduoliu ir gražina erdvės modelį, kuris susideda iš tikrinio vektoriaus ir duomenų vidurkio.
 
-Programos antro modulio struktūrinė schema pavaizduota \ref{fig:antra_faze} pav. Struktūroje naudojamas erdvės modelis iš pirmojo programos modulio. Jis reikalingas tam, kad kiekvieną kartą neprojektuoti naujos erdvės iš naujo, bet projektuoti naujus duomenis į jau esamą erdvę. Tai taip pat užtikrina, kad naudojama ta pati dimensijų erdvė, kas leidžia užtikrinti duomenų apibendrinimą. Sistemos įėjimas yra toks pats, kaip ir pirmojo modulio. Skirtumas taip pirmojo ir antrojo modulio yra tas, kad antro modulio išėjime yra klasifikatoriaus modelis, kuris yra apmokyto klasifikatoriaus parametrai, kurie yra panaudoti testuojant klasifikatorių.
+Programos antro modulio struktūrinė schema pavaizduota \ref{fig:antra_faze} pav. Struktūroje naudojamas erdvės modelis iš pirmojo programos modulio. Jis reikalingas tam, kad kiekvieną kartą neprojektuoti naujos erdvės iš naujo, bet projektuoti naujus duomenis į jau esamą erdvę. Tai taip pat užtikrina, kad naudojama ta pati matmenų erdvė, kas leidžia užtikrinti duomenų apibendrinimą. Sistemos įėjimas yra toks pats, kaip ir pirmojo modulio. Skirtumas taip pirmojo ir antrojo modulio yra tas, kad antro modulio išėjime yra klasifikatoriaus modelis, kuris yra apmokyto klasifikatoriaus parametrai, kurie yra panaudoti testuojant klasifikatorių.
 
 Trečiojo, paskutinio modulio, struktūrine schema pavaizduota \ref{fig:trecia_faze} pav. Struktūroje naudojamas erdvės modelis iš pirmo modulio ir klasifikatoriaus modelis iš antro modulio. Modulio įėjimas yra toks pats, kaip ir antrojo modulio, išskyrus tai, kad šio modulio išėjime yra klasifikavimo rezultatas, kurį galima pateikti tiek grafiškai, tiek skaitine išraiška, išreikšta tikslumo ir taiklumo verte.
 
@@ -806,7 +824,7 @@ h^*(x) = arg max_i P(\mathbf{X}=x|C=i)P(C=i)
 \end{equation}
 randa didžiausią vėlesnės tikimybės hipotezę, nurodžius $x$.
 
-Duomenys Hilberto erdvėje yra labai gerai praskiriami linijine funkcija, todėl šiame sprendime yra naudojamas tokios paprastos struktūros klasifikavimo mechanizmas. Tuo labiau, kadangi duomenis yra vienmatėje erdvėje -- mažinti dimensijų skaičių nelieka prasmės, ieškoti klasifikavimo algoritmo, kuris geriausiai apibendrintų turimus duomenis erdvėje nėra prasmės, kadangi duomenų apibendrinimą puikiausiai atliko LDA su Gauso branduoliu.
+Duomenys Hilberto erdvėje yra labai gerai praskiriami tiesinė funkcija, todėl šiame sprendime yra naudojamas tokios paprastos struktūros klasifikavimo mechanizmas. Tuo labiau, kadangi duomenis yra vienmatėje erdvėje -- mažinti matmenų skaičių nelieka prasmės, ieškoti klasifikavimo algoritmo, kuris geriausiai apibendrintų turimus duomenis erdvėje nėra prasmės, kadangi duomenų apibendrinimą puikiausiai atliko LDA su Gauso branduoliu.
 
 Darbe panaudota Matlab aplinkoje įgyvendintas naivaus Bayes klasifikatoriaus versija, kuri yra ``Statistical Toolbox'' paketo dalis. Klasifikatoriaus apmokymo kodas yra pateiktas \ref{code:nb_training} programiniam kode. Jo rezultate, kintamajam ''nb`` yra saugomas klasifikatoriaus modelis. Klasifikatoriaus tikrinimo kodas yra pateiktas \ref{code:nb_testing} programiniam kode. Rezultate, kintamajam ``ypred'' yra saugomas programos spėjimas.
 
@@ -852,13 +870,13 @@ Darbas ties Parkinsono ligos identifikavimu ir jo diagnozavimui reikia įdėti d
 
 Tikrinant kiekvieno žmogaus žingsnio signalus, paaiškėjo, kad skirtingi subjektai sugeneruoja kitokį tikrinimą atliktų žingsnių skaičių, todėl tikrinimas atliekamas ne atskiriant konkrečius žmones, tačiau jau išskirtus kojos pakilimo ir kojos prisilietimo prie žemės signalus, konkrečiau -- iš tų signalų suformuotus jų ilgių duomenų langus.
 
-Po pirminio duomenų apdorojimo, kontrolinių subjektų grupėje liko $1790$ duomenų langų, Parkinsono subjektų grupėje liko $1619$ duomenų langų, todėl nuspręsta iš kiekvienos grupės pasiimti po $1500$ langų duomenų, visi jie padalinti po lygias tris dalis: viena dalis erdvės sudarymui, antra dalis klasifikatoriaus apmokymui, trečia dalis klasifikatoriaus testavimui. Jokie duomenys jokioje dalyje pasikartotinai nesikartoja. Tai yra kritinis faktorius mašininiam apmokyme \cite{824819}. Taip pat reikia užtikrinti duomenų praskyrimo ir klasifikatoriaus apmokymui dešimtį kartų didesnių duomenų skaičių, negu yra tų pačių duomenų dimensijų. Kadangi prieš duomenų praskyrimą turima tik $d=2$ dimensijas, tai teoriškai užtektų ir $n=21$ ($n/d > 10$), tačiau dimensijų praskyrimas vyksta su $500$ taškų, kas tik užtikrina apibendrinimą. 
+Po pirminio duomenų apdorojimo, kontrolinių subjektų grupėje liko $1790$ duomenų langų, Parkinsono subjektų grupėje liko $1619$ duomenų langų, todėl nuspręsta iš kiekvienos grupės pasiimti po $1500$ langų duomenų, visi jie padalinti po lygias tris dalis: viena dalis erdvės sudarymui, antra dalis klasifikatoriaus apmokymui, trečia dalis klasifikatoriaus testavimui. Jokie duomenys jokioje dalyje pasikartotinai nesikartoja. Tai yra kritinis faktorius mašininiam apmokyme \cite{824819}. Taip pat reikia užtikrinti duomenų praskyrimo ir klasifikatoriaus apmokymui dešimtį kartų didesnių duomenų skaičių, negu yra tų pačių duomenų matmenų. Kadangi prieš duomenų praskyrimą turima tik $d=2$ matmenys, tai teoriškai užtektų ir $n=21$ ($n/d > 10$), tačiau matmenų praskyrimas vyksta su $500$ taškų, kas tik užtikrina apibendrinimą. 
 
 \subsection{Eksperimentų plano rengimas}
 
 Šiame poskyryje aptarti galimi eksperimentiniai algoritmo patikros planai, nurodytas galimos duomenų pateikimo metodikos.
 
-Pirminį patikros planą sudaro pateikiamų duomenų skaičiaus mažinimas į kiekvieno algoritmo žingsnį: dimensijų erdvės sudarymas, klasifikatoriaus apmokymas, klasifikatoriaus testavimas. Duomenis galima mažinti linijiniu būdu -- dimensijų mažinime naudoti pirmus $400$ duomenų, $100$ praleisti, nuo $501$ iki $1000$ paduodi klasifikatoriaus apmokymui ir nuo $1001$ iki $1500$ pateikti klasifikatoriaus tikrinimui. Taip pat duomenis galima pateikti kas kelintą $n$ narį -- kadangi iš viso yra trys algoritmo žingsniai, tuomet $n=3$. Taip į dimensijų mažinimo algoritmą pateikiamas $1$ rinkinys, $4$ rinkinys, $7$ rinkinys. Klasifikatoriaus apmokymui pateikiamas $2$ rinkinys, $5$ rinkinys, $8$ rinkinys. Klasifikatoriaus tikrinimui pateikiamas $3$ rinkinys, $6$ rinkinys, $8$ rinkinys. Toks duomenų pateikimas leidžia pasiekti ``apibendrinto'' metodo. 
+Pirminį patikros planą sudaro pateikiamų duomenų skaičiaus mažinimas į kiekvieno algoritmo žingsnį: matmenų erdvės sudarymas, klasifikatoriaus apmokymas, klasifikatoriaus testavimas. Duomenis galima mažinti tiesiniu būdu -- matmenų mažinime naudoti pirmus $400$ duomenų, $100$ praleisti, nuo $501$ iki $1000$ paduodi klasifikatoriaus apmokymui ir nuo $1001$ iki $1500$ pateikti klasifikatoriaus tikrinimui. Taip pat duomenis galima pateikti kas kelintą $n$ narį -- kadangi iš viso yra trys algoritmo žingsniai, tuomet $n=3$. Taip į matmenų mažinimo algoritmą pateikiamas $1$ rinkinys, $4$ rinkinys, $7$ rinkinys. Klasifikatoriaus apmokymui pateikiamas $2$ rinkinys, $5$ rinkinys, $8$ rinkinys. Klasifikatoriaus tikrinimui pateikiamas $3$ rinkinys, $6$ rinkinys, $8$ rinkinys. Toks duomenų pateikimas leidžia pasiekti ``apibendrinto'' metodo. 
 
 Taip pat, kadangi sprendime naudojamas laikinos atminties modulis, kuris reikalingas saugoti pirmąjį diskriminantą kiekvienos variacijos poros, eksperimentiniu būdu galima spręsti koks lango dydis nurodytai užduočiai atlikti geriausiai tinka. Atliekant tokį tikrinimą svarbu palaikyti kitų parametrų vienodumą, todėl į kiekvieną iš trijų modulių pateikiamas pastovus duomenų skaičius, kuomet keičiamas laikinos atminties dydis. Tikrinimas taip pat nuspręs kiek minimaliai iš paciento eisenos turi būti išskirta savybės grupės, kad sistema gražintų geriausią klasifikavimo tikslumo ir taiklumo rezultatą.
 
@@ -866,7 +884,7 @@ Taip pat, kadangi sprendime naudojamas laikinos atminties modulis, kuris reikali
 
 Šiame poskyryje aptartas duomenų eksperimentams rengimas, aprašytas planuojamas duomenų kiekis, naudojamas tikrinimo metu.
 
-Pradžioje yra tikrinamas dimensijų mažinimo algoritmas, mažinant pateikiamų duomenų skaičių. Struktūriškai nuspręsta, kad kiekvienas modulis turi lygiai po $500$ rinkinių. Tikrinimas pradedamas nuo $500$ rinkinių ir mažinamas kas $100$ rinkinių. Vadinasi, iš viso dimensijų mažinimo algoritmui pateikiama $500$, $400$, $300$, $200$, $100$ ir minimalus $21$ rinkinių skaičius. Į apmokymo lygmenį pateikiamas pastovus duomenų skaičius -- $500$ (nuo $501$ iki $1000$) rinkinių. Laikinos atminties dydis palaikomas pastovus -- $50$ verčių. Po dimensijų mažinimo žingsnio tikrinimo, rinkinių skaičius tokia pat metodika mažinamas klasifikatoriaus apmokymui, dimensijų mažinimo metodui pateikiant pastovų rinkinių skaičių. Šioje stadijoje duomenų skaičius nėra mažinamas iki $21$ rinkinio skaičiaus, kadangi neformuojamas naudojamas lango ilgio, $50$, duomenų skaičius. Klasifikatoriaus testavimo atveju duomenų dydis nėra mažinamas.
+Pradžioje yra tikrinamas matmenų mažinimo algoritmas, mažinant pateikiamų duomenų skaičių. Struktūriškai nuspręsta, kad kiekvienas modulis turi lygiai po $500$ rinkinių. Tikrinimas pradedamas nuo $500$ rinkinių ir mažinamas kas $100$ rinkinių. Vadinasi, iš viso matmenų mažinimo algoritmui pateikiama $500$, $400$, $300$, $200$, $100$ ir minimalus $21$ rinkinių skaičius. Į apmokymo lygmenį pateikiamas pastovus duomenų skaičius -- $500$ (nuo $501$ iki $1000$) rinkinių. Laikinos atminties dydis palaikomas pastovus -- $50$ verčių. Po matmenų mažinimo žingsnio tikrinimo, rinkinių skaičius tokia pat metodika mažinamas klasifikatoriaus apmokymui, matmenų mažinimo metodui pateikiant pastovų rinkinių skaičių. Šioje stadijoje duomenų skaičius nėra mažinamas iki $21$ rinkinio skaičiaus, kadangi neformuojamas naudojamas lango ilgio, $50$, duomenų skaičius. Klasifikatoriaus testavimo atveju duomenų dydis nėra mažinamas.
 
 Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgiai: $10$, $30$, $50$, $70$, $100$, $130$ ir $150$. Kiekvienas toks tikinimas atliekamas su duomenų kiekiu, kuris parodė geriausią klasifikavimo tikslumo ir taiklumo rezultatą, aprašytą ankstesniame paragrafe. Panaudoti rezultatai atitinkamai užtikrins optimalų duomenų kiekio pasiskirstymą, geriausiam klasifikavimo tikslumo ir taiklumo rezultatui pasiekti.
 
@@ -875,7 +893,7 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 \subsection{Programos patikros rezultatai}
 \begin{table}
 	\centering
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, mažinant linijiškai pateikiamų duomenų dimensijų mažinimo algoritmui}
+	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, tiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
 	\label{table:first_phase_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
@@ -891,7 +909,7 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 
 \begin{table}
 	\centering
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, mažinant linijiškai pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
+	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, tiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
 	\label{table:second_phase_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
@@ -908,7 +926,7 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 
 \begin{table}
 	\centering
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, mažinant nelinijiškai pateikiamų duomenų dimensijų mažinimo algoritmui}
+	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, netiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
 	\label{table:second_phase_not_linear_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
@@ -924,7 +942,7 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 
 \begin{table}
 	\centering
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, mažinant nelinijiškai pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
+	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, netiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
 	\label{table:second_phase_not_linear_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
@@ -957,13 +975,13 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 
 Šiame poskyryje pateikti ir aptarti patikros tikslumo ir taiklumo rezultatai, išanalizuoti galimi sistemos parametrai, kurie gali būti derinami: duomenų skaičius, kuris naudojamas kiekvienam programos moduliui, bei atminties dydis, kuris naudojamas pirmajai diskriminanto vertei saugoti.
 
-Pirma patikra atlikta linijiškai mažinant duomenų kiekį, kuris yra paduodamas dimensijų mažinimo algoritmui, taip siekiant nustatyti koks duomenų kiekis geriausiai tinka naujai savybių erdvei projektuoti. Eksperimentiniai duomenys yra pateikti \ref{table:first_phase_experiment} lentelėje. Vertinant dimensijų sudarymą pagal klasifikatoriaus duodamą rezultatą, geriausias duomenų kiekis, skirtas naujai dimensijų erdvei sudaryti yra $400$ erdvės taškų. Tokiu atveju pasiekiamas $0,875$ Pt ir $0,750$ Co taiklumas. 
+Pirma patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui, taip siekiant nustatyti koks duomenų kiekis geriausiai tinka naujai savybių erdvei projektuoti. Eksperimentiniai duomenys yra pateikti \ref{table:first_phase_experiment} lentelėje. Vertinant matmenų sudarymą pagal klasifikatoriaus duodamą rezultatą, geriausias duomenų kiekis, skirtas naujai matmenų erdvei sudaryti yra $400$ erdvės taškų. Tokiu atveju pasiekiamas $0,875$ Pt ir $0,750$ Co taiklumas. 
 
-Antra patikra atlikta linijiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymui, taip siekiant nustatyti, kokio duomenų kiekio reikia klasifikatoriui, kad jis sugebėtų apibendrinti duomenis, naudojamus testavimo stadijoje. Eksperimentiniai duomenys yra pateikti \ref{table:second_phase_experiment} lentelėje. Šio tikrinimo metu paaiškėjo, kad geriausiai klasifikatoriaus apmokymui tinka du duomenų rinkiniai -- po $500$ ir po $400$. Tokiu atveju pasirenkamas didesnis duomenų kiekis, taip užtikrinant bendrų duomenų apibrėžtumą.
+Antra patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymui, taip siekiant nustatyti, kokio duomenų kiekio reikia klasifikatoriui, kad jis sugebėtų apibendrinti duomenis, naudojamus testavimo stadijoje. Eksperimentiniai duomenys yra pateikti \ref{table:second_phase_experiment} lentelėje. Šio tikrinimo metu paaiškėjo, kad geriausiai klasifikatoriaus apmokymui tinka du duomenų rinkiniai -- po $500$ ir po $400$. Tokiu atveju pasirenkamas didesnis duomenų kiekis, taip užtikrinant bendrų duomenų apibrėžtumą.
 
-Trečia patikra atlikta nelinijiškai mažinant duomenų kiekį, kuris yra paduodamas dimensijų mažinimo algoritmui. Klasifikavimo rezultatai yra pateikiami \ref{table:second_phase_experiment} lentelėje. Bendri klasifikavimo tikslumo ir taiklumo rezultatai yra prastesni, negu mažinant duomenų pateikimą linijiniu būdu, todėl iš eksperimento galima teigti, kad duomenis į dimensijų mažinimo algoritmą geriausiai yra pateikti linijiniu būdu -- nuo $1$ eilės iki $400$ eilės numerio. Taip duomenis yra geriau ``apibendrinami'' dimensijų mažinimo algoritmo, ką parodo klasifikavimo rezultatas.
+Trečia patikra atlikta netiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui. Klasifikavimo rezultatai yra pateikiami \ref{table:second_phase_experiment} lentelėje. Bendri klasifikavimo tikslumo ir taiklumo rezultatai yra prastesni, negu mažinant duomenų pateikimą tiesiniu būdu, todėl iš eksperimento galima teigti, kad duomenis į matmenų mažinimo algoritmą geriausiai yra pateikti tiesiniu būdu -- nuo $1$ eilės iki $400$ eilės numerio. Taip duomenis yra geriau ``apibendrinami'' matmenų mažinimo algoritmo, ką parodo klasifikavimo rezultatas.
 
-Ketvirta patikra atlikta nelinijiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymo metodui. Klasifikavimo rezultatai yra pateikiami \ref{table:second_phase_not_linear_experiment} lentelėje. Kaip ir trečios patikros atveju -- klasifikavimo duomenis nėra patenkinami, todėl ir klasifikavimo apmokymo atveju, duomenis geriausiai pateikti linijiniu būdu -- nuo $0$  eilės iki $500$ eilės numerio.
+Ketvirta patikra atlikta netiesiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymo metodui. Klasifikavimo rezultatai yra pateikiami \ref{table:second_phase_not_linear_experiment} lentelėje. Kaip ir trečios patikros atveju -- klasifikavimo duomenis nėra patenkinami, todėl ir klasifikavimo apmokymo atveju, duomenis geriausiai pateikti tiesiniu būdu -- nuo $0$  eilės iki $500$ eilės numerio.
 
 Paskutinė patikra atlikta keičiant laikinosios atminties dydžio matmenis. Duomenų erdvei sudaryti panaudoti duomenys, remiantis pirma patikra, klasifikatoriaus apmokymui panaudoti duomenys, remiantis antra patikra. Klasifikavimo rezultatai yra pateikti \ref{table:memory_linear_experiment} lentelėje. Geriausias laikinosios atminties lango dydis, prie kurio pasiekiamas geriausias klasifikavimo rezultatas yra $50$ pirmojo diskriminanto verčių.
 
@@ -982,7 +1000,7 @@ Patikros metu nustatyta, kad programa geriausiai veikia $80~\%$ tikslumu, kas į
 
 Darbo metu ištirtos galimos žingsnio savybės, kuriomis remiantis galima sėkmingai atpažinti Parkinsono ligą pagal subjekto eiseną. Nustatyta, kad dažninės žingsnio komponentės, koreliacijos koeficientas, dviejų maksimumų ir vieno minimumo savybės neturi pakankamai informacijos Parkinsono ligos atpažinimui. Daugiausiai informacijos turi kojos prisilietimo prie žemės ir kojos pakilimo nuo žemės signalo laiko variacijos.
 
-Turint duomenis, kurie turi daugiausiai informacijos ligos identifikavimui, toliau patikrinta galimų dimensijų praskyrimo metodų pritaikymas. Linijiniai PCA ir LDA transformacijos savybių erdvę duomenys tinkamai nepraskyrė. Geriausiai užduotį LDA su Gauso branduoliu. Rezultatas parodė kaip branduolio metodo pritaikymas gali padidinti dimensijų mažinimo algoritmo efektyvumą.
+Turint duomenis, kurie turi daugiausiai informacijos ligos identifikavimui, toliau patikrinta galimų matmenų praskyrimo metodų pritaikymas. Tiesiniai PCA ir LDA transformacijos savybių erdvę duomenys tinkamai nepraskyrė. Geriausiai užduotį LDA su Gauso branduoliu. Rezultatas parodė kaip branduolio metodo pritaikymas gali padidinti matmenų mažinimo algoritmo efektyvumą.
 
 Turimus vienmačius duomenis realiu laiku geriausiai klasifikavo naivus Bayes klasifikatorius, tačiau klasifikavimo tikslumas ir taiklumas nepatenkinamas, tikslumas siekė tik $50,8~\%$. Pritaikius papildomą metodikos žingsnį -- laikinosios atminties bloką, kuriame saugomas pirmas transformacijos diskriminantas, klasifikavimo tikslumas pagerintas iki $80~\%$. Rezultatas nurodo kas penkto diagnozavimo rezultato klaidingumą. Turint omenyje, kad klinikinės diagnostikos sprendimų taiklumas yra nuo $74~\%$ iki $90~\%$ \cite{vgtu}, sistemos darbo rezultatas kitų produktų palyginime atrodo patenkinamai.
 
@@ -990,7 +1008,7 @@ Turimus vienmačius duomenis realiu laiku geriausiai klasifikavo naivus Bayes kl
 
 Pagrindinis darbo uždavinys buvo sukurti sistemą, kuri gebėtų atpažinti Parkinsono ligą pagal galimus ligos požymius, nagrinėjant subjektus pagal jų eisenos ypatybes. Toks uždavinys yra įvykdytas, tačiau egzistuoja $1/5$ dalies netikslumas. Toks netikslumas argumentuojamas kiekvieno žmogaus eisenos unikaliomis savybėmis. Tokia neigiama metodo savybė yra pašalinama, atliekant diagnozę mažiausiai $5$ kartus.
 
-Darbe planuotas naudoti dirbtinių neuronų tinklas panaudotas nebuvo. Duomenys savybių erdvėje buvo lengvai atskiriami linijine funkcija, todėl naudoti kompleksinio dirbtinių neuronų tinklų klasifikatorių nėra prasmės. Panaudotas paprastesnis naivaus Bayes klasifikatorius.
+Darbe planuotas naudoti dirbtinių neuronų tinklas panaudotas nebuvo. Duomenys savybių erdvėje buvo lengvai atskiriami tiesine funkcija, todėl naudoti kompleksinio dirbtinių neuronų tinklų klasifikatorių nėra prasmės. Panaudotas paprastesnis naivaus Bayes klasifikatorius.
 
 Naudojamų subjektų skaičius klasifikatoriaus apmokymui ir tikrinimui panaudotas nebuvo. Iš viso, klasifikatoriaus apmokymui planuota panaudoti $60$ Parkinsono liga sergančių ir $50$ kontrolinių subjektų. Klasifikatoriaus tikrinimui planuota panaudoti $33$ sergančių ir $23$ sveikų subjektų. Kiekvienas iš subjektų generuoja skirtingą skaičių patikrintų žingsnių signalų, iš kurių toliau skaičiuojamos savybės. Duomenų analizės metu, norint suvienodinti ir tuo pačiu supaprastinti uždavinio nagrinėjimą, pirmiausiai iš kiekvieno subjekto išskirti žingsnio fazės signalai ir jie visi sujungti į vieną matricą. Tuomet egzistuoja dvi matricos, kurios priklauso skirtingai subjektų grupei. Toliau dalinti duomenis pagal kiekvieno subjektu sugeneruotų duomenų kiekį nėra prasmės, kadangi pirmiausiai yra naudojamas skirtingas subjektų skaičius kiekvienos grupės atžvilgiu ir yra garantuojamas duomenų skaičiaus neatitikimas. Skaičiaus atitikimas yra būtinas erdvės transformacijai atlikti, todėl reikia suvienodinti esamų duomenų skaičių. Tikrinimo atveju turi būti atliekama tokia pati procedūrą. Dėl šios priežasties buvo parinktas visų esamų duomenų dalinimas į tris lygias dalis kiekvieno programos modulio įgyvendinimui.
 

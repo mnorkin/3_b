@@ -22,6 +22,11 @@
 \RequirePackage[toc,page]{appendix}
 \RequirePackage[bookmarks]{hyperref}
 
+%% Lists
+%\RequirePackage{tweaklist}
+%\renewcommand{\itemhooki}{\setlength{\topsep}{0pt}%
+%  \setlength{\itemsep}{0pt}}
+
 %% Table
 \RequirePackage{multirow}
 
@@ -146,6 +151,12 @@
 \let\stdsection\section
 \renewcommand\section{\newpage\stdsection}
 
-%% APPENDIX
-\renewcommand\appendixname{PRIEDAI}
+% Listing style
+\newcommand{\blob}{\rule[.2ex]{0.7ex}{0.7ex}}
+\renewcommand{\labelitemi}{$\blob$}
+
+\renewenvironment{itemize}%
+  {\begin{list}{$\blob$}%
+     {\topsep=0.05in\itemsep=0.05in\parsep=0in\partopsep=0in\leftmargin=0.15in}%
+   }{\end{list}}
 

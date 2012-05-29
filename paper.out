@@ -1,23 +1,28 @@
 \BOOKMARK [1][-]{section*.1}{\231ymenys ir santrumpos}{}% 1
 \BOOKMARK [1][-]{section.1}{Ivadas. U\236duoties analize}{}% 2
 \BOOKMARK [1][-]{section.2}{Informaciniu Parkinsono ligos diagnostikos sistemu ap\236valga}{}% 3
-\BOOKMARK [1][-]{section.3}{Signalu analizes programos kurimas}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Bendros programos strukturines schemos sudarymas}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Pirminio signalu apdorojimo programos kurimas}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.3}{Po\236ymiu i\235skyrimo programos kurimas}{section.3}% 7
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Dimensiju ma\236inimas}{subsection.3.3}% 8
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Savybiu tyrimas}{subsection.3.3}% 9
-\BOOKMARK [2][-]{subsection.3.4}{Po\236ymiu klasifikavimo programos kurimas}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.5}{Duomenu analizes programos kurimas}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Signalu analizes programos igyvendinimas}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Bendro programos algoritmo schemos sudarymas}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Po\236ymiu klasifikavimo programos algoritmo schemos sudarymas}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.3}{Signalu analizes programos igyvendinimas}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Signalu analizes programos patikra}{}% 16
-\BOOKMARK [2][-]{subsection.5.1}{Eksperimentu plano rengimas}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.2}{Duomenu eksperimentams rengimas}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.3}{Programos patikros rezultatai}{section.5}% 19
-\BOOKMARK [1][-]{section.6}{Rezultatu apibendrinimas}{}% 20
-\BOOKMARK [1][-]{section.6}{Literaturos ir informaciniu \235altiniu sara\235as}{}% 21
-\BOOKMARK [1][-]{section*.50}{Santrauka}{}% 22
-\BOOKMARK [1][-]{section*.51}{PRIEDAI}{}% 23
+\BOOKMARK [2][-]{subsection.2.1}{Tiesiniu jegos jutikliu metodas}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Dirbtiniu neuronu tinklu metodas}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Atraminiu vektoriu ma\235inos metodas}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Statistines analizes metodas}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.5}{Parkinsono ligos stadijos nustatytmo metodas}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Signalu analizes programos kurimas}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Bendros programos strukturines schemos sudarymas}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Pirminio signalu apdorojimo programos kurimas}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Po\236ymiu i\235skyrimo programos kurimas}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Matmenu ma\236inimas}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Savybiu tyrimas}{subsection.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Po\236ymiu klasifikavimo programos kurimas}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Duomenu analizes programos kurimas}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Signalu analizes programos igyvendinimas}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Bendro programos algoritmo schemos sudarymas}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Po\236ymiu klasifikavimo programos algoritmo schemos sudarymas}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Signalu analizes programos igyvendinimas}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Signalu analizes programos patikra}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Eksperimentu plano rengimas}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Duomenu eksperimentams rengimas}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Programos patikros rezultatai}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Rezultatu apibendrinimas}{}% 25
+\BOOKMARK [1][-]{section.6}{Literaturos ir informaciniu \235altiniu sara\235as}{}% 26
+\BOOKMARK [1][-]{section*.50}{Santrauka}{}% 27
+\BOOKMARK [1][-]{section*.51}{PRIEDAI}{}% 28

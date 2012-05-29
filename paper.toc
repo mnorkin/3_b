@@ -2,11 +2,16 @@
 \contentsline {section}{\IeC {\v Z}ymenys ir santrumpos}{8}{section*.1}
 \contentsline {section}{\numberline {1.}\IeC {\k I}vadas. U\IeC {\v z}duoties analiz\IeC {\.e}}{9}{section.1}
 \contentsline {section}{\numberline {2.}Informacini\IeC {\k u} Parkinsono ligos diagnostikos sistem\IeC {\k u} ap\IeC {\v z}valga}{12}{section.2}
+\contentsline {subsection}{\numberline {2.1.}Tiesini\IeC {\k u} j\IeC {\.e}gos jutikli\IeC {\k u} metodas}{12}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2.}Dirbtini\IeC {\k u} neuron\IeC {\k u} tinkl\IeC {\k u} metodas}{13}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3.}Atramini\IeC {\k u} vektori\IeC {\k u} ma\IeC {\v s}inos metodas}{14}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4.}Statistin\IeC {\.e}s analiz\IeC {\.e}s metodas}{16}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5.}Parkinsono ligos stadijos nustatytmo metodas}{17}{subsection.2.5}
 \contentsline {section}{\numberline {3.}Signal\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{20}{section.3}
 \contentsline {subsection}{\numberline {3.1.}Bendros programos strukt\IeC {\=u}rin\IeC {\.e}s schemos sudarymas}{20}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2.}Pirminio signal\IeC {\k u} apdorojimo programos k\IeC {\=u}rimas}{21}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3.}Po\IeC {\v z}ymi\IeC {\k u} i\IeC {\v s}skyrimo programos k\IeC {\=u}rimas}{27}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1.}Dimensij\IeC {\k u} ma\IeC {\v z}inimas}{27}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.}Matmen\IeC {\k u} ma\IeC {\v z}inimas}{27}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2.}Savybi\IeC {\k u} tyrimas}{29}{subsubsection.3.3.2}
 \contentsline {subsection}{\numberline {3.4.}Po\IeC {\v z}ymi\IeC {\k u} klasifikavimo programos k\IeC {\=u}rimas}{36}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5.}Duomen\IeC {\k u} analiz\IeC {\.e}s programos k\IeC {\=u}rimas}{40}{subsection.3.5}
