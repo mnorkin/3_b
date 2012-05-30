@@ -18,45 +18,45 @@ while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Aubin, Patric M.; Serackis, Artūras; Griškevičius, Julius [Griskevicius, Julius,]." for entry vgtu
 while executing---line 1090 of file plain.bst
 Warning--can't use both volume and number fields in S0966-6362(05)00058-5
-You've used 23 entries,
+You've used 25 entries,
             2118 wiz_defined-function locations,
-            638 strings with 8804 characters,
-and the built_in function-call counts, 8226 in all, are:
-= -- 784
-> -- 384
+            648 strings with 8999 characters,
+and the built_in function-call counts, 8642 in all, are:
+= -- 822
+> -- 398
 < -- 8
-+ -- 158
-- -- 130
-* -- 586
-:= -- 1315
-add.period$ -- 65
-call.type$ -- 23
-change.case$ -- 133
++ -- 164
+- -- 134
+* -- 602
+:= -- 1383
+add.period$ -- 71
+call.type$ -- 25
+change.case$ -- 141
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 308
-empty$ -- 653
-format.name$ -- 130
-if$ -- 1751
+cite$ -- 26
+duplicate$ -- 322
+empty$ -- 697
+format.name$ -- 134
+if$ -- 1841
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 25
 missing$ -- 19
-newline$ -- 114
-num.names$ -- 46
-pop$ -- 151
+newline$ -- 124
+num.names$ -- 50
+pop$ -- 169
 preamble$ -- 1
-purify$ -- 111
+purify$ -- 117
 quote$ -- 0
-skip$ -- 258
+skip$ -- 272
 stack$ -- 0
-substring$ -- 523
-swap$ -- 92
+substring$ -- 533
+swap$ -- 94
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 98
 warning$ -- 1
-while$ -- 73
-width$ -- 25
-write$ -- 239
+while$ -- 77
+width$ -- 27
+write$ -- 259
 (There were 6 error messages)

@@ -21,6 +21,7 @@
 \RequirePackage[hmarginratio=1:1]{geometry}
 \RequirePackage[toc,page]{appendix}
 \RequirePackage[bookmarks]{hyperref}
+\usepackage{fancyvrb}
 
 %% Lists
 %\RequirePackage{tweaklist}
@@ -42,14 +43,14 @@
 \RequirePackage{setspace}
 
 %% Fonts
-\RequirePackage{winfonts}
+%\RequirePackage{winfonts}
 
 %% Graphics
 \RequirePackage{pgfplots}
 \RequirePackage{tikz}
 
 %% Custom captions
-\RequirePackage[skip=5pt,labelfont=bf,justification=centering,labelsep=space]{caption}
+\RequirePackage[skip=5pt,labelfont=bf,justification=centering,labelsep=space,font=small]{caption}
 \RequirePackage{chngcntr}
 \counterwithin{figure}{section}
 \counterwithin{equation}{section}
@@ -72,11 +73,16 @@
 \captionsetup[cfigure]{position=above,labelformat=cfigure-st,justification=justified,singlelinecheck=false}
 \counterwithin{cfigure}{section}
 
+%\RequirePackage{fontspec}
+
 %% Source code style
 \lstset{
   language=Matlab,
-  basicstyle=\footnotesize,
-  numbers=none
+  basicstyle=\fontfamily{pzc}\selectfont,
+  columns=fixed,
+  numbers=none,
+  showspaces=false,
+  xleftmargin=20pt
 }
 
 % COLORS
@@ -84,19 +90,10 @@
 
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\rmdefault}{ptm}
-\renewcommand{\ttdefault}{pcr}
-
-\def\@IEEEstringptm{ptm} % Times Roman family
-\def\@IEEEstringppl{ppl} % Palatino Roman family
-\def\@IEEEstringphv{phv} % Helvetica Sans Serif family
-\def\@IEEEstringpcr{pcr} % Courier typewriter family
-\def\@IEEEstringcmtt{cmtt} % Computer Modern typewriter family
 
 \pagestyle{fancy}
 
-\fancypagestyle{plain}{
-
-}
+\fancypagestyle{plain}{}
 
 \fancyhead{} % clear all the headers
 \renewcommand{\headrulewidth}{0pt} % and lines
@@ -157,6 +154,13 @@
 
 \renewenvironment{itemize}%
   {\begin{list}{$\blob$}%
-     {\topsep=0.05in\itemsep=0.05in\parsep=0in\partopsep=0in\leftmargin=0.15in}%
+     {\topsep=0.05in\itemsep=0.05in\parsep=0in\partopsep=0in\leftmargin=0.4in}%
+   }{\end{list}}
+   
+   
+\newcounter{qcounter}
+\renewenvironment{enumerate}%
+  {\begin{list}{$\arabic{qcounter}.$}%
+     {\topsep=0.05in\itemsep=0.05in\parsep=0in\partopsep=0in\leftmargin=0.45in\usecounter{qcounter}}%
    }{\end{list}}
 
