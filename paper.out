@@ -1,11 +1,11 @@
 \BOOKMARK [1][-]{section*.1}{\231ymenys ir santrumpos}{}% 1
 \BOOKMARK [1][-]{section.1}{Ivadas. U\236duoties analize}{}% 2
 \BOOKMARK [1][-]{section.2}{Informaciniu Parkinsono ligos diagnostikos sistemu ap\236valga}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Tiesiniu jegos jutikliu metodas}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Dirbtiniu neuronu tinklu metodas}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Atraminiu vektoriu ma\235inos metodas}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Tiesiniais pagreicio jutikliais gristas metodas}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Dirbtiniu neuronu tinklais gristas metodas}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Atraminiu vektoriu ma\235inomis gristas metodas}{section.2}% 6
 \BOOKMARK [2][-]{subsection.2.4}{Statistines analizes metodas}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.5}{Parkinsono ligos stadijos nustatytmo metodas}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Parkinsono ligos stadijos nustatymas naudojant Micro-AHRS}{section.2}% 8
 \BOOKMARK [1][-]{section.3}{Signalu analizes programos kurimas}{}% 9
 \BOOKMARK [2][-]{subsection.3.1}{Bendros programos strukturines schemos sudarymas}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.2}{Pirminio signalu apdorojimo programos kurimas}{section.3}% 11

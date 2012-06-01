@@ -1,7 +1,17 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/dev/Arch Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
+A level-1 auxiliary file: figures/pirmine_schema.aux
+A level-1 auxiliary file: figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija.aux
+A level-1 auxiliary file: figures/hmm_modelis.aux
+A level-1 auxiliary file: figures/pirminis_signalo_apdorojimas.aux
+A level-1 auxiliary file: figures/pirma_faze.aux
+A level-1 auxiliary file: figures/antra_faze.aux
+A level-1 auxiliary file: figures/trecia_faze.aux
+A level-1 auxiliary file: figures/galutine_programa.aux
 The style file: plain.bst
+A level-1 auxiliary file: figures/klasifikatoriaus_apmokymas.aux
+A level-1 auxiliary file: figures/klasifikatoriaus_tikrinimas.aux
 Database file #1: references.bib
 Warning--I'm ignoring vgtu's extra "pages" field
 --line 129 of file references.bib
@@ -20,7 +30,7 @@ while executing---line 1090 of file plain.bst
 Warning--can't use both volume and number fields in S0966-6362(05)00058-5
 You've used 25 entries,
             2118 wiz_defined-function locations,
-            648 strings with 8999 characters,
+            658 strings with 9324 characters,
 and the built_in function-call counts, 8642 in all, are:
 = -- 822
 > -- 398

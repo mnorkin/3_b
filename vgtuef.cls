@@ -69,9 +69,16 @@
 }
 \floatsetup[cfigure]{style=cfigure-fs}
 \DeclareCaptionLabelFormat{cfigure-st}{#2 programinis kodas.}
-\floatsetup[table]{style=cfigure-fs}
 \captionsetup[cfigure]{position=above,labelformat=cfigure-st,justification=justified,singlelinecheck=false}
 \counterwithin{cfigure}{section}
+
+\DeclareFloatStyle{table-fs}{
+	capposition=top,
+	heightadjust=all
+}
+\floatsetup[table]{style=cfigure-fs}
+\DeclareCaptionLabelFormat{table-st}{#2 lentelė.}
+\captionsetup[table]{position=above,labelformat=table-st,singlelinecheck=true}
 
 %\RequirePackage{fontspec}
 
