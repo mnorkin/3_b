@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2012/dev/Arch Linux) (format=pdflatex 2012.4.18)  1 JUN 2012 03:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2012/dev/Arch Linux) (format=pdflatex 2012.4.18)  1 JUN 2012 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paper
+**paper.tex
 (./paper.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
@@ -1379,6 +1379,9 @@ LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line
 120.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 126.
+
+Underfull \vbox (badness 6157) has occurred while \output is active []
+
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 126.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
@@ -1518,25 +1521,25 @@ LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 231.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-240.
+239.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-240.
+239.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-240.
+239.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-243.
+242.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-245.
+244.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-245.
+244.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-253.
+252.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-253.
+252.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-253.
+252.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-256.
+255.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1545,17 +1548,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-256.
+255.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [18]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-261.
+260.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -1564,42 +1567,42 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 261.
+(epstopdf)             \includegraphics on input line 260.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-261.
+260.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [19]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-261.
+260.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 261.
+(hyperref)                removing `\textdotaccent' on input line 260.
 
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 261.
+(hyperref)                removing `\textasciimacron' on input line 260.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-267.
+266.
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 267.
+(hyperref)                removing `\textasciimacron' on input line 266.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 267.
+(hyperref)                removing `\textdotaccent' on input line 266.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-285.
+284.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1608,16 +1611,16 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 285.
+(epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-285.
+284.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [20]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-290.
+289.
 \openout2 = `figures/pirmine_schema.aux'.
 
  (./figures/pirmine_schema.tex
@@ -1626,23 +1629,23 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-292.
+291.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-292.
+291.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-294.
+293.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-294.
+293.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-298.
+297.
 
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 298.
+(hyperref)                removing `\textasciimacron' on input line 297.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-306.
+305.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -1651,27 +1654,27 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 306.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-306.
+305.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [21
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-328.
+327.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-333.
+332.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-338.
+337.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-343.
+342.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-349.
+348.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1680,23 +1683,23 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 348.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-349.
+348.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [22]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-352.
+351.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-363.
+362.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-377.
+376.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-377.
+376.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -1705,29 +1708,29 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 377.
+(epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-377.
+376.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [23]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-386.
+385.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-392.
+391.
 
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 392.
+(hyperref)                removing `\textasciimacron' on input line 391.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-396.
+395.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-408.
+407.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1736,27 +1739,27 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 408.
+(epstopdf)             \includegraphics on input line 407.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-408.
+407.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [24]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-415.
+414.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-421.
+420.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-430.
+429.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-435.
+434.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-435.
+434.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -1765,33 +1768,33 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 435.
+(epstopdf)             \includegraphics on input line 434.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-435.
+434.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [25]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-439.
+438.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-447.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 454
+446.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 453
 .
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-456.
+455.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-461.
+460.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-464.
+463.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-469.
+468.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1800,17 +1803,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 469.
+(epstopdf)             \includegraphics on input line 468.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-469.
+468.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [26]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-470.
+469.
 Package epstopdf Info: Source file: <figures/co_fft.eps>
 (epstopdf)                    date: 2012-03-22 19:13:00
 (epstopdf)                    size: 3301304 bytes
@@ -1819,7 +1822,7 @@ Package epstopdf Info: Source file: <figures/co_fft.eps>
 (epstopdf)                    size: 86553 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/co_fft-eps-convert
 ed-to.pdf figures/co_fft.eps>
-(epstopdf)             \includegraphics on input line 472.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/co_fft-eps-converted-to.pdf, id=347, 410.53375pt x 309.155pt>
@@ -1827,18 +1830,18 @@ File: figures/co_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/co_fft-eps-converted-to.pdf>
 Package pdftex.def Info: figures/co_fft-eps-converted-to.pdf used on input line
- 472.
+ 471.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-473.
+472.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-473.
+472.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-475.
+474.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-475.
+474.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-477.
+476.
 Package epstopdf Info: Source file: <figures/pt_fft.eps>
 (epstopdf)                    date: 2012-03-22 19:14:00
 (epstopdf)                    size: 3301304 bytes
@@ -1847,7 +1850,7 @@ Package epstopdf Info: Source file: <figures/pt_fft.eps>
 (epstopdf)                    size: 73966 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pt_fft-eps-convert
 ed-to.pdf figures/pt_fft.eps>
-(epstopdf)             \includegraphics on input line 479.
+(epstopdf)             \includegraphics on input line 478.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/pt_fft-eps-converted-to.pdf, id=348, 410.53375pt x 309.155pt>
@@ -1855,18 +1858,18 @@ File: figures/pt_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pt_fft-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pt_fft-eps-converted-to.pdf used on input line
- 479.
+ 478.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-480.
+479.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-480.
+479.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-482.
+481.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-482.
+481.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-486.
+485.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -1875,18 +1878,18 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 486.
+(epstopdf)             \includegraphics on input line 485.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-486.
+485.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [27 <./figures/co_fft-eps-converted-to.pdf> <./figures/pt_fft-eps-converted-to
 .pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-489.
+488.
 Package epstopdf Info: Source file: <figures/co_corr.eps>
 (epstopdf)                    date: 2012-03-22 20:00:00
 (epstopdf)                    size: 3301305 bytes
@@ -1895,7 +1898,7 @@ Package epstopdf Info: Source file: <figures/co_corr.eps>
 (epstopdf)                    size: 222303 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/co_corr-eps-conver
 ted-to.pdf figures/co_corr.eps>
-(epstopdf)             \includegraphics on input line 491.
+(epstopdf)             \includegraphics on input line 490.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/co_corr-eps-converted-to.pdf, id=370, 410.53375pt x 309.155pt>
@@ -1903,18 +1906,18 @@ File: figures/co_corr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/co_corr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/co_corr-eps-converted-to.pdf used on input lin
-e 491.
+e 490.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-492.
+491.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-492.
+491.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-494.
+493.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-494.
+493.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-496.
+495.
 Package epstopdf Info: Source file: <figures/pt_corr.eps>
 (epstopdf)                    date: 2012-03-22 20:01:00
 (epstopdf)                    size: 3301305 bytes
@@ -1923,7 +1926,7 @@ Package epstopdf Info: Source file: <figures/pt_corr.eps>
 (epstopdf)                    size: 220972 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pt_corr-eps-conver
 ted-to.pdf figures/pt_corr.eps>
-(epstopdf)             \includegraphics on input line 498.
+(epstopdf)             \includegraphics on input line 497.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/pt_corr-eps-converted-to.pdf, id=371, 410.53375pt x 309.155pt>
@@ -1931,18 +1934,18 @@ File: figures/pt_corr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pt_corr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pt_corr-eps-converted-to.pdf used on input lin
-e 498.
+e 497.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-499.
+498.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-499.
+498.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-501.
+500.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-501.
+500.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-505.
+504.
 Package epstopdf Info: Source file: <figures/maximums_minimums.eps>
 (epstopdf)                    date: 2012-03-22 21:02:00
 (epstopdf)                    size: 166278 bytes
@@ -1952,7 +1955,7 @@ Package epstopdf Info: Source file: <figures/maximums_minimums.eps>
 (epstopdf)                    size: 58478 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/maximums_minimums-
 eps-converted-to.pdf figures/maximums_minimums.eps>
-(epstopdf)             \includegraphics on input line 507.
+(epstopdf)             \includegraphics on input line 506.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/maximums_minimums-eps-converted-to.pdf, id=374, 410.53375pt x 309.155p
@@ -1960,18 +1963,18 @@ t>
 File: figures/maximums_minimums-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/maximums_minimums-eps-converted-to.pdf>
 Package pdftex.def Info: figures/maximums_minimums-eps-converted-to.pdf used on
- input line 507.
+ input line 506.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-508.
+507.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-508.
+507.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-510.
+509.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-510.
+509.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-516.
+515.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -1980,17 +1983,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 516.
+(epstopdf)             \includegraphics on input line 515.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-516.
+515.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [28 <./figures/co_corr-eps-converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-518.
+517.
 \openout2 = `figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija.aux'.
 
  (./figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija.tex
@@ -1998,18 +2001,18 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-522.
+521.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-522.
+521.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-524.
+523.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-524.
+523.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-525.
+524.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2018,18 +2021,18 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 525.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-525.
+524.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [29 <./figures/pt_corr-eps-converted-to.pdf> <./figures/maximums_minimums-eps-
 converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-528.
+527.
 Package epstopdf Info: Source file: <figures/stance_phase.eps>
 (epstopdf)                    date: 2012-05-31 00:29:57
 (epstopdf)                    size: 50903 bytes
@@ -2039,7 +2042,7 @@ Package epstopdf Info: Source file: <figures/stance_phase.eps>
 (epstopdf)                    size: 27354 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/stance_phase-eps-c
 onverted-to.pdf figures/stance_phase.eps>
-(epstopdf)             \includegraphics on input line 530.
+(epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/stance_phase-eps-converted-to.pdf, id=412, 410.53375pt x 309.155pt>
@@ -2047,18 +2050,18 @@ File: figures/stance_phase-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/stance_phase-eps-converted-to.pdf>
 Package pdftex.def Info: figures/stance_phase-eps-converted-to.pdf used on inpu
-t line 530.
+t line 529.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-531.
+530.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-531.
+530.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-533.
+532.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-533.
+532.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-536.
+535.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2067,20 +2070,20 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 536.
+(epstopdf)             \includegraphics on input line 535.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-536.
+535.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [30
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-544.
+543.
 Package epstopdf Info: Source file: <figures/swing_phase.eps>
 (epstopdf)                    date: 2012-05-31 00:29:21
 (epstopdf)                    size: 48367 bytes
@@ -2089,7 +2092,7 @@ Package epstopdf Info: Source file: <figures/swing_phase.eps>
 (epstopdf)                    size: 18809 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/swing_phase-eps-co
 nverted-to.pdf figures/swing_phase.eps>
-(epstopdf)             \includegraphics on input line 546.
+(epstopdf)             \includegraphics on input line 545.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/swing_phase-eps-converted-to.pdf, id=422, 410.53375pt x 309.155pt>
@@ -2097,18 +2100,18 @@ File: figures/swing_phase-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/swing_phase-eps-converted-to.pdf>
 Package pdftex.def Info: figures/swing_phase-eps-converted-to.pdf used on input
- line 546.
+ line 545.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-547.
+546.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-547.
+546.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-549.
+548.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-549.
+548.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-551.
+550.
 Package epstopdf Info: Source file: <figures/st_sw_linear_kpca.eps>
 (epstopdf)                    date: 2012-05-31 00:26:21
 (epstopdf)                    size: 37646 bytes
@@ -2118,7 +2121,7 @@ Package epstopdf Info: Source file: <figures/st_sw_linear_kpca.eps>
 (epstopdf)                    size: 26570 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_linear_kpca-
 eps-converted-to.pdf figures/st_sw_linear_kpca.eps>
-(epstopdf)             \includegraphics on input line 553.
+(epstopdf)             \includegraphics on input line 552.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_linear_kpca-eps-converted-to.pdf, id=423, 410.53375pt x 309.155p
@@ -2126,18 +2129,18 @@ t>
 File: figures/st_sw_linear_kpca-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/st_sw_linear_kpca-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_linear_kpca-eps-converted-to.pdf used on
- input line 553.
+ input line 552.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-554.
+553.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-554.
+553.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-556.
+555.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-556.
+555.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-560.
+559.
 Package epstopdf Info: Source file: <figures/st_sw_linear_lda.eps>
 (epstopdf)                    date: 2012-05-31 00:26:03
 (epstopdf)                    size: 37147 bytes
@@ -2147,7 +2150,7 @@ pdf>
 (epstopdf)                    size: 26293 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_linear_lda-e
 ps-converted-to.pdf figures/st_sw_linear_lda.eps>
-(epstopdf)             \includegraphics on input line 562.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_linear_lda-eps-converted-to.pdf, id=425, 410.53375pt x 309.155pt
@@ -2155,18 +2158,18 @@ Package epstopdf Info: Output file is already uptodate.
 File: figures/st_sw_linear_lda-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/st_sw_linear_lda-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_linear_lda-eps-converted-to.pdf used on 
-input line 562.
+input line 561.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-563.
+562.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-563.
+562.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-565.
+564.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-565.
+564.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-568.
+567.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2175,18 +2178,18 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 568.
+(epstopdf)             \includegraphics on input line 567.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-568.
+567.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [31 <./figures/stance_phase-eps-converted-to.pdf> <./figures/swing_phase-eps-c
 onverted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-569.
+568.
 Package epstopdf Info: Source file: <figures/st_sw_poly_kpca.eps>
 (epstopdf)                    date: 2012-05-31 00:25:14
 (epstopdf)                    size: 23662 bytes
@@ -2196,25 +2199,25 @@ df>
 (epstopdf)                    size: 9880 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_poly_kpca-ep
 s-converted-to.pdf figures/st_sw_poly_kpca.eps>
-(epstopdf)             \includegraphics on input line 571.
+(epstopdf)             \includegraphics on input line 570.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_poly_kpca-eps-converted-to.pdf, id=453, 410.53375pt x 309.155pt>
 File: figures/st_sw_poly_kpca-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/st_sw_poly_kpca-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_poly_kpca-eps-converted-to.pdf used on i
-nput line 571.
+nput line 570.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-572.
+571.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-572.
+571.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-574.
+573.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-574.
+573.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-576.
+575.
 Package epstopdf Info: Source file: <figures/st_sw_poly_gda.eps>
 (epstopdf)                    date: 2012-05-31 00:25:37
 (epstopdf)                    size: 33847 bytes
@@ -2224,7 +2227,7 @@ f>
 (epstopdf)                    size: 21743 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_poly_gda-eps
 -converted-to.pdf figures/st_sw_poly_gda.eps>
-(epstopdf)             \includegraphics on input line 578.
+(epstopdf)             \includegraphics on input line 577.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_poly_gda-eps-converted-to.pdf, id=454, 410.53375pt x 309.155pt>
@@ -2232,18 +2235,18 @@ File: figures/st_sw_poly_gda-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/st_sw_poly_gda-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_poly_gda-eps-converted-to.pdf used on in
-put line 578.
+put line 577.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-579.
+578.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-579.
+578.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-581.
+580.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-581.
+580.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-585.
+584.
 Package epstopdf Info: Source file: <figures/st_sw_gauss_kpca.eps>
 (epstopdf)                    date: 2012-05-31 00:27:30
 (epstopdf)                    size: 48107 bytes
@@ -2253,7 +2256,7 @@ pdf>
 (epstopdf)                    size: 34401 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_gauss_kpca-e
 ps-converted-to.pdf figures/st_sw_gauss_kpca.eps>
-(epstopdf)             \includegraphics on input line 587.
+(epstopdf)             \includegraphics on input line 586.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_gauss_kpca-eps-converted-to.pdf, id=459, 410.53375pt x 309.155pt
@@ -2261,18 +2264,18 @@ Package epstopdf Info: Output file is already uptodate.
 File: figures/st_sw_gauss_kpca-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/st_sw_gauss_kpca-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_gauss_kpca-eps-converted-to.pdf used on 
-input line 587.
+input line 586.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-588.
+587.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-588.
+587.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-590.
+589.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-590.
+589.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-592.
+591.
 Package epstopdf Info: Source file: <figures/st_sw_gauss_gda.eps>
 (epstopdf)                    date: 2012-05-31 00:27:52
 (epstopdf)                    size: 40043 bytes
@@ -2282,25 +2285,25 @@ df>
 (epstopdf)                    size: 8073 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/st_sw_gauss_gda-ep
 s-converted-to.pdf figures/st_sw_gauss_gda.eps>
-(epstopdf)             \includegraphics on input line 594.
+(epstopdf)             \includegraphics on input line 593.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/st_sw_gauss_gda-eps-converted-to.pdf, id=460, 410.53375pt x 309.155pt>
 File: figures/st_sw_gauss_gda-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/st_sw_gauss_gda-eps-converted-to.pdf>
 Package pdftex.def Info: figures/st_sw_gauss_gda-eps-converted-to.pdf used on i
-nput line 594.
+nput line 593.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-595.
+594.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-595.
+594.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-597.
+596.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-597.
+596.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-601.
+600.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2309,26 +2312,26 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 601.
+(epstopdf)             \includegraphics on input line 600.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-601.
+600.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [32 <./figures/st_sw_linear_kpca-eps-converted-to.pdf> <./figures/st_sw_linear
 _lda-eps-converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-603.
+602.
 
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 603.
+(hyperref)                removing `\textasciimacron' on input line 602.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-611.
+610.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2337,22 +2340,22 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 611.
+(epstopdf)             \includegraphics on input line 610.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-611.
+610.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [33 <./figures/st_sw_poly_kpca-eps-converted-to.pdf> <./figures/st_sw_poly_gda
 -eps-converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-620.
+619.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-620.
+619.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2361,32 +2364,36 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 620.
+(epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-620.
+619.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [34 <./figures/st_sw_gauss_kpca-eps-converted-to.pdf> <./figures/st_sw_gauss_g
 da-eps-converted-to.pdf>]
+
+LaTeX Warning: Command \v invalid in math mode on input line 625.
+
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-627.
+626.
+Missing character: There is no þ in font pplr9t!
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-642.
+641.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-645.
+644.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-645.
+644.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-652.
+651.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-652.
+651.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-652.
+651.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-655.
+654.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2395,17 +2402,16 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 655.
+(epstopdf)             \includegraphics on input line 654.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
-
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-655.
+654.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [35]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-657.
+656.
 \openout2 = `figures/hmm_modelis.aux'.
 
  (./figures/hmm_modelis.tex
@@ -2413,42 +2419,42 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-660.
+659.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-660.
+659.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-662.
+661.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-662.
+661.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-667.
+666.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-669.
+668.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-669.
+668.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-676.
+675.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-676.
+675.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-676.
+675.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-683.
+682.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-685.
+684.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-685.
+684.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-692.
+691.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-692.
+691.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-692.
+691.
 
 Underfull \vbox (badness 3547) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-697.
+696.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2457,45 +2463,45 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 697.
+(epstopdf)             \includegraphics on input line 696.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-697.
+696.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [36
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-699.
+698.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-701.
+700.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-701.
+700.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-708.
+707.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-708.
+707.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-708.
+707.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-712.
+711.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 712.
+(hyperref)                removing `\textdotaccent' on input line 711.
 
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 712.
+(hyperref)                removing `\textasciimacron' on input line 711.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-719.
+718.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2504,16 +2510,16 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 719.
+(epstopdf)             \includegraphics on input line 718.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-719.
+718.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [37]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-721.
+720.
 Package epstopdf Info: Source file: <figures/11_sample_testing.eps>
 (epstopdf)                    date: 2012-05-23 20:09:56
 (epstopdf)                    size: 15032 bytes
@@ -2523,7 +2529,7 @@ Package epstopdf Info: Source file: <figures/11_sample_testing.eps>
 (epstopdf)                    size: 11464 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/11_sample_testing-
 eps-converted-to.pdf figures/11_sample_testing.eps>
-(epstopdf)             \includegraphics on input line 722.
+(epstopdf)             \includegraphics on input line 721.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/11_sample_testing-eps-converted-to.pdf, id=583, 410.53375pt x 309.155p
@@ -2531,30 +2537,30 @@ t>
 File: figures/11_sample_testing-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/11_sample_testing-eps-converted-to.pdf>
 Package pdftex.def Info: figures/11_sample_testing-eps-converted-to.pdf used on
- input line 722.
+ input line 721.
 (pdftex.def)             Requested size: 250.93842pt x 188.97108pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-723.
+722.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-723.
+722.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-725.
+724.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-725.
+724.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-732.
+731.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-734.
+733.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-734.
+733.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-741.
+740.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-741.
+740.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-741.
+740.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-744.
+743.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2563,17 +2569,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 744.
+(epstopdf)             \includegraphics on input line 743.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-744.
+743.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [38 <./figures/11_sample_testing-eps-converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-747.
+746.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2582,26 +2588,26 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 747.
+(epstopdf)             \includegraphics on input line 746.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
  <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-747.
+746.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [39]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-747.
+746.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 747.
+(hyperref)                removing `\textdotaccent' on input line 746.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-751.
+750.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-765.
+764.
 \openout2 = `figures/pirminis_signalo_apdorojimas.aux'.
 
 (./figures/pirminis_signalo_apdorojimas.tex
@@ -2609,39 +2615,39 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-768.
+767.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-768.
+767.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-770.
+769.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-770.
+769.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-772.
+771.
 Package hyperref Info: bookmark level for unknown cfigure defaults to 0 on inpu
-t line 774.
+t line 773.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-774.
+773.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-774.
+773.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-776.
+775.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-781.
+780.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-781.
+780.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-781.
+780.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+785.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 786.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-787.
-LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-787.
+786.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 789.
+nput line 788.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-789.
+788.
  (./sources/extract_signal.m
 Overfull \hbox (44.59692pt too wide) in paragraph at lines 10--11
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
@@ -2649,13 +2655,13 @@ Overfull \hbox (44.59692pt too wide) in paragraph at lines 10--11
 
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-790.
+789.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-790.
+789.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-790.
+789.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-793.
+792.
 Package epstopdf Info: Source file: <figures/09_sample_stance_phase.eps>
 (epstopdf)                    date: 2012-03-22 15:20:00
 (epstopdf)                    size: 10093 bytes
@@ -2665,7 +2671,7 @@ ed-to.pdf>
 (epstopdf)                    size: 7259 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/09_sample_stance_p
 hase-eps-converted-to.pdf figures/09_sample_stance_phase.eps>
-(epstopdf)             \includegraphics on input line 794.
+(epstopdf)             \includegraphics on input line 793.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/09_sample_stance_phase-eps-converted-to.pdf, id=608, 410.53375pt x 309
@@ -2674,18 +2680,18 @@ File: figures/09_sample_stance_phase-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/09_sample_stance_phase-eps-converted-to.pdf>
 Package pdftex.def Info: figures/09_sample_stance_phase-eps-converted-to.pdf us
-ed on input line 794.
+ed on input line 793.
 (pdftex.def)             Requested size: 301.1261pt x 226.76154pt.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-795.
+794.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-795.
+794.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-797.
+796.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-797.
+796.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-800.
+799.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2694,17 +2700,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 799.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-800.
+799.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [40]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-800.
+799.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2713,20 +2719,20 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 799.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-800.
+799.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [41
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-800.
+799.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2735,17 +2741,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 799.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-800.
+799.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [42 <./figures/09_sample_stance_phase-eps-converted-to.pdf>]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-802.
+801.
 \openout2 = `figures/pirma_faze.aux'.
 
  (./figures/pirma_faze.tex
@@ -2753,15 +2759,15 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-805.
+804.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-805.
+804.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-807.
+806.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-807.
+806.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-813.
+812.
 \openout2 = `figures/antra_faze.aux'.
 
  (./figures/antra_faze.tex
@@ -2769,18 +2775,18 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-816.
+815.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-816.
+815.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-818.
+817.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-818.
+817.
 
 Underfull \vbox (badness 4660) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-821.
+820.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2789,20 +2795,20 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 821.
+(epstopdf)             \includegraphics on input line 820.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-821.
+820.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [43
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-825.
+824.
 \openout2 = `figures/trecia_faze.aux'.
 
  (./figures/trecia_faze.tex
@@ -2810,19 +2816,19 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-828.
+827.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-828.
+827.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-830.
+829.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-830.
+829.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-834.
+833.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-843.
+842.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-843.
+842.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2831,26 +2837,26 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 843.
+(epstopdf)             \includegraphics on input line 842.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-843.
+842.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [44
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-850.
+849.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-856.
+855.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-861.
+860.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-863.
+862.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2859,58 +2865,58 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 863.
+(epstopdf)             \includegraphics on input line 862.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-863.
+862.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [45
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-866.
+865.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+873.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 874.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-875.
-LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-875.
+874.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-877.
+876.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-880.
+879.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-880.
+879.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-880.
+879.
+LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
+882.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
 883.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-884.
-LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-884.
+883.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-886.
+885.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-889.
+888.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-889.
+888.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-889.
+888.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-895.
+894.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 895.
+(hyperref)                removing `\textdotaccent' on input line 894.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-901.
+900.
 \openout2 = `figures/galutine_programa.aux'.
 
 (./figures/galutine_programa.tex
@@ -2918,15 +2924,15 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-904.
+903.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-904.
+903.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-906.
+905.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-906.
+905.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-909.
+908.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2935,17 +2941,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 909.
+(epstopdf)             \includegraphics on input line 908.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
  <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-909.
+908.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
 
 [46]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-914.
+913.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -2954,29 +2960,29 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 914.
+(epstopdf)             \includegraphics on input line 913.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
  <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-914.
+913.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [47
 
 
 ]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-914.
+913.
 
 
 Package hyperref Warning: Composite letter `\textdotaccent+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotaccent' on input line 914.
+(hyperref)                removing `\textdotaccent' on input line 913.
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-922.
+921.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-929.
+928.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -2985,44 +2991,44 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 929.
+(epstopdf)             \includegraphics on input line 928.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-929.
+928.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [48]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-930.
+929.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-940.
+939.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-942.
+941.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-944.
+943.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-944.
+943.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-956.
+955.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-956.
+955.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-956.
+955.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-959.
+958.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-961.
+960.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-961.
+960.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-973.
+972.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-973.
+972.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-973.
+972.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-978.
+977.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -3031,53 +3037,53 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 978.
+(epstopdf)             \includegraphics on input line 977.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-978.
+977.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [49]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-982.
+981.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-984.
+983.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-984.
+983.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-996.
+995.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-996.
+995.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-996.
+995.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-999.
+998.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1001.
+1000.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1001.
+1000.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1013.
+1012.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1013.
+1012.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1013.
+1012.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1016.
+1015.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1018.
+1017.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1018.
+1017.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1031.
+1030.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1031.
+1030.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1031.
+1030.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1037.
+1036.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -3086,17 +3092,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1037.
+(epstopdf)             \includegraphics on input line 1036.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-1037.
+1036.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [50]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1048.
+1047.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -3105,19 +3111,19 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1048.
+(epstopdf)             \includegraphics on input line 1047.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-1048.
+1047.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [51]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1048.
+1047.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1067.
+1066.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -3126,19 +3132,19 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1067.
+(epstopdf)             \includegraphics on input line 1066.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-1067.
+1066.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [52]
 
 Package hyperref Warning: Composite letter `\textasciimacron+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciimacron' on input line 1076.
+(hyperref)                removing `\textasciimacron' on input line 1075.
 
 (./paper.bbl
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
@@ -3198,7 +3204,7 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  144.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1082.
+1081.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -3207,18 +3213,18 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1082.
+(epstopdf)             \includegraphics on input line 1081.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
  <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-1082.
+1081.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [55]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1082.
+1081.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1087.
+1086.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -3227,27 +3233,27 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1087.
+(epstopdf)             \includegraphics on input line 1086.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-1087.
+1086.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [56]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1087.
+1086.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1090.
+1089.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1093.
+1092.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1095.
+1094.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1095.
+1094.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-1097.
+1096.
  (./sources/pca2.m
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 18.
 
@@ -3264,31 +3270,31 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 18.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1098.
+1097.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1098.
+1097.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1098.
+1097.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1100.
+1099.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1102.
+1101.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1102.
+1101.
 LaTeX Font Info:    Failed loading font information for L7x+pzc. on input line 
-1104.
+1103.
  (./sources/pca1.m)
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1105.
+1104.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1105.
+1104.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1105.
+1104.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1106.
+1105.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -3297,19 +3303,19 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1106.
+(epstopdf)             \includegraphics on input line 1105.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-1106.
+1105.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [57]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1107.
+1106.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1110.
+1109.
 \openout2 = `figures/klasifikatoriaus_apmokymas.aux'.
 
 
@@ -3318,18 +3324,18 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1114.
+1113.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1114.
+1113.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1116.
+1115.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1116.
+1115.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1117.
+1116.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -3338,17 +3344,17 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1117.
+(epstopdf)             \includegraphics on input line 1116.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-1117.
+1116.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [58]
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1118.
+1117.
 \openout2 = `figures/klasifikatoriaus_tikrinimas.aux'.
 
 
@@ -3357,18 +3363,18 @@ LaTeX Font Info:    Failed loading font information for L7x+cmtt. on input line
  14.
 )
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1122.
+1121.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1122.
+1121.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1124.
+1123.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1124.
+1123.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1125.
+1124.
 Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:23:00
 (epstopdf)                    size: 23181 bytes
@@ -3377,21 +3383,21 @@ Package epstopdf Info: Source file: <img/CE_HEADER.eps>
 (epstopdf)                    size: 6035 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CE_HEADER-eps-converte
 d-to.pdf img/CE_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1125.
+(epstopdf)             \includegraphics on input line 1124.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CE_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CE_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CE_HEADER-eps-converted-to.pdf used on input line 
-1125.
+1124.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [59
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1126.
 LaTeX Font Info:    Failed loading font information for L7x+ptm. on input line 
-1127.
+1126.
 Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    date: 2012-03-09 09:33:00
 (epstopdf)                    size: 22629 bytes
@@ -3400,19 +3406,19 @@ Package epstopdf Info: Source file: <img/CO_HEADER.eps>
 (epstopdf)                    size: 5990 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/CO_HEADER-eps-converte
 d-to.pdf img/CO_HEADER.eps>
-(epstopdf)             \includegraphics on input line 1127.
+(epstopdf)             \includegraphics on input line 1126.
 Package epstopdf Info: Output file is already uptodate.
 File: img/CO_HEADER-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/CO_HEADER-eps-converted-to.pdf>
 Package pdftex.def Info: img/CO_HEADER-eps-converted-to.pdf used on input line 
-1127.
+1126.
 (pdftex.def)             Requested size: 483.0pt x 11.5774pt.
  [60
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1126.
  (./paper.aux
 (./figures/pirmine_schema.aux)
 (./figures/pirminis_signalo_apdorojimas_skaiciuojant_variacija.aux)
@@ -3421,8 +3427,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1127.
 (./figures/trecia_faze.aux) (./figures/galutine_programa.aux)
 (./figures/klasifikatoriaus_apmokymas.aux)
 (./figures/klasifikatoriaus_tikrinimas.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1126.
 
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: ECF6F7B311B55CF1212AD3A3AF20F0E8;2290.
@@ -3430,15 +3436,18 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  28678 strings out of 493629
  559420 string characters out of 3148778
- 720714 words of memory out of 3000000
+ 720715 words of memory out of 3000000
  31030 multiletter control sequences out of 15000+200000
  57915 words of font info for 116 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 70i,15n,76p,1716b,1860s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,15n,76p,1720b,1860s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dis
 t/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.
 enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
@@ -3455,7 +3464,7 @@ pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-di
 st/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/pala
 tino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
 r/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper.pdf (54 pages, 1210747 bytes).
+Output written on paper.pdf (54 pages, 1210805 bytes).
 PDF statistics:
  952 PDF objects out of 1000 (max. 8388607)
  808 compressed objects within 9 object streams

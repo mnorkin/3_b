@@ -62,7 +62,7 @@ Duomenys surinkti: ``Galit Yogev et al'' (dual tasking in PD; Eur J Neuro, 2005)
 
 % Accuracy is the degree of closeness of measurements of quantity to that quantity's actual (true) value. Precision is the degree to which repeated measurements under unchanged conditions show the same results. The closer these two measurements are to one - the better classification method works.
 
-Programos veikimas, atliekamas klasifikavimo mechanizmu, vertinamas taiklumu ir tikslumu. Taiklumas yra matmens laipsnio artumas iki tikrojo matmens. Tikslumas yra matmens laipsnis, kuris nusako rezultatų pasikartojimo skaičių nepakitus sąlygoms. Parametrai yra apskaičiuojami iš pasikliovimo matricos.
+Programos veikimas, atliekamas klasifikavimo mechanizmu, vertinamas tikslumu. Tikslumas yra matmuo, kuris apibrėžia klasifikatoriaus teisingai identifikuotų klasių skaičių. Parametras yra apskaičiuojamas iš pasikliovimo matricos.
 
 \section{Informacinių Parkinsono ligos diagnostikos sistemų apžvalga}
 
@@ -82,17 +82,17 @@ Nepriklausomai nuo atlikto tyrimo siaurumo, darbe pateiktos svarbios eisenos ana
 
 Tolimesnis darbas apžvalgai yra ``A ground reaction force artificial neural network classifier for the diagnosis of Parkinson's disease'' \cite{vgtu}. Duomenys analizei panaudoti tokie patys, kokie naudojami ir šiame darbe, iš tos pačios duomenų bazės, tačiau pagrindinis nagrinėjamo darbo skirtumas yra naudojamų subjektų skaičius -- analizei pasirinkta $40$ subjektu, turinčių Parkinsono ligą ir $40$ subjektų, neturinčių neurologinių sutrikimų. Nėra argumentuota kodėl toks subjektų skaičius panaudotas analizei, kadangi duomenų bazėje yra $93$ subjektai su Parkinsono ligos sutrikimais ir $73$ kontroliniai, sveiki subjektai. Iš atliktos pirminės analizės pastebėta, kad Parkinsono subjektai VŽRJ signale turi mažiau galios aukštuose dažniuose, žemesnę pirmo ir antro maksimumo amplitudę ir pavėluotą pirmą maksimumą. Atlikta DFA (angl. \textit{Detrended fluctation analysis}) parodė, kad Parkinsono subjektai turi ilgesnį vidurinį ilgo laikotarpio žingsnio pakilimo nuo žemės fazės koreliacijos įvertį.
 
-Darbe panaudoti $8$ signalo požymiai: vidutinė galia tarp $0,5$ Hz ir $1,5$ Hz (dB), vidutinė galia tarp $1,5$ Hz ir $20$ Hz (dB), kojos pakilimo nuo žemės santykis viso žingsnio atžvilgiu (procentais), pirmo maksimumo reikšmė (N/BW); antro maksimumo reikšmė (N/BW), kairės kojos atliktos DFA analizės skalės $\alpha$ eksponentė, dešinės kojos atliktos DFA analizės skalės $\alpha$ eksponentė \cite{Hausdorff01011997}. Matmenų mažinimo metodas nepritaikytas. Klasifikavimui pasirinktas dirbtinių neuronų tinklas su $8$ paslėptais neuronais, apmokymas vyko naudojantis normuoto susietų gradientų atvirkštinį dauginimą (angl. \textit{scaled conjugate gradient backpropagation algorithm}). Apmokymui pasirinkta po $20$ subjektų iš kiekvienos grupės, dirbtinių neuronų tinklo persimokymo tikrinimas vykdytas panaudojus po $10$ subjektų iš kiekvienos grupės, testavimas atliekamas panaudojus po $10$ subjektų duomenis iš kiekvienos grupės. Klasifikavimo taiklumas ir tikslumas yra pateikti \ref{table:vgtu_ann_scores} lentelėje. Klasifikatoriaus tikslumas yra $95~\%$, kontroliniai subjektai atpažinti su $90~\%$ taiklumu (vienas iš dešimt subjektų atpažinti klaidingai), Parkinsono liga sergantys subjektai atpažinti su $100~\%$ taiklumu.
+Darbe panaudoti $8$ signalo požymiai: vidutinė galia tarp $0,5$ Hz ir $1,5$ Hz (dB), vidutinė galia tarp $1,5$ Hz ir $20$ Hz (dB), kojos pakilimo nuo žemės santykis viso žingsnio atžvilgiu (procentais), pirmo maksimumo reikšmė (N/BW); antro maksimumo reikšmė (N/BW), kairės kojos atliktos DFA analizės skalės $\alpha$ eksponentė, dešinės kojos atliktos DFA analizės skalės $\alpha$ eksponentė \cite{Hausdorff01011997}. Matmenų mažinimo metodas nepritaikytas. Klasifikavimui pasirinktas dirbtinių neuronų tinklas su $8$ paslėptais neuronais, apmokymas vyko naudojantis normuoto susietų gradientų atvirkštinį dauginimą (angl. \textit{scaled conjugate gradient backpropagation algorithm}). Apmokymui pasirinkta po $20$ subjektų iš kiekvienos grupės, dirbtinių neuronų tinklo persimokymo tikrinimas vykdytas panaudojus po $10$ subjektų iš kiekvienos grupės, testavimas atliekamas panaudojus po $10$ subjektų duomenis iš kiekvienos grupės. Klasifikavimo rezultatai yra pateikti \ref{table:vgtu_ann_scores} lentelėje. Klasifikatoriaus tikslumas yra $95~\%$, kontroliniai subjektai atpažinti $90~\%$ (vienas iš dešimt subjektų atpažinti klaidingai), Parkinsono liga sergantys subjektai atpažinti $100~\%$.
 
 \begin{table}
   \centering
   \renewcommand{\arraystretch}{1.3}
-  \caption{Klasifikavimo taiklumas ir tikslumas, panaudojus dirbtinių neuronų tinklo klasifikatorių \cite{vgtu}}
+  \caption{Klasifikavimo rezultatas, panaudojus dirbtinių neuronų tinklo klasifikatorių \cite{vgtu}}
   \label{table:vgtu_ann_scores}
   \begin{tabular}{|c|c|c|} \hline
     & Co & Pt \\ \hline
     Tikslumas & 0,950 & 0,950 \\ \hline
-    Taiklumas & 0,900 & 1,000 \\ \hline
+    Atpažinimas & 0,900 & 1,000 \\ \hline
   \end{tabular}
 \end{table}
 
@@ -193,7 +193,7 @@ Iš viso duomenų surinkimo metu dalyvavo $12$ Parkinsono liga sergančių subje
 
 Klasifikavimo uždaviniui spręsti panaudotas dirbtinis neuronų tinklas su daugiasluoksniu perceptronu. Duomenis algoritmui pateikiami padalinus visus turimus duomenis į keturis rinkinius.
 
-Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis ir suformuoti hipotezę, kokie eisenos požymiai geriausiai identifikuoja subjektų grupes. Vėliau, pagal klasifikatoriaus taiklumo rezultatus, parinkti geriausius požymius, pagal kuriuos vyks subjektų atpažinimas. Pagrindiniai eisenos parametrai, kurie labiausiai skyrėsi tarp subjektų, yra pateikti \ref{table:statistics_st_wa} lentelėje. Pastebėta, kad kontrolinių subjektų žingsnio ilgis yra ilgesnis už Parkinsono subjektų žingsnio ilgį. Iš pagrindinių požymių išskirtas ėjimo greitis. Parkinsono subjektų eisenos greitis pažymėtas kaip lėtesnis, lyginant su kontroliniais subjektais. Jėgos jutiklių parametrų palyginimas parodė, kad daugiausiai informacijos pateikia minimumas, kuris yra tarp pėdos pirmo prisilietimo prie žemės maksimumo ir pėdos pakilimo nuo žemės maksimumo. Iš kinematinių požymių, didžiausias skirtumas tarp subjektų yra klubo maksimalus kampas: $19,904\pm8,623$ laipsnių kontrolinių subjektų atveju ir $11,271\pm6,157$ laipsnių Parkinsono subjektų atveju.
+Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis ir suformuoti hipotezę, kokie eisenos požymiai geriausiai identifikuoja subjektų grupes. Vėliau, pagal klasifikatoriaus atpažinimo rezultatus, parinkti geriausius požymius, pagal kuriuos vyks subjektų atpažinimas. Pagrindiniai eisenos parametrai, kurie labiausiai skyrėsi tarp subjektų, yra pateikti \ref{table:statistics_st_wa} lentelėje. Pastebėta, kad kontrolinių subjektų žingsnio ilgis yra ilgesnis už Parkinsono subjektų žingsnio ilgį. Iš pagrindinių požymių išskirtas ėjimo greitis. Parkinsono subjektų eisenos greitis pažymėtas kaip lėtesnis, lyginant su kontroliniais subjektais. Jėgos jutiklių parametrų palyginimas parodė, kad daugiausiai informacijos pateikia minimumas, kuris yra tarp pėdos pirmo prisilietimo prie žemės maksimumo ir pėdos pakilimo nuo žemės maksimumo. Iš kinematinių požymių, didžiausias skirtumas tarp subjektų yra klubo maksimalus kampas: $19,904\pm8,623$ laipsnių kontrolinių subjektų atveju ir $11,271\pm6,157$ laipsnių Parkinsono subjektų atveju.
 
 \begin{table}
 	\centering
@@ -201,7 +201,7 @@ Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis
 	\caption{Dirbtinių neuronų tinklo klasifikavimo rezultatai, panaudojus skirtingas pažymių grupes \cite{6151536}}
 	\label{table:ann_table_results}
 	\begin{tabular}{|c|c|} \hline
-		Požymių grupė & Klasifikavimo taiklumas \\ \hline
+		Požymių grupė & Klasifikavimo tikslumas \\ \hline
 		Pagrindiniai & $81,25~\%$ \\ \hline
 		Kinetiniai & $81,25~\%$ \\ \hline
 		Kinematiniai & $84,38~\%$ \\ \hline
@@ -213,7 +213,7 @@ Darbo tikslas yra pirmiausiai analitiškai išanalizuoti visus gaunamus duomenis
 	\end{tabular}
 \end{table}
 
-Atlikus analitinį palyginimą, toliau atliktas požymių tikrinimas, remiantis klasifikatoriaus taiklumo rezultatais. Rezultatai yra pateikiami \ref{table:ann_table_results} lentelėje. Pagrindinių ir kinetinių požymių grupės surinko po vienodą klasifikavimo taiklumo rezultatą. Tai leidžia daryti išvadą, kad abi šių požymių grupės rodo panašias eisenos savybes. Kinematinių požymių taiklumo rezultatas yra $84,38~\%$ ir yra didesnis už dviejų požymių grupių taiklumą. Sujungus pagrindines ir kinetines požymių grupes pasiektas didesnis klasifikavimo taiklumo rezultatas $87,50~\%$, tokį patį rezultatą pateikė ir pagrindinių su kinematiniais požymiais sujungimas. Kiti galimi požymių grupių sujungimai nepateikė geresnių klasifikavimo taiklumo rezultatų. Geriausią rezultatą pateikė keturių požymių grupė, kuri paaiškėjo po atliktos statistinės analizės: žingsnio ilgis, eisenos greitis, klubo maksimumo kampas ir minimumas tarp dviejų pėdos prisilietimo prie žemės maksimumų. Klasifikavimo taiklumas $95,63~\%$.
+Atlikus analitinį palyginimą, toliau atliktas požymių tikrinimas, remiantis klasifikatoriaus tikslumo rezultatais. Rezultatai yra pateikiami \ref{table:ann_table_results} lentelėje. Pagrindinių ir kinetinių požymių grupės surinko po vienodą klasifikavimo tikslumo rezultatą. Tai leidžia daryti išvadą, kad abi šių požymių grupės rodo panašias eisenos savybes. Kinematinių požymių tikslumo rezultatas yra $84,38~\%$ ir yra didesnis už dviejų požymių grupių tikslumą. Sujungus pagrindines ir kinetines požymių grupes pasiektas didesnis klasifikavimo tikslumo rezultatas $87,50~\%$, tokį patį rezultatą pateikė ir pagrindinių su kinematiniais požymiais sujungimas. Kiti galimi požymių grupių sujungimai nepateikė geresnių klasifikavimo tikslumo rezultatų. Geriausią rezultatą pateikė keturių požymių grupė, kuri paaiškėjo po atliktos statistinės analizės: žingsnio ilgis, eisenos greitis, klubo maksimumo kampas ir minimumas tarp dviejų pėdos prisilietimo prie žemės maksimumų. Klasifikavimo tikslumas $95,63~\%$.
 
 Apibendrinant, šiame darbe yra panaudoti požymiai požymių erdvei sudaryti, bei pritaikytas dirbtinių neuronų tinklas, klasifikavimui atlikti.
 
@@ -228,12 +228,11 @@ Tyrime iš viso panaudoti $67$ normuojami laiko srities požymiai, kurie yra sva
 \begin{table}
 	\centering
   \renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo jautrumas, taiklumas, klaidingai klasifikuotas rodiklis ir tikslumas, naudojant pastovų ir kintantį klaidingo klasifikavimo metodo kriterijų \cite{5627904}}
+	\caption{Klasifikavimo jautrumas, tikslumas, ir klaidingai klasifikuotas rodiklis, naudojant pastovų ir kintantį klaidingo klasifikavimo metodo kriterijų \cite{5627904}}
 	\label{table:wireless_svm_pd_recognition}
 	\begin{tabular}{|c|c|c|} \hline
 		& Pastovus kriterijus & Kintantis kriterijus \\ \hline
 	Jautrumas & $93,3~\%$ & $88,9~\%$ \\ \hline
-	Taiklumas & $95,8~\%$ & $100,0~\%$ \\ \hline
 	Klaidingai klasifikuotas rodiklis & $4,2~\%$ & $0,0~\%$ \\ \hline
 	Tikslumas & $97,7~\%$ & $100,0~\%$ \\ \hline
 	\end{tabular}
@@ -242,19 +241,19 @@ Tyrime iš viso panaudoti $67$ normuojami laiko srities požymiai, kurie yra sva
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Sunkios, lengvos ir kontrolinio subjekto eisenos sutrikimo klasifikavimo tikslumas ir taiklumas, identifikuojant lengvą ir sunkų Parkinsono ligos eigos atvejį \cite{5627904}}
+	\caption{Sunkios, lengvos ir kontrolinio subjekto eisenos sutrikimo klasifikavimo tikslumas, identifikuojant lengvą ir sunkų Parkinsono ligos eigos atvejį \cite{5627904}}
 	\label{table:wireless_svm_recognition}
 	\begin{tabular}{|c|c|c|} \hline
-		& Klasės taiklumas & Klasės tikslumas \\ \hline
+		& Tikslumas & Atpažinimas \\ \hline
 	Sunkus PD eisenos sutrikimas & $52,4~\%$ & $84,6~\%$ \\ \hline
 	Lengvas PD eisenos sutrikimas & $66,7~\%$ & $64,0~\%$ \\ \hline
 	Kontrolinis subjektas & $91,7~\%$ & $71,0~\%$ \\ \hline
 	\end{tabular}
 \end{table}
 
-Nepaisant neaiškumų dėl požymių erdvės -- atraminių vektorių mašinos klasifikatorius su radialiniu Gauso branduoliu subendrina požymių erdvę. Klasifikatoriaus tikslumo ir taiklumo rezultatai yra pateikiami \ref{table:wireless_svm_pd_recognition} lentelėje. Geriausias klasifikavimo tikslumas pasiektas, naudojant kintamą klaidos vertinimo kriterijų. Nurodytas klasifikavimo metodas atpažįsta Parkinsono ligą sėkmingai ($100~\%$ tikslumas).
+Nepaisant neaiškumų dėl požymių erdvės -- atraminių vektorių mašinos klasifikatorius su radialiniu Gauso branduoliu subendrina požymių erdvę. Klasifikatoriaus tikslumo ir atpažinimo rezultatai yra pateikiami \ref{table:wireless_svm_pd_recognition} lentelėje. Geriausias klasifikavimo tikslumas pasiektas, naudojant kintamą klaidos vertinimo kriterijų. Nurodytas klasifikavimo metodas atpažįsta Parkinsono ligą sėkmingai ($100~\%$ tikslumas).
 
-Atliekant sudėtingesnį klasifikavimą tarp lengvos eisenos sutrikimo, sunkios eisenos sutrikimo Parkinsono ir kontrolinio subjekto, klasifikavimo taiklumas gaunamas prastesnis. Sunkios eisenos sutrikimas atpažįstamas prastai, taiklumas rezultatas yra $52,4~\%$, lengvos eisenos sutrikimo klasifikavimo taiklumas siekia $66,7~\%$. Kontrolinis subjektas atpažįstamas $91,7~\%$ taiklumu.
+Atliekant sudėtingesnį klasifikavimą tarp lengvos eisenos sutrikimo, sunkios eisenos sutrikimo Parkinsono ir kontrolinio subjekto, klasifikavimo klasės atpažinimas gaunamas prastesnis. Sunkios eisenos sutrikimas atpažįstamas prastai, tikslumas rezultatas yra $52,4~\%$, lengvos eisenos sutrikimo klasifikavimo tikslumas siekia $66,7~\%$. Kontrolinis subjektas atpažįstamas $91,7~\%$ tikslumu.
 
 Aptartas metodas siūlo konkrečią įrangą, algoritmą ir požymius, tačiau užsibrėžtas tikslas pasiektas tik iš dalies -- suprojektuota sistema, naudojanti pigius vertikalaus pagreičio jutiklius, kuri atpažįsta Parkinsono liga sergančių subjektų eigos sutrikimus, tačiau sistema labai blogai atpažįsta lengvą ir sunkų eisenos sutrikimą. Nurodyta kryptimi reikia atlikti detalesnę signalų analizę, norint sėkmingai identifikuoti Parkinsono ligos sunkią ir lengvą formas, atitinkamai pateikti HAY skalės vertinimą, analizuojat žmogaus eisenos požymius.
 
@@ -283,7 +282,7 @@ Kiekvieno bloko užduotis:
 
 \item ``Požymių erdvės sudarymas'' bloko paskirtis yra pateikti pasirinktam klasifikatoriui išskirtus signalų požymius po pirminio signalo apdorojimo. Tokiais požymiais gali būti signalų dažninės komponentės (Furjė koeficientai), koreliacijos koeficientai tarp dešinės ir kairės kojos, savi-koreliacijos koeficientai dešinės ar kairės kojos. Požymiai detaliau nagrinėjami tolimesniuose poskyriuose. Į bloką taip pat įeina ir darbas su matmenimis -- matmenų skaičiaus mažinimas ar naujos erdvės paieška, kurioje nagrinėjami duomenys yra geriau tiesiškai atskiriami.
 
-\item ``Klasifikatoriaus modelio sudarymas'' bloko paskirtis yra klasifikatoriaus apmokymas ir jo testavimas. Klasifikatoriaus pasirinkimas yra labai svarbus šiame darbe. Jis turi būti parinktas argumentuotai, išanalizavus kiekvieno naudojamo klasifikatoriaus taiklumo ir tikslumo rezultatus. Svarbus klasifikatoriaus aspektas yra požymių erdvės bendro dėsnio radimas arba erdvės aproksimacija. Šį faktą galima apibrėžti iš klasifikatoriaus rezultatų grafiko. Jeigu ilgą laiko tarpą į klasifikatorių yra siunčiami vienos klasės duomenys, o klasifikavimo rezultatai yra nestabilūs, ilgą laiką neturintys pastovaus rezultato, vadinasi, galima teigti, kad klasifikatorius blogai atliko erdvės duomenų pasiskirstymo dėsnio aproksimavimą, jis nėra tinkamas nagrinėjamai požymių erdvei.
+\item ``Klasifikatoriaus modelio sudarymas'' bloko paskirtis yra klasifikatoriaus apmokymas ir jo testavimas. Klasifikatoriaus pasirinkimas yra labai svarbus šiame darbe. Jis turi būti parinktas argumentuotai, išanalizavus kiekvieno naudojamo klasifikatoriaus tikslumo ir atpažinimo rezultatus. Svarbus klasifikatoriaus aspektas yra požymių erdvės bendro dėsnio radimas arba erdvės aproksimacija. Šį faktą galima apibrėžti iš klasifikatoriaus rezultatų grafiko. Jeigu ilgą laiko tarpą į klasifikatorių yra siunčiami vienos klasės duomenys, o klasifikavimo rezultatai yra nestabilūs, ilgą laiką neturintys pastovaus rezultato, vadinasi, galima teigti, kad klasifikatorius blogai atliko erdvės duomenų pasiskirstymo dėsnio aproksimavimą, jis nėra tinkamas nagrinėjamai požymių erdvei.
 \end{enumerate}
 
 \begin{figure}
@@ -613,17 +612,17 @@ Remiantis pateikta analize galima teigti, kad geriausiai duomenis požymių erdv
 
 Labai svarbu yra atskirti duomenis, kuriais klasifikatorius yra apmokamas ir kuriais jis yra testuojamas. Jeigu klasifikatoriaus apmokymo duomenys yra pakankamai apibendrinti, tuomet naujus duomenis klasifikatorius turėtų gerai atpažinti. Pateikiant klasifikatoriaus testavime tokius pačius duomenis, kaip ir apmokyme -- atliekamas tikrinimas ar klasifikatorius teisingai ``suprato'' nagrinėjamus duomenis, tačiau tai neapibrėžia kiek gerai jis apdoros naujus duomenis.
 
-Nurodytų klasifikatorių veikimas vertinamas taiklumo ir tikslumo parametrais. Taiklumas apskaičiuojamas:
+Nurodytų klasifikatorių veikimas vertinamas tikslumu ir klasės atpažinimu. Tikslumas apskaičiuojamas:
 
 \begin{equation}
-Taiklumas = \frac{T_P + T_N}{T_P + F_P + T_N + F_N},
+Tikslumas = \frac{T_P + T_N}{T_P + F_P + T_N + F_N},
 \end{equation}
 kur $T_P$ -- teisingai identifikuotų klasių skaičius, $T_N$ -- teisingai atmestų klasių skaičius, $F_P$ -- klaidingai identifikuotų klasių skaičius ir $F_N$ -- klaidingai atmestų klasių skaičius.
 
-Tikslumas apskaičiuojamas:
+Atpažinimas apskaičiuojamas:
 
 \begin{equation}
-Tikslumas = \frac{T_P}{T_P + F_P}
+Atpažinimas = \frac{T_P}{T_P + F_P}
 \end{equation}
 
 Visos tolesnės klasifikatorių patikros atliekamos remiantis tokia schema: iš turimų duomenų išskirta kojos prisilietimo ir pakilimo nuo žemės laiko ilgio variacijos požymiai. Visi duomenys padalinti į lygias tris dalis: matmenų operacijai atlikti duota $500$ reikšmių, klasifikatoriaus apmokymui tolimesnės eilės $500$ reikšmių, klasifikatoriaus testavimui tolimesnės eilės $500$ reikšmių. Klasifikavimas atliekamas realiu laiku, t.y. klasifikatoriui pateikiami duomenis apie žingsnio stadijos variaciją po transformacijos ir klasifikatorius pateikia savo spėjimą.
@@ -637,7 +636,7 @@ Atraminių vektorių mašina \cite{Burges98atutorial} šiuo metu yra populiariau
 \item Branduolio argumentas -- 2.
 \end{itemize}
 
-Lentelėje \ref{table:svm_scores} pateikti SVM tikslumo ir taiklumo duomenys. Kaip matyti, klasifikatorius veikia nepakankamai gerai -- tikslumo koeficientas nėra didesnis negu pusė, abiems atvejams tik $0,489$. Pirmos klasės atpažinimo taiklumas tėra $0,234$, antros klasės atpažinimo taiklumas yra $0,744$, tačiau to nepakanka. Iš padarytos klasifikatoriaus veikimo analizės galima teigti, kad klasifikatorius veikia blogai ir jo naudoti sprendime nėra galima.
+Lentelėje \ref{table:svm_scores} pateikti SVM tikslumo ir atpažinimo duomenys. Kaip matyti, klasifikatorius veikia nepakankamai gerai -- tikslumo koeficientas nėra didesnis negu pusė, abiems atvejams tik $0,489$. Pirmos klasės atpažinimas $0,234$, antros klasės atpažinimas $0,744$, tačiau to nepakanka. Iš padarytos klasifikatoriaus veikimo analizės galima teigti, kad klasifikatorius veikia blogai ir jo naudoti sprendime nėra galima.
 
 \begin{table}[!t]
   \centering
@@ -647,7 +646,7 @@ Lentelėje \ref{table:svm_scores} pateikti SVM tikslumo ir taiklumo duomenys. Ka
   \begin{tabular}{|c|c|c|} \hline
     & Co & Pt \\ \hline
     Tikslumas & 0,489 & 0,489 \\ \hline
-    Taiklumas & 0,234 & 0,744 \\ \hline
+    Atpažinimas & 0,234 & 0,744 \\ \hline
   \end{tabular}
 \end{table}
 
@@ -671,13 +670,13 @@ Lentelėje \ref{table:hmm_scores} pateikti tikslumo ir taikumo duomenys. Kaip ma
   \begin{tabular}{|c|c|c|} \hline
     & Co & Pt \\ \hline
     Tikslumas & 0,500 & 0,500 \\ \hline
-    Taiklumas & 0,000 & 1,000 \\ \hline
+    Atpažinimas & 0,000 & 1,000 \\ \hline
   \end{tabular}
 \end{table}
 
 Naivus Bayes \cite{R22230} yra vienas iš pirmųjų statistinių metodų grindžiamų klasifikavimo mechanizmas. Jis veikia labai paprastai -- ieškoma tiesinės funkcijos, kuri geriausiai atskiria nagrinėjamus duomenis ir vieni žymenis priskiriami, jeigu duomenys yra vienoje linijos pusėje, atvirkšti žymenis priskiriami, jeigu duomenys yra kitoje linijos pusėje. 
 
-Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys. Tikslumo koeficientas viršija pusę, $0,508$, tačiau tai yra mažai. Taiklumo koeficientas pirmuoju atveju yra neblogas, $0,764$, tačiau antruoju atveju koeficientas yra visiškai nepatenkinamas, viso $0,252$. Iš turimų rezultatų galima teigti, kad klasifikatorius veikia blogai ir duomenis vienmatėje erdvėje jis klasifikuoti teisingai negali.
+Lentelėje \ref{table:nb_scores} pateikti tikslumo ir atpažinimo duomenys. Tikslumo koeficientas viršija pusę, $0,508$, tačiau tai yra mažai. Atpažinimo koeficientas pirmuoju atveju yra neblogas, $0,764$, tačiau antruoju atveju koeficientas yra visiškai nepatenkinamas, viso $0,252$. Iš turimų rezultatų galima teigti, kad klasifikatorius veikia blogai ir duomenis vienmatėje erdvėje jis klasifikuoti teisingai negali.
 
 \begin{table}
   \centering
@@ -687,13 +686,13 @@ Lentelėje \ref{table:nb_scores} pateikti tikslumo ir taiklumo duomenys. Tikslum
   \begin{tabular}{|c|c|c|} \hline
     & Co & Pt \\ \hline
     Tikslumas & 0,508 & 0,508 \\ \hline
-    Taiklumas & 0,764 & 0,252 \\ \hline
+    Atpažinimas & 0,764 & 0,252 \\ \hline
   \end{tabular}
 \end{table}
 
 Paskutinis klasifikatorius, kuris pritaikytas turimiems duomenims -- tiesioginio sklidimo neuronų tinklas. Tai yra dirbtinių neuronų tinklų klasifikatorius, kuris veikia panašiai kaip ir Naivus Bayes -- jis ieško funkcijos (tiesinės arba daugianarės), kuri geriausiai atskiria turimus duomenis. Bandymo metu pasirinktas vienas įėjimas, du išėjimai ir vienas paslėptas sluoksnis. 
 
-Lentelėje \ref{table:ffn_scores} pateikiami tiesioginio sklidimo dirbtinių neuronų tinklų klasifikavimo rezultatas. Kaip matyti iš rezultatų -- klasifikatoriaus tikslumas pirmos klasės atžvilgiu yra $0,282$, taiklumas $0,000$, antros klasės atžvilgiu klasifikavimo tikslumas yra artimas pirmai $0,287$, tačiau turi geresnį taiklumą $0,392$. Iš turimos patikros rezultatų galima spręsti, kad tiesioginio sklidimo neuronų tinklas užduotį atlieka blogai.
+Lentelėje \ref{table:ffn_scores} pateikiami tiesioginio sklidimo dirbtinių neuronų tinklų klasifikavimo rezultatas. Kaip matyti iš rezultatų -- klasifikatoriaus tikslumas pirmos klasės atžvilgiu yra $0,282$, atpažinimas $0,000$, antros klasės atžvilgiu klasifikavimo tikslumas yra artimas pirmai $0,287$, tačiau turi geresnį atpažinimą $0,392$. Iš turimos patikros rezultatų galima spręsti, kad tiesioginio sklidimo neuronų tinklas užduotį atlieka blogai.
 
 \begin{table}
   \centering
@@ -703,11 +702,11 @@ Lentelėje \ref{table:ffn_scores} pateikiami tiesioginio sklidimo dirbtinių neu
   \begin{tabular}{|c|c|c|} \hline
     & Co & Pt \\ \hline
     Tikslumas & 0,282 & 0,287 \\ \hline
-    Taiklumas & 0,000 & 0,392 \\ \hline
+    Atpažinimas & 0,000 & 0,392 \\ \hline
   \end{tabular}
 \end{table}
 
-Iš pateiktos analizės galima spręsti, kad realiu laiku pateikti klasifikavimo tikslumas ir taiklumas nėra geri, norint atlikti kokybišką spėjimą ligos atžvilgiu. Atraminių vektorių mašinos tikslumas neviršija pusės, paslėptas Markovo modelis nesugeba atlikti tikslingo apmokymo, naivus Bayes klasifikatorius užduotį atlieka geriausiai iš visų nagrinėjamų klasifikatorių, tiesioginio sklidimo neuronų tinklas užduotį atlieka blogiausiai, iš visų klasifikatorių, kurie sugebėjo bent kažkiek apibendrinti duodamus duomenis apmokymo metu. Atlikta analizė reikalauja kito būdo klasifikavimui atlikti. Naudojamas būdas aprašytas kitame poskyryje.
+Iš pateiktos analizės galima spręsti, kad realiu laiku pateikti klasifikavimo tikslumas ir atpažinimas nėra geri, norint atlikti kokybišką spėjimą ligos atžvilgiu. Atraminių vektorių mašinos tikslumas neviršija pusės, paslėptas Markovo modelis nesugeba atlikti tikslingo apmokymo, naivus Bayes klasifikatorius užduotį atlieka geriausiai iš visų nagrinėjamų klasifikatorių, tiesioginio sklidimo neuronų tinklas užduotį atlieka blogiausiai, iš visų klasifikatorių, kurie sugebėjo bent kažkiek apibendrinti duodamus duomenis apmokymo metu. Atlikta analizė reikalauja kito būdo klasifikavimui atlikti. Naudojamas būdas aprašytas kitame poskyryje.
 
 \subsection{Duomenų analizės programos kūrimas}
 
@@ -726,7 +725,7 @@ Pagrindinė problema, kodėl joks nagrinėjamas klasifikatorius neatliko korekti
 
 Tokios išvados verčia projektuoti kitą klasifikavimo mechanizmą, kuris duomenis klasifikuotų ne kiekvieną pagal kiekvieną nagrinėjamą požymį, o pagal požymių grupę -- į laikiną atmintį yra rašoma požymio reikšmė, laukiama, kol laikina atmintis užsipildys iki tam tikros $n$ eilės ir iš gautos sekos yra skaičiuojamas vidurkis (vidurkis skaičiuojamas todėl, nes pagal duomenų pasiskirstymą, kuris parodytas \ref{fig:gauss_lda} paveiksle, pasiskirstymų vidurkiai skiriasi, tačiau variacijos lieka tokios pačios) ir apskaičiuota reikšmė naudojama kaip naujas požymis klasifikatoriaus apmokymui, bei tikrinimui. 
 
-Dėl gaunamų duomenų matmenų ir jų mažo kiekio (kuris priklauso nuo laikinos atminties dydžio, į kurią rašomos naudos erdvės vertės), yra panaudotas paprasčiausias Naivaus Bayes klasifikatoriaus mechanizmas. Duomenys nesikartojo jokiam algoritmo modulyje. Viso erdvės sudarymui panaudota $400$ (nuo $1$ iki $400$), apmokymui $500$ (nuo $501$ iki $1000$), testavimui $500$ ($1001$ iki $1500$) reikšmių. Laikinos atminties ilgis pasirinktas $50$ verčių, iš kurių skaičiuojamas vidurkis. Apmokymo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei, testavimo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei. Gauti tikslumo ir taiklumo rezultatai pateikti \ref{table:classification_results} lentelėje.
+Dėl gaunamų duomenų matmenų ir jų mažo kiekio (kuris priklauso nuo laikinos atminties dydžio, į kurią rašomos naudos erdvės vertės), yra panaudotas paprasčiausias Naivaus Bayes klasifikatoriaus mechanizmas. Duomenys nesikartojo jokiam algoritmo modulyje. Viso erdvės sudarymui panaudota $400$ (nuo $1$ iki $400$), apmokymui $500$ (nuo $501$ iki $1000$), testavimui $500$ ($1001$ iki $1500$) reikšmių. Laikinos atminties ilgis pasirinktas $50$ verčių, iš kurių skaičiuojamas vidurkis. Apmokymo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei, testavimo metu iš viso $10$ vidurkiai kiekvienai subjektų grupei. Gauti tikslumo ir atpažinimo rezultatai pateikti \ref{table:classification_results} lentelėje.
 
 \begin{table}
 	\centering
@@ -736,13 +735,13 @@ Dėl gaunamų duomenų matmenų ir jų mažo kiekio (kuris priklauso nuo laikino
 	\begin{tabular}{|c|c|c|} \hline
 		& Co & Pt \\ \hline
     Tikslumas & 0,800 & 0,800 \\ \hline
-    Taiklumas & 0,714 & 1,000 \\ \hline
+    Atpažinimas & 0,714 & 1,000 \\ \hline
 	\end{tabular}
 \end{table}
 
-Gautas klasifikavimo tikslumas yra $0,800$, kas viršija prieš tai naudotų metodų tikslumą. Pirmos grupės klasifikavimo taiklumas yra $0,714$, antros grupės klasifikavimo taiklumas $1,000$. Detalesnė klasifikavimo mechanizmo veikimo apžvalga yra pateikta Požymių klasifikavimo programos kūrimo poskyryje.
+Gautas klasifikavimo tikslumas yra $0,800$, kas viršija prieš tai naudotų metodų tikslumą. Pirmos grupės atpažinimas yra $0,714$, antros grupės atpažinimas $1,000$. Detalesnė klasifikavimo mechanizmo veikimo apžvalga yra pateikta Požymių klasifikavimo programos kūrimo poskyryje.
 
-Skyriuje apžvelgta bendra programos struktūrinė schema, aprašytas kiekvienos schemos elemento tikslas ir funkcija. Aptartas pirminio signalo apdorojimo žingsnio svarba ir būtinumas. Svarbiausias skyriaus rezultatas -- jėgos jutiklių signalo požymio radimas, kurio skirtumas tarp kontrolinio ir Parkinsono liga sergančio subjekto, leidžia identifikuoti eisenos sutrikimą. Atlikus erdvės transformacija, pakito požymio duomenų pasiskirstymai ir tai leido atlikti duomenų klasifikavimą. Skyriuje aptarti galimi panaudoti klasifikatoriai, pateiktas kiekvienas jų veikimo rezultatas, išreikštas tikslumu ir taiklumu. Algoritmo tikslumui ir taiklumui padidinti nuspręsta panaudoti laikinąją atmintį požymiams saugoti. Toliau apžvelgtas algoritmo įgyvendinimas.
+Skyriuje apžvelgta bendra programos struktūrinė schema, aprašytas kiekvienos schemos elemento tikslas ir funkcija. Aptartas pirminio signalo apdorojimo žingsnio svarba ir būtinumas. Svarbiausias skyriaus rezultatas -- jėgos jutiklių signalo požymio radimas, kurio skirtumas tarp kontrolinio ir Parkinsono liga sergančio subjekto, leidžia identifikuoti eisenos sutrikimą. Atlikus erdvės transformacija, pakito požymio duomenų pasiskirstymai ir tai leido atlikti duomenų klasifikavimą. Skyriuje aptarti galimi panaudoti klasifikatoriai, pateiktas kiekvienas jų veikimo rezultatas, išreikštas tikslumu ir atpažinimu. Algoritmo tikslumui ir atpažinimui padidinti nuspręsta panaudoti laikinąją atmintį požymiams saugoti. Toliau apžvelgtas algoritmo įgyvendinimas.
 
 \section{Signalų analizės programos įgyvendinimas}
 
@@ -819,7 +818,7 @@ Programos pirmo modulio struktūrinė schema atvaizduota \ref{fig:pirma_faze} pa
 
 Programos antro modulio struktūrinė schema atvaizduota \ref{fig:antra_faze} paveiksle. Modulis iš pirminio signalo apdorojimo nuskaito variacijos skaičiavimus. Struktūroje naudojamas erdvės modelis iš pirmojo programos modulio. Jis reikalingas tam, kad kiekvieną kartą neprojektuoti naujos erdvės iš naujo, bet projektuoti naujus duomenis į jau esamą erdvę. Tai taip pat užtikrina, kad naudojama ta pati matmenų erdvė, kas leidžia užtikrinti duomenų apibendrinimą. Skirtumas taip pirmojo ir antrojo modulio yra antro modulio išėjime yra klasifikatoriaus modelis, kuris yra apmokyto klasifikatoriaus parametrai, kurie yra naudojami klasifikatoriaus tikrinimui.
 
-Trečiojo, paskutinio modulio, struktūrine schema atvaizduota \ref{fig:trecia_faze} paveiksle. Struktūroje naudojamas erdvės modelis iš pirmo modulio ir klasifikatoriaus modelis iš antro modulio. Modulio iš pirminio signalo apdorojimo nuskaito variacijos skaičiavimus. Šio modulio išėjime yra klasifikavimo rezultatas, kurį galima pateikti tiek grafiškai, tiek skaitine išraiška, išreikšta tikslumo ir taiklumo verte.
+Trečiojo, paskutinio modulio, struktūrine schema atvaizduota \ref{fig:trecia_faze} paveiksle. Struktūroje naudojamas erdvės modelis iš pirmo modulio ir klasifikatoriaus modelis iš antro modulio. Modulio iš pirminio signalo apdorojimo nuskaito variacijos skaičiavimus. Šio modulio išėjime yra klasifikavimo rezultatas, kurį galima pateikti tiek grafiškai, tiek skaitine išraiška, išreikšta tikslumo ir atpažinimo verte.
 
 \begin{figure}
   \centering
@@ -890,7 +889,7 @@ ypred = nb.predict( testing_set.X' );
 
 Struktūriškai klasifikatoriaus apmokymas yra pateiktas 2 priede \ref{fig:class_train} paveiksle. Programa pradedama nuo signalo variacijos duomenų priėmimo iš pirminio signalo apdorojimo. Pagal ankščiau sukonstruotą erdvės modelį, projektuojami nauji signalo požymiai ir atliekamas klasifikatoriaus apmokymas.
 
-Klasifikatoriaus tikrinimas yra vykdomas pagal 2 priede pateiktą schemą \ref{fig:class_test} paveiksle. Programa pradedama tai pat, kaip ir klasifikatoriaus apmokymas iki ``Erdvės sudarymas pagal požymius'' struktūros bloko. Klasifikatoriaus modelis panaudojamas iš prieš tai atlikto apmokymo ir atliekamas požymių erdvės klasifikavimas. Rezultatai pateikiami neužtikrintumo matrica. Duomenys išvedami vartotojui tikslumo ir taiklumo skaitiniais įverčiais, ir grafiniu pavidalu.
+Klasifikatoriaus tikrinimas yra vykdomas pagal 2 priede pateiktą schemą \ref{fig:class_test} paveiksle. Programa pradedama tai pat, kaip ir klasifikatoriaus apmokymas iki ``Erdvės sudarymas pagal požymius'' struktūros bloko. Klasifikatoriaus modelis panaudojamas iš prieš tai atlikto apmokymo ir atliekamas požymių erdvės klasifikavimas. Rezultatai pateikiami neužtikrintumo matrica. Duomenys išvedami vartotojui tikslumo ir atpažinimo skaitiniais įverčiais, ir grafiniu pavidalu.
 
 \subsection{Signalų analizės programos įgyvendinimas}
 \label{subsec:total_program}
@@ -925,7 +924,7 @@ Po pirminio duomenų apdorojimo, kontrolinių subjektų grupėje liko $1790$ duo
 
 Pirminį patikros planą sudaro pateikiamų duomenų skaičiaus mažinimas į kiekvieno algoritmo žingsnį: matmenų erdvės sudarymas, klasifikatoriaus apmokymas, klasifikatoriaus testavimas. Duomenis galima mažinti tiesiniu būdu -- matmenų mažinime naudoti pirmus $400$ duomenų, $100$ praleisti, nuo $501$ iki $1000$ paduodi klasifikatoriaus apmokymui ir nuo $1001$ iki $1500$ pateikti klasifikatoriaus tikrinimui. Taip pat duomenis galima pateikti kas kelintą $n$ narį -- kadangi iš viso yra trys algoritmo žingsniai, tuomet $n=3$. Taip į matmenų mažinimo algoritmą pateikiamas pirmas rinkinys, ketvirtas rinkinys, septintas rinkinys. Klasifikatoriaus apmokymui pateikiamas antras rinkinys, penktas rinkinys, aštuntas rinkinys. Klasifikatoriaus tikrinimui pateikiamas trečias rinkinys, šeštas rinkinys, devintas rinkinys. Nurodytas duomenų pateikimas yra naudojamas, siekiant kiekvienam programos moduliui pateikti skirtingesnius duomenis. 
 
-Kadangi sprendime naudojamas laikinos atminties modulis, kuris reikalingas saugoti pirmąjį diskriminantą kiekvienos variacijos poros, eksperimentiniu būdu galima spręsti koks lango dydis nurodytai užduočiai atlikti geriausiai tinka. Atliekant tokį tikrinimą svarbu išlaikyti kitų parametrų skaičiaus vienodumą, todėl į kiekvieną iš trijų modulių pateikiamas pastovus duomenų skaičius, kuomet keičiamas laikinos atminties dydis. Tikrinimas taip pat nuspręs kiek minimaliai iš paciento eisenos turi būti išskirta požymių grupių, kad sistema grąžintų geriausią klasifikavimo tikslumo ir taiklumo rezultatą.
+Kadangi sprendime naudojamas laikinos atminties modulis, kuris reikalingas saugoti pirmąjį diskriminantą kiekvienos variacijos poros, eksperimentiniu būdu galima spręsti koks lango dydis nurodytai užduočiai atlikti geriausiai tinka. Atliekant tokį tikrinimą svarbu išlaikyti kitų parametrų skaičiaus vienodumą, todėl į kiekvieną iš trijų modulių pateikiamas pastovus duomenų skaičius, kuomet keičiamas laikinos atminties dydis. Tikrinimas taip pat nuspręs kiek minimaliai iš paciento eisenos turi būti išskirta požymių grupių, kad sistema grąžintų geriausią klasifikavimo tikslumo ir atpažinimo rezultatą.
 
 \subsection{Duomenų eksperimentams rengimas}
 
@@ -933,7 +932,7 @@ Kadangi sprendime naudojamas laikinos atminties modulis, kuris reikalingas saugo
 
 Pradžioje yra tikrinamas matmenų mažinimo algoritmas, mažinant pateikiamų duomenų skaičių. Struktūriškai nuspręsta, kad kiekvienas modulis turi lygiai po $500$ rinkinių. Tikrinimas pradedamas nuo $500$ rinkinių ir mažinamas kas $100$ rinkinių. Vadinasi, iš viso matmenų mažinimo algoritmui pateikiama $500$, $400$, $300$, $200$, $100$ ir minimalus $21$ rinkinių skaičius. Į apmokymo lygmenį pateikiamas pastovus duomenų skaičius -- $500$ (nuo $501$ iki $1000$) rinkinių. Laikinos atminties dydis palaikomas pastovus -- $50$ verčių. Po matmenų mažinimo žingsnio tikrinimo, rinkinių skaičius tokia pat metodika mažinamas klasifikatoriaus apmokymui, matmenų mažinimo metodui pateikiant pastovų rinkinių skaičių. Šioje stadijoje duomenų skaičius nėra mažinamas iki $21$ rinkinio skaičiaus, kadangi neformuojamas naudojamas lango ilgio, $50$, duomenų skaičius. Klasifikatoriaus testavimo atveju duomenų dydis nėra mažinamas.
 
-Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgiai: $10$, $30$, $50$, $70$, $100$, $130$ ir $150$. Kiekvienas toks tikinimas atliekamas su duomenų kiekiu, kuris parodė geriausią klasifikavimo tikslumo ir taiklumo rezultatą, aprašytą ankstesniame paragrafe. Panaudoti rezultatai atitinkamai užtikrins optimalų duomenų kiekio pasiskirstymą, geriausiam klasifikavimo tikslumo ir taiklumo rezultatui pasiekti.
+Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgiai: $10$, $30$, $50$, $70$, $100$, $130$ ir $150$. Kiekvienas toks tikinimas atliekamas su duomenų kiekiu, kuris parodė geriausią klasifikavimo tikslumo ir atpažinimo rezultatą, aprašytą ankstesniame paragrafe. Panaudoti rezultatai atitinkamai užtikrins optimalų duomenų kiekio pasiskirstymą, geriausiam klasifikavimo tikslumo ir atpažinimo rezultatui pasiekti.
 
 % Kokie duomenys ir kodėl bus naudojami patikrai?
 
@@ -941,81 +940,81 @@ Laikinos atminties ilgio tikrinimo metu panaudoti tokie laikinos atminties ilgia
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, tiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
+	\caption{Klasifikavimo rezultatai, tiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
 	\label{table:first_phase_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
 						&	& 500 	& 400	& 300 	& 200 & 100 	& 21 	\\ \hline
 		\multirow{2}{*}{Co}
 		& Tikslumas	& $0,700$ & $\mathbf{0,800}$ & $0,450$ & $0,450$ & $0,500$ & $0,450$ \\ \cline{2-8}
-		& Taiklumas  &	$0,750$ & $\mathbf{0,875}$ & $0,467$ & $0,429$ & $0,500$ & $0,400$ \\ \hline
+		& Atpažinimas  &	$0,750$ & $\mathbf{0,875}$ & $0,467$ & $0,429$ & $0,500$ & $0,400$ \\ \hline
 		\multirow{2}{*}{Pt}
 		& Tikslumas	& $0,700$ & $\mathbf{0,800}$ & $0,450$ & $0,450$ & $0,500$ & $0,450$ \\ \cline{2-8}
-		& Taiklumas  &	$0,667$ & $\mathbf{0,750}$ & $0,400$ & $0,462$ & $0,500$ & $0,467$ \\ \hline
+		& Atpažinimas  &	$0,667$ & $\mathbf{0,750}$ & $0,400$ & $0,462$ & $0,500$ & $0,467$ \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, tiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
+	\caption{Klasifikavimo rezultatai, tiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
 	\label{table:second_phase_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
 						&	& 500 	& 400	& 300 	& 200 & 100 	& 21 	\\ \hline
 		\multirow{2}{*}{Co}
 		& Tikslumas	& $\mathbf{0,800}$ & $\mathbf{0,800}$ & $0,750$ & $0,750$ & $0,650$ & $-$ \\ \cline{2-8}
-		& Taiklumas  &	$\mathbf{0,875}$ & $\mathbf{0,875}$ & $0,857$ & $1,000$ & $1,000$ & $-$ \\ \hline
+		& Atpažinimas  &	$\mathbf{0,875}$ & $\mathbf{0,875}$ & $0,857$ & $1,000$ & $1,000$ & $-$ \\ \hline
 		\multirow{2}{*}{Pt}
 		& Tikslumas	& $\mathbf{0,800}$ & $\mathbf{0,800}$ & $0,750$ & $0,750$ & $0,650$ & $-$ \\ \cline{2-8}
-		& Taiklumas  &	$\mathbf{0,750}$ & $\mathbf{0,750}$ & $0,692$ & $0,667$ & $0,588$ & $-$ \\ \hline
+		& Atpažinimas  &	$\mathbf{0,750}$ & $\mathbf{0,750}$ & $0,692$ & $0,667$ & $0,588$ & $-$ \\ \hline
 	\end{tabular}
 \end{table}
 
-Šiame poskyryje pateikti ir aptarti patikros tikslumo ir taiklumo rezultatai, išanalizuoti galimi sistemos parametrai, kurie gali būti derinami: duomenų skaičius, kuris naudojamas kiekvienam programos moduliui, bei atminties dydis, kuris naudojamas pirmajai diskriminanto vertei saugoti.
+Šiame poskyryje pateikti ir aptarti patikros tikslumo ir atpažinimo rezultatai, išanalizuoti galimi sistemos parametrai, kurie gali būti derinami: duomenų skaičius, kuris naudojamas kiekvienam programos moduliui, bei atminties dydis, kuris naudojamas pirmajai diskriminanto vertei saugoti.
 
-Pirma patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui, taip siekiant nustatyti koks duomenų kiekis geriausiai tinka naujai požymių erdvei projektuoti. Eksperimentiniai duomenys yra pateikti \ref{table:first_phase_experiment} lentelėje. Vertinant matmenų sudarymą pagal klasifikatoriaus duodamą rezultatą, geriausias duomenų kiekis, skirtas naujai matmenų erdvei sudaryti yra $400$ erdvės taškų. Tokiu atveju pasiekiamas $0,875$ Pt ir $0,750$ Co taiklumas. 
+Pirma patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui, taip siekiant nustatyti koks duomenų kiekis geriausiai tinka naujai požymių erdvei projektuoti. Eksperimentiniai duomenys yra pateikti \ref{table:first_phase_experiment} lentelėje. Vertinant matmenų sudarymą pagal klasifikatoriaus duodamą rezultatą, geriausias duomenų kiekis, skirtas naujai matmenų erdvei sudaryti yra $400$ erdvės taškų. Tokiu atveju pasiekiamas $0,875$ Pt ir $0,750$ Co atpažinimas. 
 
 Antra patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymui, taip siekiant nustatyti, kokio duomenų kiekio reikia klasifikatoriui, kad jis sugebėtų apibendrinti duomenis, naudojamus testavimo stadijoje. Eksperimentiniai duomenys yra pateikti \ref{table:second_phase_experiment} lentelėje. Šio tikrinimo metu paaiškėjo, kad geriausiai klasifikatoriaus apmokymui tinka du duomenų rinkiniai -- po $500$ ir po $400$. Tokiu atveju pasirenkamas didesnis duomenų kiekis, taip užtikrinant bendrų duomenų apibrėžtumą.
 
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, netiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
+	\caption{Klasifikavimo rezultatai, netiesiškai mažinant pateikiamų duomenų matmenų mažinimo algoritmui}
 	\label{table:first_phase_not_linear_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
 						&	& 500 	& 400	& 300 	& 200 & 100 	& 21 	\\ \hline
 		\multirow{2}{*}{Co}
 		& Tikslumas & $0,550$ & $0,450$ & $0,600$ & $0,600$ & $0,450$ & $\mathbf{0,650}$ \\ \cline{2-8}
-		& Taiklumas & $0,533$ & $0,467$ & $0,583$ & $0,583$ & $0,400$ & $\mathbf{0,667}$ \\ \hline
+		& Atpažinimas & $0,533$ & $0,467$ & $0,583$ & $0,583$ & $0,400$ & $\mathbf{0,667}$ \\ \hline
 		\multirow{2}{*}{Pt}
 		& Tikslumas & $0,550$ & $0,450$ & $0,600$ & $0,600$ & $0,450$ & $\mathbf{0,650}$ \\ \cline{2-8}
-		& Taiklumas & $0,600$ & $0,400$ & $0,625$ & $0,625$ & $0,467$ & $\mathbf{0,636}$ \\ \hline
+		& Atpažinimas & $0,600$ & $0,400$ & $0,625$ & $0,625$ & $0,467$ & $\mathbf{0,636}$ \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, netiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
+	\caption{Klasifikavimo rezultatai, netiesiškai mažinant pateikiamų duomenų klasifikatoriaus apmokymo algoritmui}
 	\label{table:second_phase_not_linear_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{6}{c|}{Taškų rinkinio skaičius} \\ \cline{3-8}
 						&	& 500 	& 400	& 300 	& 200 & 100 	& 21 	\\ \hline
 		\multirow{2}{*}{Co}
 		& Tikslumas	& $0,550$ & $0,450$ & $0,500$ & $0,400$ & $\mathbf{0,550}$ & $-$ \\ \cline{2-8}
-		& Taiklumas  &	$0,553$ & $0,455$ & $0,500$ & $0,400$ & $\mathbf{1,000}$ & $-$ \\ \hline
+		& Atpažinimas  &	$0,553$ & $0,455$ & $0,500$ & $0,400$ & $\mathbf{1,000}$ & $-$ \\ \hline
 		\multirow{2}{*}{Pt}
 		& Tikslumas	& $0,550$ & $0,450$ & $0,500$ & $0,400$ & $\mathbf{0,550}$ & $-$ \\ \cline{2-8}
-		& Taiklumas  &	$0,600$ & $0,444$ & $0,500$ & $0,400$ & $\mathbf{0,526}$ & $-$ \\ \hline
+		& Atpažinimas  &	$0,600$ & $0,444$ & $0,500$ & $0,400$ & $\mathbf{0,526}$ & $-$ \\ \hline
 	\end{tabular}
 \end{table}
 
 \begin{table}
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{Klasifikavimo tikslumo ir taiklumo rezultatai, mažinant laikinosios atminties dydį}
+	\caption{Klasifikavimo rezultatai, mažinant laikinosios atminties dydį}
 	\label{table:memory_linear_experiment}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
 			& & \multicolumn{7}{c|}{Laikinosios atminties dydis} \\ \cline{3-9}
@@ -1023,14 +1022,14 @@ Antra patikra atlikta tiesiškai mažinant duomenų kiekį, kuris yra paduodamas
 		\multirow{2}{*}{Co}
 									%150				%130			%100				%70				%50			% 30				%10
 		& Tikslumas	& $0,500$ & $0,500$ & $0,700$ & $0,500$ & $\mathbf{0,800}$ & $0,500$ & $0,570$ \\ \cline{2-9}
-		& Taiklumas  &	$0,500$ & $0,500$ & $0,750$ & $0,500$ & $\mathbf{0,875}$ & $0,500$ & $0,585$ \\ \hline
+		& Atpažinimas &	$0,500$ & $0,500$ & $0,750$ & $0,500$ & $\mathbf{0,875}$ & $0,500$ & $0,585$ \\ \hline
 		\multirow{2}{*}{Pt}
 		& Tikslumas	& $0,500$ & $0,500$ & $0,700$ & $0,500$ & $\mathbf{0,800}$ & $0,500$ & $0,570$ \\ \cline{2-9}
-		& Taiklumas  &	$0,500$ & $0,500$ & $0,667$ & $0,500$ & $\mathbf{0,750}$ & $0,500$ & $0,559$ \\ \hline
+		& Atpažinimas &	$0,500$ & $0,500$ & $0,667$ & $0,500$ & $\mathbf{0,750}$ & $0,500$ & $0,559$ \\ \hline
 	\end{tabular}
 \end{table}
 
-Trečia patikra atlikta netiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui. Klasifikavimo rezultatai yra pateikiami \ref{table:first_phase_not_linear_experiment} lentelėje. Bendri klasifikavimo tikslumo ir taiklumo rezultatai yra prastesni, negu mažinant duomenų pateikimą tiesiniu būdu, todėl iš eksperimento galima teigti, kad duomenis į matmenų mažinimo algoritmą geriausiai yra pateikti tiesiniu būdu -- nuo $1$ eilės iki $400$ eilės numerio. Taip duomenis yra geriau ``apibendrinami'' matmenų mažinimo algoritmo, ką parodo klasifikavimo rezultatas.
+Trečia patikra atlikta netiesiškai mažinant duomenų kiekį, kuris yra paduodamas matmenų mažinimo algoritmui. Klasifikavimo rezultatai yra pateikiami \ref{table:first_phase_not_linear_experiment} lentelėje. Bendri klasifikavimo tikslumo ir atpažinimo rezultatai yra prastesni, negu mažinant duomenų pateikimą tiesiniu būdu, todėl iš eksperimento galima teigti, kad duomenis į matmenų mažinimo algoritmą geriausiai yra pateikti tiesiniu būdu -- nuo $1$ eilės iki $400$ eilės numerio. Taip duomenis yra geriau ``apibendrinami'' matmenų mažinimo algoritmo, ką parodo klasifikavimo rezultatas.
 
 Ketvirta patikra atlikta netiesiškai mažinant duomenų kiekį, kuris yra paduodamas klasifikatoriaus apmokymo metodui. Klasifikavimo rezultatai yra pateikiami \ref{table:second_phase_not_linear_experiment} lentelėje. Kaip ir trečios patikros atveju -- klasifikavimo duomenis nėra patenkinami, todėl ir klasifikavimo apmokymo atveju, duomenis geriausiai pateikti tiesiniu būdu -- nuo $0$  eilės iki $500$ eilės numerio.
 
@@ -1055,7 +1054,7 @@ Turint duomenis, kurie turi daugiausiai informacijos ligos identifikavimui, toli
 
 % Kiek gerai veikia sukurtas produktas?
 
-Turimus vienmačius duomenis realiu laiku geriausiai klasifikavo Naivus Bayes klasifikatorius, tačiau klasifikavimo tikslumas ir taiklumas yra nepatenkinamas, tikslumas siekė tik $50,8~\%$. Pritaikius papildomą metodikos žingsnį -- laikinosios atminties bloką, kuriame saugomas pirmas transformacijos diskriminantas, klasifikavimo tikslumas pagerintas iki $80~\%$. Rezultatas nurodo kas penkto diagnozavimo rezultato klaidingumą. Turint omenyje, kad klinikinės diagnostikos sprendimų taiklumas yra nuo $74~\%$ iki $90~\%$ \cite{vgtu}, sistemos darbo rezultatas kitų produktų palyginime atrodo patenkinamai.
+Turimus vienmačius duomenis realiu laiku geriausiai klasifikavo Naivus Bayes klasifikatorius, tačiau klasifikavimo tikslumas ir atpažinimas yra nepatenkinamas, tikslumas siekė tik $50,8~\%$. Pritaikius papildomą metodikos žingsnį -- laikinosios atminties bloką, kuriame saugomas pirmas transformacijos diskriminantas, klasifikavimo tikslumas pagerintas iki $80~\%$. Rezultatas nurodo kas penkto diagnozavimo rezultato klaidingumą. Turint omenyje, kad klinikinės diagnostikos sprendimų atpažinimas yra nuo $74~\%$ iki $90~\%$ \cite{vgtu}, sistemos darbo rezultatas kitų produktų palyginime atrodo patenkinamai.
 
 % Ar visus iškeltus uždavinius pavyko sėkmingai išspręsti, įgyvendinti?
 
